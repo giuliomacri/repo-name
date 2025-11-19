@@ -20,63 +20,53 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: references.bib
+Warning--I didn't find a database entry for "Stark2015feasability"
+Warning--I didn't find a database entry for "Stark2015GeoRL..42.7881S"
 sn-mathphys-num.bst [2024/07/19 v1.1  bibliography style]
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Warning--"{An" isn't a brace-balanced string for entry 1968aitp.book.....K
-while executing--line 2871 of file sn-mathphys-num.bst
-Warning--"{An" isn't a brace-balanced string for entry 1968aitp.book.....K
-while executing--line 2871 of file sn-mathphys-num.bst
-Warning--"{An" isn't a brace-balanced string for entry 1968aitp.book.....K
-while executing--line 2871 of file sn-mathphys-num.bst
-Warning--"planets}" isn't a brace-balanced string for entry 1968aitp.book.....K
-while executing--line 2871 of file sn-mathphys-num.bst
-Warning--"planets}" isn't a brace-balanced string for entry 1968aitp.book.....K
-while executing--line 2871 of file sn-mathphys-num.bst
-Warning--"PLANETS}" isn't a brace-balanced string for entry 1968aitp.book.....K
-while executing--line 2871 of file sn-mathphys-num.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 52 entries,
+You've used 24 entries,
             7485 wiz_defined-function locations,
-            1684 strings with 26227 characters,
-and the built_in function-call counts, 420231 in all, are:
-= -- 71726
-> -- 1696
-< -- 826
-+ -- 38594
-- -- 513
-* -- 14271
-:= -- 75274
-add.period$ -- 57
-call.type$ -- 52
-change.case$ -- 339
-chr.to.int$ -- 2197
-cite$ -- 52
-duplicate$ -- 2363
-empty$ -- 10687
-format.name$ -- 1116
-if$ -- 106220
+            1433 strings with 18837 characters,
+and the built_in function-call counts, 120880 in all, are:
+= -- 17066
+> -- 884
+< -- 392
++ -- 5909
+- -- 268
+* -- 6953
+:= -- 22980
+add.period$ -- 26
+call.type$ -- 24
+change.case$ -- 135
+chr.to.int$ -- 1062
+cite$ -- 24
+duplicate$ -- 1204
+empty$ -- 6065
+format.name$ -- 649
+if$ -- 28787
 int.to.chr$ -- 1
-int.to.str$ -- 78
+int.to.str$ -- 32
 missing$ -- 0
-newline$ -- 813
-num.names$ -- 263
-pop$ -- 1019
+newline$ -- 427
+num.names$ -- 120
+pop$ -- 560
 preamble$ -- 1
-purify$ -- 233
+purify$ -- 103
 quote$ -- 0
-skip$ -- 42987
+skip$ -- 9249
 stack$ -- 0
-substring$ -- 41926
-swap$ -- 1345
-text.length$ -- 669
+substring$ -- 14613
+swap$ -- 688
+text.length$ -- 288
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 2282
+type$ -- 1058
 warning$ -- 0
-while$ -- 1504
+while$ -- 742
 width$ -- 0
-write$ -- 1126
-(There were 6 warnings)
+write$ -- 569
+(There were 2 warnings)

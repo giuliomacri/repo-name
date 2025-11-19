@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.14)  13 NOV 2025 18:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.14)  19 NOV 2025 16:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -798,28 +798,32 @@ Package caption Info: wrapfig package is loaded.
 \c@example=\count373
 \c@remark=\count374
 \c@definition=\count375
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 156.
- (./sn-article.aux)
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 159.
+ (./sn-article.aux
+
+LaTeX Warning: Label `eq:22.23' multiply defined.
+
+)
 \openout1 = `sn-article.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -875,13 +879,13 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Info: Redefining \S on input line 156.
-LaTeX Font Info:    Redeclaring symbol font `AMSa' on input line 156.
+LaTeX Info: Redefining \S on input line 159.
+LaTeX Font Info:    Redeclaring symbol font `AMSa' on input line 159.
 LaTeX Font Info:    Overwriting symbol font `AMSa' in version `normal'
-(Font)                  U/msa/m/n --> U/msa/m/n on input line 156.
+(Font)                  U/msa/m/n --> U/msa/m/n on input line 159.
 LaTeX Font Info:    Overwriting symbol font `AMSa' in version `bold'
-(Font)                  U/msa/m/n --> U/msa/m/n on input line 156.
-Package hyperref Info: Link coloring ON on input line 156.
+(Font)                  U/msa/m/n --> U/msa/m/n on input line 159.
+Package hyperref Info: Link coloring ON on input line 159.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
@@ -891,9 +895,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count382
 )
-LaTeX Info: Redefining \ref on input line 156.
-LaTeX Info: Redefining \pageref on input line 156.
-LaTeX Info: Redefining \nameref on input line 156.
+LaTeX Info: Redefining \ref on input line 159.
+LaTeX Info: Redefining \pageref on input line 159.
+LaTeX Info: Redefining \nameref on input line 159.
  (./sn-article.out) (./sn-article.out)
 \@outlinefile=\write4
 \openout4 = `sn-article.out'.
@@ -902,32 +906,32 @@ LaTeX Info: Redefining \nameref on input line 156.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 156.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 159.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 239.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 239.
+LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 233.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 233.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 239.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 233.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 239.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 233.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <8.43146> not available
-(Font)              size <8> substituted on input line 239.
+(Font)              size <8> substituted on input line 233.
 
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 239.
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 233.
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <5.52061> not available
-(Font)              size <6> substituted on input line 239.
+(Font)              size <6> substituted on input line 233.
 
-LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 239.
+LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 233.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -937,15 +941,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
-
-Package hyperref Warning: Ignoring empty anchor on input line 423.
-
-
-Overfull \hbox (101.61024pt too wide) in paragraph at lines 365--427
- [][] 
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
@@ -958,74 +953,47 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6]
+
+LaTeX Warning: Reference `tab:galilean_satellites_parameters_ext' on page 7 undefined on input line 798.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
-<IMAGES/spheres/ganymede.png, id=298, 1927.2pt x 1084.05pt>
-File: IMAGES/spheres/ganymede.png Graphic file (type png)
-<use IMAGES/spheres/ganymede.png>
-Package pdftex.def Info: IMAGES/spheres/ganymede.png  used on input line 898.
-(pdftex.def)             Requested size: 50.0pt x 28.12012pt.
-
-Overfull \hbox (59.14497pt too wide) in paragraph at lines 1004--1005
- [][] 
- []
-
-<IMAGES/spheres/jupiter.png, id=300, 2055.68pt x 1156.32pt>
-File: IMAGES/spheres/jupiter.png Graphic file (type png)
-<use IMAGES/spheres/jupiter.png>
-Package pdftex.def Info: IMAGES/spheres/jupiter.png  used on input line 1108.
-(pdftex.def)             Requested size: 50.0pt x 28.12453pt.
-File: IMAGES/spheres/ganymede.png Graphic file (type png)
-<use IMAGES/spheres/ganymede.png>
-Package pdftex.def Info: IMAGES/spheres/ganymede.png  used on input line 1166.
-(pdftex.def)             Requested size: 35.0pt x 19.68408pt.
-
-Overfull \hbox (51.18445pt too wide) in paragraph at lines 1270--1271
- [][] 
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8]
-File: IMAGES/spheres/ganymede.png Graphic file (type png)
-<use IMAGES/spheres/ganymede.png>
-Package pdftex.def Info: IMAGES/spheres/ganymede.png  used on input line 1384.
-(pdftex.def)             Requested size: 27.0pt x 15.18486pt.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Overfull \hbox (33.83496pt too wide) in paragraph at lines 1521--1522
- [][] 
- []
+ [9]
 
-<IMAGES/spheres/moon.png, id=312, 1927.2pt x 1084.05pt>
-File: IMAGES/spheres/moon.png Graphic file (type png)
-<use IMAGES/spheres/moon.png>
-Package pdftex.def Info: IMAGES/spheres/moon.png  used on input line 1615.
-(pdftex.def)             Requested size: 27.0pt x 15.18486pt.
+Package natbib Warning: Citation `Stark2015feasability' on page 10 undefined on input line 996.
 
-Overfull \hbox (37.7989pt too wide) in paragraph at lines 1756--1757
- [][] 
- []
+
+Package natbib Warning: Citation `Stark2015GeoRL..42.7881S' on page 10 undefined on input line 1001.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9 <./IMAGES/spheres/ganymede.png> <./IMAGES/spheres/jupiter.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [10]
 
- [10 <./IMAGES/spheres/moon.png>]
+Package natbib Warning: Citation `Stark2015feasability' on page 11 undefined on input line 1058.
+
+
+LaTeX Warning: Reference `sec:3GM' on page 11 undefined on input line 1064.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11]
-Overfull \hbox (4.30887pt too wide) in paragraph at lines 1973--2002
- [][] 
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12]
+Overfull \hbox (8.55214pt too wide) detected at line 1299
+[]
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13]
@@ -1035,169 +1003,169 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15]
-<IMAGES/io_gamma_tile.pdf, id=455, 108.405pt x 54.2025pt>
-File: IMAGES/io_gamma_tile.pdf Graphic file (type pdf)
-<use IMAGES/io_gamma_tile.pdf>
-Package pdftex.def Info: IMAGES/io_gamma_tile.pdf  used on input line 2337.
-(pdftex.def)             Requested size: 184.13818pt x 92.08098pt.
-<IMAGES/europa_gamma_tile.pdf, id=457, 108.405pt x 54.2025pt>
-File: IMAGES/europa_gamma_tile.pdf Graphic file (type pdf)
-<use IMAGES/europa_gamma_tile.pdf>
-Package pdftex.def Info: IMAGES/europa_gamma_tile.pdf  used on input line 2346.
-(pdftex.def)             Requested size: 184.13818pt x 92.08098pt.
-<IMAGES/ganymede_gamma_tile.pdf, id=459, 108.405pt x 54.2025pt>
-File: IMAGES/ganymede_gamma_tile.pdf Graphic file (type pdf)
-<use IMAGES/ganymede_gamma_tile.pdf>
-Package pdftex.def Info: IMAGES/ganymede_gamma_tile.pdf  used on input line 2357.
-(pdftex.def)             Requested size: 184.13818pt x 92.08098pt.
-<IMAGES/callisto_gamma_tile.pdf, id=461, 108.405pt x 54.2025pt>
-File: IMAGES/callisto_gamma_tile.pdf Graphic file (type pdf)
-<use IMAGES/callisto_gamma_tile.pdf>
-Package pdftex.def Info: IMAGES/callisto_gamma_tile.pdf  used on input line 2366.
-(pdftex.def)             Requested size: 184.13818pt x 92.08098pt.
+
+LaTeX Warning: Reference `A_1' on page 16 undefined on input line 1517.
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [16]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17 <./IMAGES/io_gamma_tile.pdf> <./IMAGES/europa_gamma_tile.pdf> <./IMAGES/ganymede_gamma_tile.pdf> <./IMAGES/callisto_gamma_tile.pdf>]
+ [17]
+<IMAGES/spheres/ganymede.png, id=414, 1927.2pt x 1084.05pt>
+File: IMAGES/spheres/ganymede.png Graphic file (type png)
+<use IMAGES/spheres/ganymede.png>
+Package pdftex.def Info: IMAGES/spheres/ganymede.png  used on input line 1805.
+(pdftex.def)             Requested size: 50.0pt x 28.12012pt.
+
+Overfull \hbox (60.46965pt too wide) in paragraph at lines 1911--1912
+ [][] 
+ []
+
+<IMAGES/spheres/jupiter.png, id=416, 2055.68pt x 1156.32pt>
+File: IMAGES/spheres/jupiter.png Graphic file (type png)
+<use IMAGES/spheres/jupiter.png>
+Package pdftex.def Info: IMAGES/spheres/jupiter.png  used on input line 2015.
+(pdftex.def)             Requested size: 50.0pt x 28.12453pt.
+File: IMAGES/spheres/ganymede.png Graphic file (type png)
+<use IMAGES/spheres/ganymede.png>
+Package pdftex.def Info: IMAGES/spheres/ganymede.png  used on input line 2073.
+(pdftex.def)             Requested size: 35.0pt x 19.68408pt.
+
+Overfull \hbox (52.06757pt too wide) in paragraph at lines 2177--2178
+ [][] 
+ []
+
+
+LaTeX Warning: Reference `eq:generic_fit' on page 18 undefined on input line 2682.
+
+<IMAGES/io_gamma_tile.pdf, id=418, 108.405pt x 54.2025pt>
+File: IMAGES/io_gamma_tile.pdf Graphic file (type pdf)
+<use IMAGES/io_gamma_tile.pdf>
+Package pdftex.def Info: IMAGES/io_gamma_tile.pdf  used on input line 2721.
+(pdftex.def)             Requested size: 184.13818pt x 92.08098pt.
+<IMAGES/europa_gamma_tile.pdf, id=420, 108.405pt x 54.2025pt>
+File: IMAGES/europa_gamma_tile.pdf Graphic file (type pdf)
+<use IMAGES/europa_gamma_tile.pdf>
+Package pdftex.def Info: IMAGES/europa_gamma_tile.pdf  used on input line 2730.
+(pdftex.def)             Requested size: 184.13818pt x 92.08098pt.
+<IMAGES/ganymede_gamma_tile.pdf, id=422, 108.405pt x 54.2025pt>
+File: IMAGES/ganymede_gamma_tile.pdf Graphic file (type pdf)
+<use IMAGES/ganymede_gamma_tile.pdf>
+Package pdftex.def Info: IMAGES/ganymede_gamma_tile.pdf  used on input line 2741.
+(pdftex.def)             Requested size: 184.13818pt x 92.08098pt.
+<IMAGES/callisto_gamma_tile.pdf, id=424, 108.405pt x 54.2025pt>
+File: IMAGES/callisto_gamma_tile.pdf Graphic file (type pdf)
+<use IMAGES/callisto_gamma_tile.pdf>
+Package pdftex.def Info: IMAGES/callisto_gamma_tile.pdf  used on input line 2750.
+(pdftex.def)             Requested size: 184.13818pt x 92.08098pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [18]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19]
-<IMAGES/io_snk.pdf, id=728, 55.20625pt x 60.225pt>
-File: IMAGES/io_snk.pdf Graphic file (type pdf)
-<use IMAGES/io_snk.pdf>
-Package pdftex.def Info: IMAGES/io_snk.pdf  used on input line 2885.
-(pdftex.def)             Requested size: 91.13818pt x 99.4285pt.
-<IMAGES/europa_snk.pdf, id=729, 55.20625pt x 60.225pt>
-File: IMAGES/europa_snk.pdf Graphic file (type pdf)
-<use IMAGES/europa_snk.pdf>
-Package pdftex.def Info: IMAGES/europa_snk.pdf  used on input line 2892.
-(pdftex.def)             Requested size: 91.13818pt x 99.4285pt.
-<IMAGES/ganymede_snk.pdf, id=730, 55.20625pt x 60.225pt>
-File: IMAGES/ganymede_snk.pdf Graphic file (type pdf)
-<use IMAGES/ganymede_snk.pdf>
-Package pdftex.def Info: IMAGES/ganymede_snk.pdf  used on input line 2899.
-(pdftex.def)             Requested size: 91.13818pt x 99.4285pt.
-<IMAGES/callisto_snk.pdf, id=731, 55.20625pt x 60.225pt>
-File: IMAGES/callisto_snk.pdf Graphic file (type pdf)
-<use IMAGES/callisto_snk.pdf>
-Package pdftex.def Info: IMAGES/callisto_snk.pdf  used on input line 2906.
-(pdftex.def)             Requested size: 91.13818pt x 99.4285pt.
-<IMAGES/io_lib_tile.pdf, id=732, 111.41624pt x 129.48375pt>
-File: IMAGES/io_lib_tile.pdf Graphic file (type pdf)
-<use IMAGES/io_lib_tile.pdf>
-Package pdftex.def Info: IMAGES/io_lib_tile.pdf  used on input line 2929.
-(pdftex.def)             Requested size: 184.13818pt x 214.0163pt.
-<IMAGES/europa_lib_tile.pdf, id=733, 111.41624pt x 129.48375pt>
-File: IMAGES/europa_lib_tile.pdf Graphic file (type pdf)
-<use IMAGES/europa_lib_tile.pdf>
-Package pdftex.def Info: IMAGES/europa_lib_tile.pdf  used on input line 2936.
-(pdftex.def)             Requested size: 184.13818pt x 214.0163pt.
-<IMAGES/Ganymede_lib_tile.pdf, id=734, 111.41624pt x 129.48375pt>
-File: IMAGES/Ganymede_lib_tile.pdf Graphic file (type pdf)
-<use IMAGES/Ganymede_lib_tile.pdf>
-Package pdftex.def Info: IMAGES/Ganymede_lib_tile.pdf  used on input line 2945.
-(pdftex.def)             Requested size: 184.13818pt x 214.0163pt.
-<IMAGES/callisto_lib_tile.pdf, id=735, 111.41624pt x 129.48375pt>
-File: IMAGES/callisto_lib_tile.pdf Graphic file (type pdf)
-<use IMAGES/callisto_lib_tile.pdf>
-Package pdftex.def Info: IMAGES/callisto_lib_tile.pdf  used on input line 2952.
-(pdftex.def)             Requested size: 184.13818pt x 214.0163pt.
+ [19 <./IMAGES/io_gamma_tile.pdf> <./IMAGES/europa_gamma_tile.pdf> <./IMAGES/ganymede_gamma_tile.pdf> <./IMAGES/callisto_gamma_tile.pdf> <./IMAGES/spheres/ganymede.png> <./IMAGES/spheres/jupiter.png>]
+
+Package hyperref Warning: Difference (4) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 3264.
+
+
+Package hyperref Warning: Difference (3) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 3278.
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [20]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21 <./IMAGES/io_snk.pdf> <./IMAGES/europa_snk.pdf> <./IMAGES/ganymede_snk.pdf> <./IMAGES/callisto_snk.pdf>]
+ [21]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22 <./IMAGES/io_lib_tile.pdf> <./IMAGES/europa_lib_tile.pdf> <./IMAGES/Ganymede_lib_tile.pdf> <./IMAGES/callisto_lib_tile.pdf>]
+ [22]
+
+LaTeX Warning: Reference `tab:euler_initial_conditions' on page 23 undefined on input line 3821.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [23]
 
-Package hyperref Warning: Difference (4) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 3289.
-
-
-Package hyperref Warning: Difference (3) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 3303.
-
-LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 3359.
-
-LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.015> not available
-(Font)              size <5> substituted on input line 3359.
-
-
-Overfull \hbox (131.20685pt too wide) in paragraph at lines 3355--3391
- [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (122.67487pt too wide) in paragraph at lines 3401--3437
- [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: Reference `tab:laplace_pole_in_ICRF' on page 24 undefined on input line 3958.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24]
+Overfull \hbox (29.94138pt too wide) detected at line 4223
+[]
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4269.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Gamma' on input line 4269.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 4269.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 4269.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4269.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26]
-Overfull \hbox (131.20685pt too wide) in paragraph at lines 3446--3481
- [] 
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4435.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Gamma' on input line 4435.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 4435.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 4435.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4435.
+
+
+Overfull \hbox (76.25174pt too wide) detected at line 4651
+[]
  []
-
-
-Overfull \hbox (126.94086pt too wide) in paragraph at lines 3490--3527
- [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [27
-
-]
+ [27]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [29]
-Overfull \hbox (50.70439pt too wide) in paragraph at lines 3982--3994
- [][] 
- []
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 4003.
-
-
-Underfull \hbox (badness 5147) in paragraph at lines 4018--4018
-[]\OT1/cmr/bx/n/10.03749 Table C6\OT1/cmr/m/n/10 : |Iner-tial coor-di-nates of the
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [30]
@@ -1207,85 +1175,66 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [32]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 4206.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [33]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34]
+ [34] (./sn-article.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35] (./sn-article.bbl
+ [35]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [36]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [37]
-Underfull \hbox (badness 2359) in paragraph at lines 397--405
-[]\OT1/cmr/m/n/10 Cassini, J.-D.: De l'Origine et du Progr^^Res de L'astronomie et de Son
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 397--405
-\OT1/cmr/m/n/10 Usage dans la G^^Seographie et dans la Nav-i-ga-tion. Paris, ??? (1693).
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [38]
-Underfull \hbox (badness 1092) in paragraph at lines 653--663
-\OT1/cmr/m/n/10 Math-e-mat-ics e-prints, 0305364 (2003) [][]$https : / / doi . org / 10 . 48550 / arXiv . math /
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [39]
-Underfull \hbox (badness 10000) in paragraph at lines 770--783
+Underfull \hbox (badness 10000) in paragraph at lines 428--441
 []\OT1/cmr/m/n/10 Landau, L.D., Lif-shitz, E.M.: Mechan-ics, 3rd edn. Course of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 770--783
+Underfull \hbox (badness 10000) in paragraph at lines 428--441
 \OT1/cmr/m/n/10 The-o-ret-i-cal Physics, vol. 1. Butterworth-Heinemann, Oxford
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 770--783
+Underfull \hbox (badness 10000) in paragraph at lines 428--441
 \OT1/cmr/m/n/10 (1976). [][]$https : / / doi . org / 10 . 1016 / B978-[]0-[]08-[]050347-[]9 . 50011-[]3$[][] .
  []
 
 )
+
+Package natbib Warning: There were undefined citations.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40] (./sn-article.aux)
+ [37] (./sn-article.aux)
 
 LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 0.985pt have occurred.
+(Font)              up to 0.47939pt have occurred.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `sn-article.out' has not changed.
-(rerunfilecheck)             Checksum: E07E71F87D2E793A506A2C4AF8BD8E24;6703.
+(rerunfilecheck)             Checksum: 202DDBD8AB2AFB92C33EF4189FF493F2;7712.
  ) 
 Here is how much of TeX's memory you used:
- 35871 strings out of 478268
- 732765 string characters out of 5846346
- 1060188 words of memory out of 5000000
- 53226 multiletter control sequences out of 15000+600000
- 500716 words of font info for 147 fonts, out of 8000000 for 9000
+ 35079 strings out of 478268
+ 715973 string characters out of 5846346
+ 1097257 words of memory out of 5000000
+ 52446 multiletter control sequences out of 15000+600000
+ 491167 words of font info for 111 fonts, out of 8000000 for 9000
  1151 hyphenation exceptions out of 8191
- 85i,15n,90p,993b,1440s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on sn-article.pdf (40 pages, 18607929 bytes).
+ 85i,16n,90p,1935b,1438s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on sn-article.pdf (37 pages, 4298929 bytes).
 PDF statistics:
- 1564 PDF objects out of 1728 (max. 8388607)
- 1278 compressed objects within 13 object streams
- 303 named destinations out of 1000 (max. 500000)
- 430 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1067 PDF objects out of 1200 (max. 8388607)
+ 898 compressed objects within 9 object streams
+ 301 named destinations out of 1000 (max. 500000)
+ 353 words of extra memory for PDF output out of 10000 (max. 10000000)
 
