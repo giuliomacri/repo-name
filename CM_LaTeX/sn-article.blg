@@ -20,53 +20,59 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: references.bib
-Warning--I didn't find a database entry for "Stark2015feasability"
-Warning--I didn't find a database entry for "Stark2015GeoRL..42.7881S"
 sn-mathphys-num.bst [2024/07/19 v1.1  bibliography style]
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--"{Statistical" isn't a brace-balanced string for entry 2004sod..book.....T
+while executing--line 2871 of file sn-mathphys-num.bst
+Warning--"{Statistical" isn't a brace-balanced string for entry 2004sod..book.....T
+while executing--line 2871 of file sn-mathphys-num.bst
+Warning--"{Statistical" isn't a brace-balanced string for entry 2004sod..book.....T
+while executing--line 2871 of file sn-mathphys-num.bst
+Warning--"Determination}" isn't a brace-balanced string for entry 2004sod..book.....T
+while executing--line 2871 of file sn-mathphys-num.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 24 entries,
+You've used 38 entries,
             7485 wiz_defined-function locations,
-            1433 strings with 18837 characters,
-and the built_in function-call counts, 120880 in all, are:
-= -- 17066
-> -- 884
-< -- 392
-+ -- 5909
-- -- 268
-* -- 6953
-:= -- 22980
-add.period$ -- 26
-call.type$ -- 24
-change.case$ -- 135
-chr.to.int$ -- 1062
-cite$ -- 24
-duplicate$ -- 1204
-empty$ -- 6065
-format.name$ -- 649
-if$ -- 28787
+            1559 strings with 29184 characters,
+and the built_in function-call counts, 317974 in all, are:
+= -- 39061
+> -- 2424
+< -- 600
++ -- 7721
+- -- 943
+* -- 25744
+:= -- 62742
+add.period$ -- 44
+call.type$ -- 38
+change.case$ -- 209
+chr.to.int$ -- 1634
+cite$ -- 38
+duplicate$ -- 2935
+empty$ -- 22212
+format.name$ -- 2589
+if$ -- 70000
 int.to.chr$ -- 1
-int.to.str$ -- 32
+int.to.str$ -- 50
 missing$ -- 0
-newline$ -- 427
-num.names$ -- 120
-pop$ -- 560
+newline$ -- 907
+num.names$ -- 190
+pop$ -- 1930
 preamble$ -- 1
-purify$ -- 103
+purify$ -- 163
 quote$ -- 0
-skip$ -- 9249
+skip$ -- 16681
 stack$ -- 0
-substring$ -- 14613
-swap$ -- 688
-text.length$ -- 288
+substring$ -- 52270
+swap$ -- 1600
+text.length$ -- 458
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 1058
+type$ -- 1688
 warning$ -- 0
-while$ -- 742
+while$ -- 1967
 width$ -- 0
-write$ -- 569
-(There were 2 warnings)
+write$ -- 1133
+(There were 4 warnings)
