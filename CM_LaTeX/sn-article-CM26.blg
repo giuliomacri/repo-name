@@ -1,0 +1,90 @@
+This is BibTeX, Version 0.99d (TeX Live 2022)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: sn-article-CM26.aux
+The style file: sn-mathphys-ay.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: references.bib
+sn-mathphys-ay.bst [2024/07/19 v1.1 bibliography style]
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--"{Classical" isn't a brace-balanced string for entry Goldstein:102554
+while executing--line 2869 of file sn-mathphys-ay.bst
+Warning--"{Classical" isn't a brace-balanced string for entry Goldstein:102554
+while executing--line 2869 of file sn-mathphys-ay.bst
+Warning--"{Classical" isn't a brace-balanced string for entry Goldstein:102554
+while executing--line 2869 of file sn-mathphys-ay.bst
+Warning--"ed.}" isn't a brace-balanced string for entry Goldstein:102554
+while executing--line 2869 of file sn-mathphys-ay.bst
+Warning--"ed.}" isn't a brace-balanced string for entry Goldstein:102554
+while executing--line 2869 of file sn-mathphys-ay.bst
+Warning--"ED.}" isn't a brace-balanced string for entry Goldstein:102554
+while executing--line 2869 of file sn-mathphys-ay.bst
+Warning--"{Statistical" isn't a brace-balanced string for entry 2004sod..book.....T
+while executing--line 2869 of file sn-mathphys-ay.bst
+Warning--"{Statistical" isn't a brace-balanced string for entry 2004sod..book.....T
+while executing--line 2869 of file sn-mathphys-ay.bst
+Warning--"{Statistical" isn't a brace-balanced string for entry 2004sod..book.....T
+while executing--line 2869 of file sn-mathphys-ay.bst
+Warning--"Determination}" isn't a brace-balanced string for entry 2004sod..book.....T
+while executing--line 2869 of file sn-mathphys-ay.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 33 entries,
+            7485 wiz_defined-function locations,
+            1515 strings with 26440 characters,
+and the built_in function-call counts, 354050 in all, are:
+= -- 48034
+> -- 2816
+< -- 820
++ -- 14552
+- -- 1189
+* -- 23116
+:= -- 73653
+add.period$ -- 41
+call.type$ -- 33
+change.case$ -- 528
+chr.to.int$ -- 1410
+cite$ -- 33
+duplicate$ -- 2559
+empty$ -- 19212
+format.name$ -- 2593
+if$ -- 80649
+int.to.chr$ -- 1
+int.to.str$ -- 34
+missing$ -- 0
+newline$ -- 795
+num.names$ -- 165
+pop$ -- 2278
+preamble$ -- 1
+purify$ -- 545
+quote$ -- 0
+skip$ -- 22421
+stack$ -- 0
+substring$ -- 49297
+swap$ -- 1385
+text.length$ -- 1055
+text.prefix$ -- 14
+top$ -- 1
+type$ -- 1463
+warning$ -- 0
+while$ -- 2366
+width$ -- 0
+write$ -- 991
+(There were 10 warnings)

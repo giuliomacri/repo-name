@@ -1,0 +1,818 @@
+%% BioMed_Central_Bib_Style_v1.01
+
+\begin{thebibliography}{33}
+% BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
+\ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
+\ifx \binits  \undefined \def \binits#1{#1}\fi
+\ifx \bauthor  \undefined \def \bauthor#1{#1}\fi
+\ifx \batitle  \undefined \def \batitle#1{#1}\fi
+\ifx \bjtitle  \undefined \def \bjtitle#1{#1}\fi
+\ifx \bvolume  \undefined \def \bvolume#1{\textbf{#1}}\fi
+\ifx \byear  \undefined \def \byear#1{#1}\fi
+\ifx \bissue  \undefined \def \bissue#1{#1}\fi
+\ifx \bfpage  \undefined \def \bfpage#1{#1}\fi
+\ifx \blpage  \undefined \def \blpage #1{#1}\fi
+\ifx \burl  \undefined \def \burl#1{\textsf{#1}}\fi
+\ifx \doiurl  \undefined \def \doiurl#1{\url{https://doi.org/#1}}\fi
+\ifx \betal  \undefined \def \betal{\textit{et al.}}\fi
+\ifx \binstitute  \undefined \def \binstitute#1{#1}\fi
+\ifx \binstitutionaled  \undefined \def \binstitutionaled#1{#1}\fi
+\ifx \bctitle  \undefined \def \bctitle#1{#1}\fi
+\ifx \beditor  \undefined \def \beditor#1{#1}\fi
+\ifx \bpublisher  \undefined \def \bpublisher#1{#1}\fi
+\ifx \bbtitle  \undefined \def \bbtitle#1{#1}\fi
+\ifx \bedition  \undefined \def \bedition#1{#1}\fi
+\ifx \bseriesno  \undefined \def \bseriesno#1{#1}\fi
+\ifx \blocation  \undefined \def \blocation#1{#1}\fi
+\ifx \bsertitle  \undefined \def \bsertitle#1{#1}\fi
+\ifx \bsnm \undefined \def \bsnm#1{#1}\fi
+\ifx \bsuffix \undefined \def \bsuffix#1{#1}\fi
+\ifx \bparticle \undefined \def \bparticle#1{#1}\fi
+\ifx \barticle \undefined \def \barticle#1{#1}\fi
+\bibcommenthead
+\ifx \bconfdate \undefined \def \bconfdate #1{#1}\fi
+\ifx \botherref \undefined \def \botherref #1{#1}\fi
+\ifx \url \undefined \def \url#1{\textsf{#1}}\fi
+\ifx \bchapter \undefined \def \bchapter#1{#1}\fi
+\ifx \bbook \undefined \def \bbook#1{#1}\fi
+\ifx \bcomment \undefined \def \bcomment#1{#1}\fi
+\ifx \oauthor \undefined \def \oauthor#1{#1}\fi
+\ifx \citeauthoryear \undefined \def \citeauthoryear#1{#1}\fi
+\ifx \endbibitem  \undefined \def \endbibitem {}\fi
+\ifx \bconflocation  \undefined \def \bconflocation#1{#1}\fi
+\ifx \arxivurl  \undefined \def \arxivurl#1{\textsf{#1}}\fi
+\csname PreBibitemsHook\endcsname
+
+%%% 1
+\bibitem[\protect\citeauthoryear{{Archinal} et~al.}{2018}]{2018CeMDA.130...22A}
+\begin{barticle}
+\bauthor{\bsnm{{Archinal}}, \binits{B.A.}},
+\bauthor{\bsnm{{Acton}}, \binits{C.H.}},
+\bauthor{\bsnm{{A'Hearn}}, \binits{M.F.}},
+\bauthor{\bsnm{{Conrad}}, \binits{A.}},
+\bauthor{\bsnm{{Consolmagno}}, \binits{G.J.}},
+\bauthor{\bsnm{{Duxbury}}, \binits{T.}},
+\bauthor{\bsnm{{Hestroffer}}, \binits{D.}},
+\bauthor{\bsnm{{Hilton}}, \binits{J.L.}},
+\bauthor{\bsnm{{Kirk}}, \binits{R.L.}},
+\bauthor{\bsnm{{Klioner}}, \binits{S.A.}},
+\bauthor{\bsnm{{McCarthy}}, \binits{D.}},
+\bauthor{\bsnm{{Meech}}, \binits{K.}},
+\bauthor{\bsnm{{Oberst}}, \binits{J.}},
+\bauthor{\bsnm{{Ping}}, \binits{J.}},
+\bauthor{\bsnm{{Seidelmann}}, \binits{P.K.}},
+\bauthor{\bsnm{{Tholen}}, \binits{D.J.}},
+\bauthor{\bsnm{{Thomas}}, \binits{P.C.}},
+\bauthor{\bsnm{{Williams}}, \binits{I.P.}}:
+\batitle{{Report of the IAU Working Group on Cartographic Coordinates and
+  Rotational Elements: 2015}}.
+\bjtitle{Celestial Mechanics and Dynamical Astronomy}
+\bvolume{130}(\bissue{3}),
+\bfpage{22}
+(\byear{2018})
+\doiurl{10.1007/s10569-017-9805-5}
+\end{barticle}
+\endbibitem
+
+%%% 2
+\bibitem[\protect\citeauthoryear{{Borderies}}{1978}]{1978CeMec..18..295B}
+\begin{barticle}
+\bauthor{\bsnm{{Borderies}}, \binits{N.}}:
+\batitle{{Mutual gravitational potential of N solid bodies}}.
+\bjtitle{Celestial Mechanics}
+\bvolume{18}(\bissue{3}),
+\bfpage{295}--\blpage{307}
+(\byear{1978})
+\doiurl{10.1007/BF01230170}
+\end{barticle}
+\endbibitem
+
+%%% 3
+\bibitem[\protect\citeauthoryear{{Borderies}}{1980}]{1980A&A....82..129B}
+\begin{barticle}
+\bauthor{\bsnm{{Borderies}}, \binits{N.}}:
+\batitle{{Theory of Mars rotation in Euler angles}}.
+\bjtitle{\aap}
+\bvolume{82}(\bissue{1-2}),
+\bfpage{129}--\blpage{141}
+(\byear{1980})
+\end{barticle}
+\endbibitem
+
+%%% 4
+\bibitem[\protect\citeauthoryear{Broucke}{1990}]{Broucke1990doi:10.2514/3.20591}
+\begin{barticle}
+\bauthor{\bsnm{Broucke}, \binits{R.A.}}:
+\batitle{Equations of motion of a rotating rigid body}.
+\bjtitle{Journal of Guidance, Control, and Dynamics}
+\bvolume{13}(\bissue{6}),
+\bfpage{1150}--\blpage{1152}
+(\byear{1990})
+\doiurl{10.2514/3.20591}
+{\href{https://arxiv.org/abs/https://doi.org/10.2514/3.20591}{{https://doi.org/10.2514/3.20591}}}
+\end{barticle}
+\endbibitem
+
+%%% 5
+\bibitem[\protect\citeauthoryear{{Bur{\v{s}}a}}{1997}]{1997AGGH...32..225B}
+\begin{barticle}
+\bauthor{\bsnm{{Bur{\v{s}}a}}, \binits{M.}}:
+\batitle{{Figure Parameters of Ganymede}}.
+\bjtitle{Acta Geodaetica et Geophysica Hungarica}
+\bvolume{32}(\bissue{1-2}),
+\bfpage{225}--\blpage{233}
+(\byear{1997})
+\doiurl{10.1007/BF03325489}
+\end{barticle}
+\endbibitem
+
+%%% 6
+\bibitem[\protect\citeauthoryear{{Busse}}{1968}]{1968JFM....33..739B}
+\begin{barticle}
+\bauthor{\bsnm{{Busse}}, \binits{F.H.}}:
+\batitle{{Steady fluid flow in a precessing spheroidal shell}}.
+\bjtitle{Journal of Fluid Mechanics}
+\bvolume{33},
+\bfpage{739}--\blpage{751}
+(\byear{1968})
+\doiurl{10.1017/S0022112068001655}
+\end{barticle}
+\endbibitem
+
+%%% 7
+\bibitem[\protect\citeauthoryear{{Baland} and {Van
+  Hoolst}}{2010}]{2010Icar..209..651B}
+\begin{barticle}
+\bauthor{\bsnm{{Baland}}, \binits{R.-M.}},
+\bauthor{\bsnm{{Van Hoolst}}, \binits{T.}}:
+\batitle{{Librations of the Galilean satellites: The influence of global
+  internal liquid layers}}.
+\bjtitle{\icarus}
+\bvolume{209}(\bissue{2}),
+\bfpage{651}--\blpage{664}
+(\byear{2010})
+\doiurl{10.1016/j.icarus.2010.04.004}
+\end{barticle}
+\endbibitem
+
+%%% 8
+\bibitem[\protect\citeauthoryear{{Cappuccio}
+  et~al.}{2020}]{2020P&SS..18704902C}
+\begin{barticle}
+\bauthor{\bsnm{{Cappuccio}}, \binits{P.}},
+\bauthor{\bsnm{{Hickey}}, \binits{A.}},
+\bauthor{\bsnm{{Durante}}, \binits{D.}},
+\bauthor{\bsnm{{Di Benedetto}}, \binits{M.}},
+\bauthor{\bsnm{{Iess}}, \binits{L.}},
+\bauthor{\bsnm{{De Marchi}}, \binits{F.}},
+\bauthor{\bsnm{{Plainaki}}, \binits{C.}},
+\bauthor{\bsnm{{Milillo}}, \binits{A.}},
+\bauthor{\bsnm{{Mura}}, \binits{A.}}:
+\batitle{{Ganymede's gravity, tides and rotational state from JUICE's 3GM
+  experiment simulation}}.
+\bjtitle{\planss}
+\bvolume{187},
+\bfpage{104902}
+(\byear{2020})
+\doiurl{10.1016/j.pss.2020.104902}
+\end{barticle}
+\endbibitem
+
+%%% 9
+\bibitem[\protect\citeauthoryear{{Charlot} et~al.}{2020}]{2020A&A...644A.159C}
+\begin{barticle}
+\bauthor{\bsnm{{Charlot}}, \binits{P.}},
+\bauthor{\bsnm{{Jacobs}}, \binits{C.S.}},
+\bauthor{\bsnm{{Gordon}}, \binits{D.}},
+\bauthor{\bsnm{{Lambert}}, \binits{S.}},
+\bauthor{\bsnm{{de Witt}}, \binits{A.}},
+\bauthor{\bsnm{{B{\"o}hm}}, \binits{J.}},
+\bauthor{\bsnm{{Fey}}, \binits{A.L.}},
+\bauthor{\bsnm{{Heinkelmann}}, \binits{R.}},
+\bauthor{\bsnm{{Skurikhina}}, \binits{E.}},
+\bauthor{\bsnm{{Titov}}, \binits{O.}},
+\bauthor{\bsnm{{Arias}}, \binits{E.F.}},
+\bauthor{\bsnm{{Bolotin}}, \binits{S.}},
+\bauthor{\bsnm{{Bourda}}, \binits{G.}},
+\bauthor{\bsnm{{Ma}}, \binits{C.}},
+\bauthor{\bsnm{{Malkin}}, \binits{Z.}},
+\bauthor{\bsnm{{Nothnagel}}, \binits{A.}},
+\bauthor{\bsnm{{Mayer}}, \binits{D.}},
+\bauthor{\bsnm{{MacMillan}}, \binits{D.S.}},
+\bauthor{\bsnm{{Nilsson}}, \binits{T.}},
+\bauthor{\bsnm{{Gaume}}, \binits{R.}}:
+\batitle{{The third realization of the International Celestial Reference Frame
+  by very long baseline interferometry}}.
+\bjtitle{\aap}
+\bvolume{644},
+\bfpage{159}
+(\byear{2020})
+\doiurl{10.1051/0004-6361/202038368}
+{\href{https://arxiv.org/abs/2010.13625}{{arXiv:2010.13625}}}
+{[astro-ph.GA]}
+\end{barticle}
+\endbibitem
+
+%%% 10
+\bibitem[\protect\citeauthoryear{{Davies} and
+  {Colvin}}{2000}]{2000JGR...10520277D}
+\begin{barticle}
+\bauthor{\bsnm{{Davies}}, \binits{M.E.}},
+\bauthor{\bsnm{{Colvin}}, \binits{T.R.}}:
+\batitle{{Lunar coordinates in the regions of the Apollo landers}}.
+\bjtitle{\jgr}
+\bvolume{105}(\bissue{E8}),
+\bfpage{20277}--\blpage{20280}
+(\byear{2000})
+\doiurl{10.1029/1999JE001165}
+\end{barticle}
+\endbibitem
+
+%%% 11
+\bibitem[\protect\citeauthoryear{{Eckhardt}}{1965}]{1965AJ.....70..466E}
+\begin{barticle}
+\bauthor{\bsnm{{Eckhardt}}, \binits{D.H.}}:
+\batitle{{Computer solutions of the forced physical librations of the moon}}.
+\bjtitle{\aj}
+\bvolume{70},
+\bfpage{466}
+(\byear{1965})
+\doiurl{10.1086/109767}
+\end{barticle}
+\endbibitem
+
+%%% 12
+\bibitem[\protect\citeauthoryear{{Eckhardt}}{1981}]{1981M&P....25....3E}
+\begin{barticle}
+\bauthor{\bsnm{{Eckhardt}}, \binits{D.H.}}:
+\batitle{{Theory of the Libration of the Moon}}.
+\bjtitle{Moon and Planets}
+\bvolume{25}(\bissue{1}),
+\bfpage{3}--\blpage{49}
+(\byear{1981})
+\doiurl{10.1007/BF00911807}
+\end{barticle}
+\endbibitem
+
+%%% 13
+\bibitem[\protect\citeauthoryear{{Enya} et~al.}{2022}]{2022AdSpR..69.2283E}
+\begin{barticle}
+\bauthor{\bsnm{{Enya}}, \binits{K.}},
+\bauthor{\bsnm{{Kobayashi}}, \binits{M.}},
+\bauthor{\bsnm{{Kimura}}, \binits{J.}},
+\bauthor{\bsnm{{Araki}}, \binits{H.}},
+\bauthor{\bsnm{{Namiki}}, \binits{N.}},
+\bauthor{\bsnm{{Noda}}, \binits{H.}},
+\bauthor{\bsnm{{Kashima}}, \binits{S.}},
+\bauthor{\bsnm{{Oshigami}}, \binits{S.}},
+\bauthor{\bsnm{{Ishibashi}}, \binits{K.}},
+\bauthor{\bsnm{{Yamawaki}}, \binits{T.}},
+\bauthor{\bsnm{{Tohara}}, \binits{K.}},
+\bauthor{\bsnm{{Saito}}, \binits{Y.}},
+\bauthor{\bsnm{{Ozaki}}, \binits{M.}},
+\bauthor{\bsnm{{Mizuno}}, \binits{T.}},
+\bauthor{\bsnm{{Kamata}}, \binits{S.}},
+\bauthor{\bsnm{{Matsumoto}}, \binits{K.}},
+\bauthor{\bsnm{{Sasaki}}, \binits{S.}},
+\bauthor{\bsnm{{Kuramoto}}, \binits{K.}},
+\bauthor{\bsnm{{Sato}}, \binits{Y.}},
+\bauthor{\bsnm{{Yokozawa}}, \binits{T.}},
+\bauthor{\bsnm{{Numata}}, \binits{T.}},
+\bauthor{\bsnm{{Mizumoto}}, \binits{S.}},
+\bauthor{\bsnm{{Mizuno}}, \binits{H.}},
+\bauthor{\bsnm{{Nagamine}}, \binits{K.}},
+\bauthor{\bsnm{{Sawamura}}, \binits{A.}},
+\bauthor{\bsnm{{Tanimoto}}, \binits{K.}},
+\bauthor{\bsnm{{Imai}}, \binits{H.}},
+\bauthor{\bsnm{{Nakagawa}}, \binits{H.}},
+\bauthor{\bsnm{{Kirino}}, \binits{O.}},
+\bauthor{\bsnm{{Green}}, \binits{D.}},
+\bauthor{\bsnm{{Fujii}}, \binits{M.}},
+\bauthor{\bsnm{{Iwamura}}, \binits{S.}},
+\bauthor{\bsnm{{Fujishiro}}, \binits{N.}},
+\bauthor{\bsnm{{Matsumoto}}, \binits{Y.}},
+\bauthor{\bsnm{{Lingenauber}}, \binits{K.}},
+\bauthor{\bsnm{{Kallenbach}}, \binits{R.}},
+\bauthor{\bsnm{{Althaus}}, \binits{C.}},
+\bauthor{\bsnm{{Behnke}}, \binits{T.}},
+\bauthor{\bsnm{{Binger}}, \binits{J.}},
+\bauthor{\bsnm{{Daurskikh}}, \binits{A.}},
+\bauthor{\bsnm{{Eisenmenger}}, \binits{H.}},
+\bauthor{\bsnm{{Heer}}, \binits{U.}},
+\bauthor{\bsnm{{H{\"u}ttig}}, \binits{C.}},
+\bauthor{\bsnm{{Lara}}, \binits{L.M.}},
+\bauthor{\bsnm{{Lichopoj}}, \binits{A.}},
+\bauthor{\bsnm{{L{\"o}tzke}}, \binits{H.-G.}},
+\bauthor{\bsnm{{L{\"u}dicke}}, \binits{F.}},
+\bauthor{\bsnm{{Michaelis}}, \binits{H.}},
+\bauthor{\bsnm{{Pablo Rodriguez Garcia}}, \binits{J.}},
+\bauthor{\bsnm{{R{\"o}sner}}, \binits{K.}},
+\bauthor{\bsnm{{Stark}}, \binits{A.}},
+\bauthor{\bsnm{{Steinbr{\"u}gge}}, \binits{G.}},
+\bauthor{\bsnm{{Thabaut}}, \binits{P.}},
+\bauthor{\bsnm{{Thomas}}, \binits{N.}},
+\bauthor{\bsnm{{del Togno}}, \binits{S.}},
+\bauthor{\bsnm{{Wahl}}, \binits{D.}},
+\bauthor{\bsnm{{Wendler}}, \binits{B.}},
+\bauthor{\bsnm{{Wickhusen}}, \binits{K.}},
+\bauthor{\bsnm{{Willner}}, \binits{K.}},
+\bauthor{\bsnm{{Hussmann}}, \binits{H.}}:
+\batitle{{The Ganymede Laser Altimeter (GALA) for the Jupiter Icy Moons
+  Explorer (JUICE): Mission, science, and instrumentation of its receiver
+  modules}}.
+\bjtitle{Advances in Space Research}
+\bvolume{69}(\bissue{5}),
+\bfpage{2283}--\blpage{2304}
+(\byear{2022})
+\doiurl{10.1016/j.asr.2021.11.036}
+\end{barticle}
+\endbibitem
+
+%%% 14
+\bibitem[\protect\citeauthoryear{Goldstein}{1950}]{Goldstein:102554}
+\begin{bbook}
+\bauthor{\bsnm{Goldstein}, \binits{H.}}:
+\bbtitle{{Classical Mechanics; 1st Ed.}}
+\bsertitle{Addison-Wesley series in advanced physics}.
+\bpublisher{Addison-Wesley},
+\blocation{Cambridge, MA}
+(\byear{1950}).
+\burl{https://cds.cern.ch/record/102554}
+\end{bbook}
+\endbibitem
+
+%%% 15
+\bibitem[\protect\citeauthoryear{{Goldreich}}{1967}]{1967JGR....72.3135G}
+\begin{barticle}
+\bauthor{\bsnm{{Goldreich}}, \binits{P.}}:
+\batitle{{Precession of the Moon's Core}}.
+\bjtitle{\jgr}
+\bvolume{72},
+\bfpage{3135}
+(\byear{1967})
+\doiurl{10.1029/JZ072i012p03135}
+\end{barticle}
+\endbibitem
+
+%%% 16
+\bibitem[\protect\citeauthoryear{{Hussmann} et~al.}{2025}]{2025SSRv..221...33H}
+\begin{barticle}
+\bauthor{\bsnm{{Hussmann}}, \binits{H.}},
+\bauthor{\bsnm{{Lingenauber}}, \binits{K.}},
+\bauthor{\bsnm{{Stark}}, \binits{A.}},
+\bauthor{\bsnm{{Enya}}, \binits{K.}},
+\bauthor{\bsnm{{Thomas}}, \binits{N.}},
+\bauthor{\bsnm{{Lara}}, \binits{L.M.}},
+\bauthor{\bsnm{{Althaus}}, \binits{C.}},
+\bauthor{\bsnm{{Araki}}, \binits{H.}},
+\bauthor{\bsnm{{Behnke}}, \binits{T.}},
+\bauthor{\bsnm{{Binger}}, \binits{J.}},
+\bauthor{\bsnm{al.}}:
+\batitle{{The Ganymede Laser Altimeter (GALA) on the Jupiter Icy moons Explorer
+  (JUICE) Mission}}.
+\bjtitle{\ssr}
+\bvolume{221}(\bissue{3}),
+\bfpage{33}
+(\byear{2025})
+\doiurl{10.1007/s11214-025-01149-7}
+\end{barticle}
+\endbibitem
+
+%%% 17
+\bibitem[\protect\citeauthoryear{{Kimura} et~al.}{2019}]{2019JSAST..17..234K}
+\begin{barticle}
+\bauthor{\bsnm{{Kimura}}, \binits{J.}},
+\bauthor{\bsnm{{Hussmann}}, \binits{H.}},
+\bauthor{\bsnm{{Kamata}}, \binits{S.}},
+\bauthor{\bsnm{{Matsumoto}}, \binits{K.}},
+\bauthor{\bsnm{{Oberst}}, \binits{J.}},
+\bauthor{\bsnm{{Steinbr{\"u}gge}}, \binits{G.}},
+\bauthor{\bsnm{{Stark}}, \binits{A.}},
+\bauthor{\bsnm{{Gwinner}}, \binits{K.}},
+\bauthor{\bsnm{{Oshigami}}, \binits{S.}},
+\bauthor{\bsnm{{Namiki}}, \binits{N.}},
+\bauthor{\bsnm{{Lingenauber}}, \binits{K.}},
+\bauthor{\bsnm{{Enya}}, \binits{K.}},
+\bauthor{\bsnm{{Kuramoto}}, \binits{K.}},
+\bauthor{\bsnm{{Sasaki}}, \binits{S.}}:
+\batitle{{Science Objectives of the Ganymede Laser Altimeter (GALA) for the
+  JUICE Mission}}.
+\bjtitle{Transactions of the Japan Society of Aeronautical and Space Sciences,
+  Aerospace Technology Japan}
+\bvolume{17}(\bissue{2}),
+\bfpage{234}--\blpage{243}
+(\byear{2019})
+\doiurl{10.2322/tastj.17.234}
+{\href{https://arxiv.org/abs/1803.01511}{{arXiv:1803.01511}}}
+{[astro-ph.EP]}
+\end{barticle}
+\endbibitem
+
+%%% 18
+\bibitem[\protect\citeauthoryear{Landau and Lifshitz}{1976}]{LANDAU1976}
+\begin{bbook}
+\bauthor{\bsnm{Landau}, \binits{L.D.}},
+\bauthor{\bsnm{Lifshitz}, \binits{E.M.}}:
+\bbtitle{Mechanics},
+\bedition{3rd} edn.
+\bsertitle{Course of Theoretical Physics},
+vol. \bseriesno{1}.
+\bpublisher{Butterworth-Heinemann},
+\blocation{Oxford}
+(\byear{1976}).
+\doiurl{10.1016/B978-0-08-050347-9.50011-3} .
+\burl{https://www.sciencedirect.com/science/article/pii/B9780080503479500113}
+\end{bbook}
+\endbibitem
+
+%%% 19
+\bibitem[\protect\citeauthoryear{Marchenko and Abrikosov}{2001}]{Marchenko2001}
+\begin{barticle}
+\bauthor{\bsnm{Marchenko}, \binits{A.N.}},
+\bauthor{\bsnm{Abrikosov}, \binits{O.A.}}:
+\batitle{Evolution of the earth's principal axes and moments of inertia: the
+  canonical form of solution}.
+\bjtitle{Journal of Geodesy}
+\bvolume{74}(\bissue{9}),
+\bfpage{655}--\blpage{669}
+(\byear{2001})
+\doiurl{10.1007/s001900000127}
+\end{barticle}
+\endbibitem
+
+%%% 20
+\bibitem[\protect\citeauthoryear{Neumann}{2014}]{Neumann2014LOLA_GDR}
+\begin{botherref}
+\oauthor{\bsnm{Neumann}, \binits{G.A.}}:
+Lunar Orbiter Laser Altimeter Gridded Data Record.
+NASA Planetary Data System.
+LRO-L-LOLA-4-GDR-V2.0
+(2014).
+\url{https://pds-geosciences.wustl.edu/lro/lro-l-lola-3-rdr-v1/lrolol_1xxx/data/lola_gdr/}
+\end{botherref}
+\endbibitem
+
+%%% 21
+\bibitem[\protect\citeauthoryear{{Palumbo} et~al.}{2025}]{2025SSRv..221...32P}
+\begin{barticle}
+\bauthor{\bsnm{{Palumbo}}, \binits{P.}},
+\bauthor{\bsnm{{Roatsch}}, \binits{T.}},
+\bauthor{\bsnm{{Lara}}, \binits{L.M.}},
+\bauthor{\bsnm{{Castro-Marin}}, \binits{J.M.}},
+\bauthor{\bsnm{{Della Corte}}, \binits{V.}},
+\bauthor{\bsnm{{Hviid}}, \binits{S.}},
+\bauthor{\bsnm{{Jaumann}}, \binits{R.}},
+\bauthor{\bsnm{{Michaelis}}, \binits{H.}},
+\bauthor{\bsnm{{Patel}}, \binits{M.R.}},
+\bauthor{\bsnm{{Portyankina}}, \binits{G.}},
+\bauthor{\bsnm{{Schmitz}}, \binits{N.}},
+\bauthor{\bsnm{{Amoroso}}, \binits{M.}},
+\bauthor{\bsnm{{Mugnuolo}}, \binits{R.}},
+\bauthor{\bsnm{{Aboudan}}, \binits{A.}},
+\bauthor{\bsnm{{Agostini}}, \binits{L.}},
+\bauthor{\bsnm{{Althaus}}, \binits{C.}},
+\bauthor{\bsnm{{{\'A}lvarez}}, \binits{F.}},
+\bauthor{\bsnm{{Bartolomei}}, \binits{M.}},
+\bauthor{\bsnm{{Behnke}}, \binits{T.}},
+\bauthor{\bsnm{{Bilotta}}, \binits{T.}},
+\bauthor{\bsnm{{Colombatti}}, \binits{G.}},
+\bauthor{\bsnm{{Colosimo}}, \binits{A.}},
+\bauthor{\bsnm{{Coustenis}}, \binits{A.}},
+\bauthor{\bsnm{{Cremonese}}, \binits{G.}},
+\bauthor{\bsnm{{Crews}}, \binits{C.}},
+\bauthor{\bsnm{{Dattolo}}, \binits{A.}},
+\bauthor{\bsnm{{Debei}}, \binits{S.}},
+\bauthor{\bsnm{{Denk}}, \binits{T.}},
+\bauthor{\bsnm{{Fiethe}}, \binits{B.}},
+\bauthor{\bsnm{{Herranz}}, \binits{M.}},
+\bauthor{\bsnm{{Hoffmann}}, \binits{H.}},
+\bauthor{\bsnm{{Hueso}}, \binits{R.}},
+\bauthor{\bsnm{{Koncz}}, \binits{A.}},
+\bauthor{\bsnm{{Jim{\'e}nez-Ortega}}, \binits{J.}},
+\bauthor{\bsnm{{Lichopoj}}, \binits{A.}},
+\bauthor{\bsnm{{Livi}}, \binits{L.}},
+\bauthor{\bsnm{{Llamas}}, \binits{X.}},
+\bauthor{\bsnm{{Lopes}}, \binits{R.}},
+\bauthor{\bsnm{{Lucchetti}}, \binits{A.}},
+\bauthor{\bsnm{{Martinez-Navajas}}, \binits{I.}},
+\bauthor{\bsnm{{Mazzotta Epifani}}, \binits{E.}},
+\bauthor{\bsnm{{Mertens}}, \binits{V.}},
+\bauthor{\bsnm{{Pajola}}, \binits{M.}},
+\bauthor{\bsnm{{Sarti}}, \binits{F.}},
+\bauthor{\bsnm{{Schroedter}}, \binits{R.}},
+\bauthor{\bsnm{{Stephan}}, \binits{K.}},
+\bauthor{\bsnm{{Tosi}}, \binits{F.}},
+\bauthor{\bsnm{{Tubiana}}, \binits{C.}},
+\bauthor{\bsnm{{Wendler}}, \binits{B.}},
+\bauthor{\bsnm{{Wendler}}, \binits{D.}},
+\bauthor{\bsnm{{Williams}}, \binits{D.}},
+\bauthor{\bsnm{{Wolff}}, \binits{F.}},
+\bauthor{\bsnm{{Zusi}}, \binits{M.}},
+\bauthor{\bsnm{{Chiodini}}, \binits{S.}},
+\bauthor{\bsnm{{Ficai Veltroni}}, \binits{I.}},
+\bauthor{\bsnm{{Galeotti}}, \binits{A.}},
+\bauthor{\bsnm{{Garc{\'\i}a-Segura}}, \binits{A.}},
+\bauthor{\bsnm{{Greggio}}, \binits{D.}},
+\bauthor{\bsnm{{Holland}}, \binits{A.D.}},
+\bauthor{\bsnm{{Kenkmann}}, \binits{T.}},
+\bauthor{\bsnm{{Leese}}, \binits{M.R.}},
+\bauthor{\bsnm{{Magrin}}, \binits{D.}},
+\bauthor{\bsnm{{Michalik}}, \binits{H.}},
+\bauthor{\bsnm{{Munari}}, \binits{M.}},
+\bauthor{\bsnm{{Noci}}, \binits{G.E.}},
+\bauthor{\bsnm{{Paolinetti}}, \binits{R.}},
+\bauthor{\bsnm{{Schipani}}, \binits{P.}},
+\bauthor{\bsnm{{Soman}}, \binits{M.}},
+\bauthor{\bsnm{{Stefanov}}, \binits{K.D.}},
+\bauthor{\bsnm{{Turella}}, \binits{A.}},
+\bauthor{\bsnm{{Aharonson}}, \binits{O.}},
+\bauthor{\bsnm{{Bell}}, \binits{J.F.}},
+\bauthor{\bsnm{{Bertini}}, \binits{I.}},
+\bauthor{\bsnm{{Coates}}, \binits{A.J.}},
+\bauthor{\bsnm{{Di Achille}}, \binits{G.}},
+\bauthor{\bsnm{{Grassi}}, \binits{D.}},
+\bauthor{\bsnm{{Groussin}}, \binits{O.}},
+\bauthor{\bsnm{{Gwinner}}, \binits{K.}},
+\bauthor{\bsnm{{Haruyama}}, \binits{J.}},
+\bauthor{\bsnm{{Hauber}}, \binits{E.}},
+\bauthor{\bsnm{{Hiesinger}}, \binits{H.}},
+\bauthor{\bsnm{{Langevin}}, \binits{Y.}},
+\bauthor{\bsnm{{Lainey}}, \binits{V.}},
+\bauthor{\bsnm{{Marchi}}, \binits{S.}},
+\bauthor{\bsnm{{Marinangeli}}, \binits{L.}},
+\bauthor{\bsnm{{Marzari}}, \binits{F.}},
+\bauthor{\bsnm{{Massironi}}, \binits{M.}},
+\bauthor{\bsnm{{Mitri}}, \binits{G.}},
+\bauthor{\bsnm{{Mottola}}, \binits{S.}},
+\bauthor{\bsnm{{Oberst}}, \binits{J.}},
+\bauthor{\bsnm{{Postberg}}, \binits{F.}},
+\bauthor{\bsnm{{Poulet}}, \binits{F.}},
+\bauthor{\bsnm{{Preusker}}, \binits{F.}},
+\bauthor{\bsnm{{Schmidt}}, \binits{J.}},
+\bauthor{\bsnm{{Schneider}}, \binits{N.M.}},
+\bauthor{\bsnm{{Simon}}, \binits{A.}},
+\bauthor{\bsnm{{Takahashi}}, \binits{Y.}},
+\bauthor{\bsnm{{Tirsch}}, \binits{D.}},
+\bauthor{\bsnm{{Vincendon}}, \binits{M.}},
+\bauthor{\bsnm{{Balme}}, \binits{M.R.}},
+\bauthor{\bsnm{{Bettanini}}, \binits{C.}},
+\bauthor{\bsnm{{Borin}}, \binits{P.}},
+\bauthor{\bsnm{{Capria}}, \binits{M.T.}},
+\bauthor{\bsnm{{Elgner}}, \binits{S.}},
+\bauthor{\bsnm{{Esposito}}, \binits{F.}},
+\bauthor{\bsnm{{Ferranti}}, \binits{L.}},
+\bauthor{\bsnm{{Ferrari}}, \binits{S.}},
+\bauthor{\bsnm{{Fornasier}}, \binits{S.}},
+\bauthor{\bsnm{{Galluzzi}}, \binits{V.}},
+\bauthor{\bsnm{{Giacomini}}, \binits{L.}},
+\bauthor{\bsnm{{Guzzetta}}, \binits{L.}},
+\bauthor{\bsnm{{Jones}}, \binits{G.H.}},
+\bauthor{\bsnm{{Kersten}}, \binits{E.}},
+\bauthor{\bsnm{{Ledeit}}, \binits{L.}},
+\bauthor{\bsnm{{Martellato}}, \binits{E.}},
+\bauthor{\bsnm{{Matz}}, \binits{K.-D.}},
+\bauthor{\bsnm{{Mennella}}, \binits{V.}},
+\bauthor{\bsnm{{Murray}}, \binits{C.}},
+\bauthor{\bsnm{{Otto}}, \binits{K.A.}},
+\bauthor{\bsnm{{Pelizzo}}, \binits{M.G.}},
+\bauthor{\bsnm{{Penasa}}, \binits{L.}},
+\bauthor{\bsnm{{Politi}}, \binits{R.}},
+\bauthor{\bsnm{{Popa}}, \binits{C.}},
+\bauthor{\bsnm{{Pozzobon}}, \binits{R.}},
+\bauthor{\bsnm{{Prieto Ballesteros}}, \binits{O.}},
+\bauthor{\bsnm{{Re}}, \binits{C.}},
+\bauthor{\bsnm{{Rotundi}}, \binits{A.}},
+\bauthor{\bsnm{{Sato}}, \binits{M.}},
+\bauthor{\bsnm{{Schmedemann}}, \binits{N.}},
+\bauthor{\bsnm{{Shoji}}, \binits{D.}},
+\bauthor{\bsnm{{Simioni}}, \binits{E.}},
+\bauthor{\bsnm{{Sindoni}}, \binits{G.}},
+\bauthor{\bsnm{{Trauthan}}, \binits{F.}},
+\bauthor{\bsnm{{Yair}}, \binits{Y.}}:
+\batitle{{The JANUS (Jovis Amorum ac Natorum Undique Scrutator) VIS-NIR
+  Multi-Band Imager for the JUICE Mission}}.
+\bjtitle{\ssr}
+\bvolume{221}(\bissue{3}),
+\bfpage{32}
+(\byear{2025})
+\doiurl{10.1007/s11214-025-01158-6}
+\end{barticle}
+\endbibitem
+
+%%% 22
+\bibitem[\protect\citeauthoryear{{Robert} et~al.}{2025}]{2025Icar..42616344R}
+\begin{barticle}
+\bauthor{\bsnm{{Robert}}, \binits{V.}},
+\bauthor{\bsnm{{Pascu}}, \binits{D.}},
+\bauthor{\bsnm{{Lainey}}, \binits{V.}},
+\bauthor{\bsnm{{Arlot}}, \binits{J.-E.}}:
+\batitle{{NAROO program: Analysis of USNO Galilean observations
+  1967{\textendash}1998}}.
+\bjtitle{\icarus}
+\bvolume{426},
+\bfpage{116344}
+(\byear{2025})
+\doiurl{10.1016/j.icarus.2024.116344}
+\end{barticle}
+\endbibitem
+
+%%% 23
+\bibitem[\protect\citeauthoryear{{Roberts} and
+  {Stewartson}}{1965}]{1965PCPS...61..279R}
+\begin{barticle}
+\bauthor{\bsnm{{Roberts}}, \binits{P.H.}},
+\bauthor{\bsnm{{Stewartson}}, \binits{K.}}:
+\batitle{{On the motion of a liquid in a spheroidal cavity of a precessing
+  rigid body. II}}.
+\bjtitle{Proceedings of the Cambridge Philosophical Society}
+\bvolume{61}(\bissue{1}),
+\bfpage{279}
+(\byear{1965})
+\doiurl{10.1017/S0305004100038858}
+\end{barticle}
+\endbibitem
+
+%%% 24
+\bibitem[\protect\citeauthoryear{{Stark} et~al.}{2015}]{2015GeoRL..42.7881S}
+\begin{barticle}
+\bauthor{\bsnm{{Stark}}, \binits{A.}},
+\bauthor{\bsnm{{Oberst}}, \binits{J.}},
+\bauthor{\bsnm{{Preusker}}, \binits{F.}},
+\bauthor{\bsnm{{Peale}}, \binits{S.J.}},
+\bauthor{\bsnm{{Margot}}, \binits{J.-L.}},
+\bauthor{\bsnm{{Phillips}}, \binits{R.J.}},
+\bauthor{\bsnm{{Neumann}}, \binits{G.A.}},
+\bauthor{\bsnm{{Smith}}, \binits{D.E.}},
+\bauthor{\bsnm{{Zuber}}, \binits{M.T.}},
+\bauthor{\bsnm{{Solomon}}, \binits{S.C.}}:
+\batitle{{First MESSENGER orbital observations of Mercury's librations}}.
+\bjtitle{\grl}
+\bvolume{42}(\bissue{19}),
+\bfpage{7881}--\blpage{7889}
+(\byear{2015})
+\doiurl{10.1002/2015GL065152}
+\end{barticle}
+\endbibitem
+
+%%% 25
+\bibitem[\protect\citeauthoryear{{Steinbr{\"u}gge}
+  et~al.}{2015}]{2015P&SS..117..184S}
+\begin{barticle}
+\bauthor{\bsnm{{Steinbr{\"u}gge}}, \binits{G.}},
+\bauthor{\bsnm{{Stark}}, \binits{A.}},
+\bauthor{\bsnm{{Hussmann}}, \binits{H.}},
+\bauthor{\bsnm{{Sohl}}, \binits{F.}},
+\bauthor{\bsnm{{Oberst}}, \binits{J.}}:
+\batitle{{Measuring tidal deformations by laser altimetry. A performance model
+  for the Ganymede Laser Altimeter}}.
+\bjtitle{\planss}
+\bvolume{117},
+\bfpage{184}--\blpage{191}
+(\byear{2015})
+\doiurl{10.1016/j.pss.2015.06.013}
+\end{barticle}
+\endbibitem
+
+%%% 26
+\bibitem[\protect\citeauthoryear{{Steinbr{\"u}gge}
+  et~al.}{2018}]{2018P&SS..159...84S}
+\begin{barticle}
+\bauthor{\bsnm{{Steinbr{\"u}gge}}, \binits{G.}},
+\bauthor{\bsnm{{Stark}}, \binits{A.}},
+\bauthor{\bsnm{{Hussmann}}, \binits{H.}},
+\bauthor{\bsnm{{Wickhusen}}, \binits{K.}},
+\bauthor{\bsnm{{Oberst}}, \binits{J.}}:
+\batitle{{The performance of the BepiColombo Laser Altimeter (BELA) prior
+  launch and prospects for Mercury orbit operations}}.
+\bjtitle{\planss}
+\bvolume{159},
+\bfpage{84}--\blpage{92}
+(\byear{2018})
+\doiurl{10.1016/j.pss.2018.04.017}
+\end{barticle}
+\endbibitem
+
+%%% 27
+\bibitem[\protect\citeauthoryear{{Steinbr{\"u}gge}
+  et~al.}{2019}]{2019Geosc...9..320S}
+\begin{barticle}
+\bauthor{\bsnm{{Steinbr{\"u}gge}}, \binits{G.}},
+\bauthor{\bsnm{{Steinke}}, \binits{T.}},
+\bauthor{\bsnm{{Thor}}, \binits{R.}},
+\bauthor{\bsnm{{Stark}}, \binits{A.}},
+\bauthor{\bsnm{{Hussmann}}, \binits{H.}}:
+\batitle{{Measuring Ganymede's Librations with Laser Altimetry}}.
+\bjtitle{Geosciences}
+\bvolume{9}(\bissue{7}),
+\bfpage{320}
+(\byear{2019})
+\doiurl{10.3390/geosciences9070320}
+\end{barticle}
+\endbibitem
+
+%%% 28
+\bibitem[\protect\citeauthoryear{{Tricarico}}{2008}]{Tricarico2008CeMDA.100..319T}
+\begin{barticle}
+\bauthor{\bsnm{{Tricarico}}, \binits{P.}}:
+\batitle{{Figure figure interaction between bodies having arbitrary shapes and
+  mass distributions: a power series expansion approach}}.
+\bjtitle{Celestial Mechanics and Dynamical Astronomy}
+\bvolume{100}(\bissue{4}),
+\bfpage{319}--\blpage{330}
+(\byear{2008})
+\doiurl{10.1007/s10569-008-9128-7}
+{\href{https://arxiv.org/abs/0711.2078}{{arXiv:0711.2078}}}
+{[astro-ph]}
+\end{barticle}
+\endbibitem
+
+%%% 29
+\bibitem[\protect\citeauthoryear{{Tapley} et~al.}{2004}]{2004sod..book.....T}
+\begin{bbook}
+\bauthor{\bsnm{{Tapley}}, \binits{B.}},
+\bauthor{\bsnm{{Schutz}}, \binits{B.}},
+\bauthor{\bsnm{{Born}}, \binits{G.}}:
+\bbtitle{{Statistical Orbit Determination}}.
+\bpublisher{Elsevier}, \blocation{???}
+(\byear{2004}).
+\doiurl{10.1016/B978-0-12-683630-1.X5019-X}
+\end{bbook}
+\endbibitem
+
+%%% 30
+\bibitem[\protect\citeauthoryear{Verner}{2010}]{Verner2010}
+\begin{barticle}
+\bauthor{\bsnm{Verner}, \binits{J.H.}}:
+\batitle{Numerically optimal runge--kutta pairs with interpolants}.
+\bjtitle{Numerical Algorithms}
+\bvolume{53}(\bissue{2}),
+\bfpage{383}--\blpage{396}
+(\byear{2010})
+\doiurl{10.1007/s11075-009-9290-3}
+\end{barticle}
+\endbibitem
+
+%%% 31
+\bibitem[\protect\citeauthoryear{{Williams} et~al.}{2014}]{2014JGRE..119.1546W}
+\begin{barticle}
+\bauthor{\bsnm{{Williams}}, \binits{J.G.}},
+\bauthor{\bsnm{{Konopliv}}, \binits{A.S.}},
+\bauthor{\bsnm{{Boggs}}, \binits{D.H.}},
+\bauthor{\bsnm{{Park}}, \binits{R.S.}},
+\bauthor{\bsnm{{Yuan}}, \binits{D.-N.}},
+\bauthor{\bsnm{{Lemoine}}, \binits{F.G.}},
+\bauthor{\bsnm{{Goossens}}, \binits{S.}},
+\bauthor{\bsnm{{Mazarico}}, \binits{E.}},
+\bauthor{\bsnm{{Nimmo}}, \binits{F.}},
+\bauthor{\bsnm{{Weber}}, \binits{R.C.}},
+\bauthor{\bsnm{{Asmar}}, \binits{S.W.}},
+\bauthor{\bsnm{{Melosh}}, \binits{H.J.}},
+\bauthor{\bsnm{{Neumann}}, \binits{G.A.}},
+\bauthor{\bsnm{{Phillips}}, \binits{R.J.}},
+\bauthor{\bsnm{{Smith}}, \binits{D.E.}},
+\bauthor{\bsnm{{Solomon}}, \binits{S.C.}},
+\bauthor{\bsnm{{Watkins}}, \binits{M.M.}},
+\bauthor{\bsnm{{Wieczorek}}, \binits{M.A.}},
+\bauthor{\bsnm{{Andrews-Hanna}}, \binits{J.C.}},
+\bauthor{\bsnm{{Head}}, \binits{J.W.}},
+\bauthor{\bsnm{{Kiefer}}, \binits{W.S.}},
+\bauthor{\bsnm{{Matsuyama}}, \binits{I.}},
+\bauthor{\bsnm{{McGovern}}, \binits{P.J.}},
+\bauthor{\bsnm{{Taylor}}, \binits{G.J.}},
+\bauthor{\bsnm{{Zuber}}, \binits{M.T.}}:
+\batitle{{Lunar interior properties from the GRAIL mission}}.
+\bjtitle{Journal of Geophysical Research (Planets)}
+\bvolume{119}(\bissue{7}),
+\bfpage{1546}--\blpage{1578}
+(\byear{2014})
+\doiurl{10.1002/2013JE004559}
+\end{barticle}
+\endbibitem
+
+%%% 32
+\bibitem[\protect\citeauthoryear{{Yoder}}{1981}]{1981RSPTA.303..327Y}
+\begin{barticle}
+\bauthor{\bsnm{{Yoder}}, \binits{C.F.}}:
+\batitle{{The Free Librations of a Dissipative Moon}}.
+\bjtitle{Philosophical Transactions of the Royal Society of London Series A}
+\bvolume{303}(\bissue{1477}),
+\bfpage{327}--\blpage{338}
+(\byear{1981})
+\doiurl{10.1098/rsta.1981.0206}
+\end{barticle}
+\endbibitem
+
+%%% 33
+\bibitem[\protect\citeauthoryear{{Yoder}}{1995}]{1995Icar..117..250Y}
+\begin{barticle}
+\bauthor{\bsnm{{Yoder}}, \binits{C.F.}}:
+\batitle{{Venus' free obliquity.}}
+\bjtitle{\icarus}
+\bvolume{117}(\bissue{2}),
+\bfpage{250}--\blpage{286}
+(\byear{1995})
+\doiurl{10.1006/icar.1995.1156}
+\end{barticle}
+\endbibitem
+
+\end{thebibliography}
