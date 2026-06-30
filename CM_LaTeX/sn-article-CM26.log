@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.14)  20 APR 2026 16:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.14)  30 JUN 2026 12:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -838,28 +838,28 @@ Package caption Info: wrapfig package is loaded.
 \c@example=\count391
 \c@remark=\count392
 \c@definition=\count393
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 163.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 167.
  (./sn-article-CM26.aux)
 \openout1 = `sn-article-CM26.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -915,13 +915,13 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Info: Redefining \S on input line 163.
-LaTeX Font Info:    Redeclaring symbol font `AMSa' on input line 163.
+LaTeX Info: Redefining \S on input line 167.
+LaTeX Font Info:    Redeclaring symbol font `AMSa' on input line 167.
 LaTeX Font Info:    Overwriting symbol font `AMSa' in version `normal'
-(Font)                  U/msa/m/n --> U/msa/m/n on input line 163.
+(Font)                  U/msa/m/n --> U/msa/m/n on input line 167.
 LaTeX Font Info:    Overwriting symbol font `AMSa' in version `bold'
-(Font)                  U/msa/m/n --> U/msa/m/n on input line 163.
-Package hyperref Info: Link coloring ON on input line 163.
+(Font)                  U/msa/m/n --> U/msa/m/n on input line 167.
+Package hyperref Info: Link coloring ON on input line 167.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
@@ -931,9 +931,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count400
 )
-LaTeX Info: Redefining \ref on input line 163.
-LaTeX Info: Redefining \pageref on input line 163.
-LaTeX Info: Redefining \nameref on input line 163.
+LaTeX Info: Redefining \ref on input line 167.
+LaTeX Info: Redefining \pageref on input line 167.
+LaTeX Info: Redefining \nameref on input line 167.
  (./sn-article-CM26.out) (./sn-article-CM26.out)
 \@outlinefile=\write4
 \openout4 = `sn-article-CM26.out'.
@@ -942,32 +942,32 @@ LaTeX Info: Redefining \nameref on input line 163.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 163.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 167.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 246.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 246.
+LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 249.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 249.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 246.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 249.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 246.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 249.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <8.43146> not available
-(Font)              size <8> substituted on input line 246.
+(Font)              size <8> substituted on input line 249.
 
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 246.
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 249.
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <5.52061> not available
-(Font)              size <6> substituted on input line 246.
+(Font)              size <6> substituted on input line 249.
 
-LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 246.
+LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 249.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -977,15 +977,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
-<IMAGES/JUICE_orbit.pdf, id=120, 199.74625pt x 191.71625pt>
+<IMAGES/JUICE_orbit.pdf, id=137, 199.74625pt x 191.71625pt>
 File: IMAGES/JUICE_orbit.pdf Graphic file (type pdf)
 <use IMAGES/JUICE_orbit.pdf>
-Package pdftex.def Info: IMAGES/JUICE_orbit.pdf  used on input line 327.
+Package pdftex.def Info: IMAGES/JUICE_orbit.pdf  used on input line 328.
 (pdftex.def)             Requested size: 186.0pt x 178.53122pt.
-<IMAGES/spheres/ganymede.png, id=123, 1927.2pt x 1084.05pt>
+<IMAGES/spheres/ganymede.png, id=140, 1927.2pt x 1084.05pt>
 File: IMAGES/spheres/ganymede.png Graphic file (type png)
 <use IMAGES/spheres/ganymede.png>
-Package pdftex.def Info: IMAGES/spheres/ganymede.png  used on input line 435.
+Package pdftex.def Info: IMAGES/spheres/ganymede.png  used on input line 436.
 (pdftex.def)             Requested size: 50.0pt x 28.12012pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1000,9 +1000,49 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.808 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.808 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.808 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.808 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.808 \end{align}
+                 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.856 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.856 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.856 \end{align}
+                 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8]
@@ -1015,12 +1055,77 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1131 	\end{align}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1131 	\end{align}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1144 	\end{align}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1144 	\end{align}
+                   
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12]
+ [12
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1212 \end{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1212 \end{equation}
+                     ]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1258 		\end{align}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1270 		\end{align}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1270 		\end{align}
+                    
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1334 	\end{align}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1334 	\end{align}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1348 	\end{align}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1348 	\end{align}
+                   
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14]
@@ -1035,7 +1140,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [17]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18]
+ [18
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1671 \begin{align}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1671 \begin{align}
+                    ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [19]
@@ -1045,49 +1160,32 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [21]
-LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 1868.
+LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 1924.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.015> not available
-(Font)              size <5> substituted on input line 1868.
+(Font)              size <5> substituted on input line 1924.
 
 
-Underfull \hbox (badness 3058) in paragraph at lines 1882--1882
+Underfull \hbox (badness 3058) in paragraph at lines 1938--1938
 \OT1/cmr/m/n/10 un-normalized degree 2 grav-ity
  []
 
-<IMAGES/GANYMEDE_tidal_potential_static.pdf, id=9768, 465.74pt x 218.8175pt>
-File: IMAGES/GANYMEDE_tidal_potential_static.pdf Graphic file (type pdf)
-<use IMAGES/GANYMEDE_tidal_potential_static.pdf>
-Package pdftex.def Info: IMAGES/GANYMEDE_tidal_potential_static.pdf  used on input line 1899.
-(pdftex.def)             Requested size: 372.0pt x 174.78044pt.
-<IMAGES/GANYMEDE_tidal_potential_range.pdf, id=9769, 465.74pt x 218.8175pt>
-File: IMAGES/GANYMEDE_tidal_potential_range.pdf Graphic file (type pdf)
-<use IMAGES/GANYMEDE_tidal_potential_range.pdf>
-Package pdftex.def Info: IMAGES/GANYMEDE_tidal_potential_range.pdf  used on input line 1908.
-(pdftex.def)             Requested size: 372.0pt x 174.78044pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<IMAGES/ganymede_laser_residuals_hist.pdf, id=9770, 443.6575pt x 306.14375pt>
-File: IMAGES/ganymede_laser_residuals_hist.pdf Graphic file (type pdf)
-<use IMAGES/ganymede_laser_residuals_hist.pdf>
-Package pdftex.def Info: IMAGES/ganymede_laser_residuals_hist.pdf  used on input line 1930.
-(pdftex.def)             Requested size: 372.0pt x 256.69652pt.
+<IMAGES/GANYMEDE_tidal_potential_static.pdf, id=9785, 465.74pt x 218.8175pt>
+File: IMAGES/GANYMEDE_tidal_potential_static.pdf Graphic file (type pdf)
+<use IMAGES/GANYMEDE_tidal_potential_static.pdf>
+Package pdftex.def Info: IMAGES/GANYMEDE_tidal_potential_static.pdf  used on input line 1955.
+(pdftex.def)             Requested size: 372.0pt x 174.78044pt.
+<IMAGES/GANYMEDE_tidal_potential_range.pdf, id=9786, 465.74pt x 218.8175pt>
+File: IMAGES/GANYMEDE_tidal_potential_range.pdf Graphic file (type pdf)
+<use IMAGES/GANYMEDE_tidal_potential_range.pdf>
+Package pdftex.def Info: IMAGES/GANYMEDE_tidal_potential_range.pdf  used on input line 1964.
+(pdftex.def)             Requested size: 372.0pt x 174.78044pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<IMAGES/ganymede_correlation.pdf, id=9771, 454.69875pt x 304.13625pt>
-File: IMAGES/ganymede_correlation.pdf Graphic file (type pdf)
-<use IMAGES/ganymede_correlation.pdf>
-Package pdftex.def Info: IMAGES/ganymede_correlation.pdf  used on input line 1946.
-(pdftex.def)             Requested size: 372.0pt x 248.82251pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 1957.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1095,32 +1193,37 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [22]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23 <./IMAGES/GANYMEDE_tidal_potential_static.pdf> <./IMAGES/GANYMEDE_tidal_potential_range.pdf>]
+ [23]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [24 <./IMAGES/ganymede_laser_residuals_hist.pdf>]
+ [24 <./IMAGES/GANYMEDE_tidal_potential_static.pdf> <./IMAGES/GANYMEDE_tidal_potential_range.pdf>]
+<IMAGES/ganymede_laser_residuals_hist_14_04_26.pdf, id=9896, 449.68pt x 312.16624pt>
+File: IMAGES/ganymede_laser_residuals_hist_14_04_26.pdf Graphic file (type pdf)
+<use IMAGES/ganymede_laser_residuals_hist_14_04_26.pdf>
+Package pdftex.def Info: IMAGES/ganymede_laser_residuals_hist_14_04_26.pdf  used on input line 2003.
+(pdftex.def)             Requested size: 372.0pt x 258.25005pt.
+<IMAGES/ganymede_correlation_14_04_26.pdf, id=9897, 454.69875pt x 304.13625pt>
+File: IMAGES/ganymede_correlation_14_04_26.pdf Graphic file (type pdf)
+<use IMAGES/ganymede_correlation_14_04_26.pdf>
+Package pdftex.def Info: IMAGES/ganymede_correlation_14_04_26.pdf  used on input line 2019.
+(pdftex.def)             Requested size: 372.0pt x 248.82251pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25 <./IMAGES/ganymede_correlation.pdf>]
+ [25 <./IMAGES/ganymede_laser_residuals_hist_14_04_26.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26]
-Overfull \hbox (1.54576pt too wide) detected at line 2444
-[]
- []
-
-
+ [26 <./IMAGES/ganymede_correlation_14_04_26.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28]
-Overfull \hbox (5.16658pt too wide) detected at line 2772
-[]
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [29]
@@ -1130,12 +1233,22 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [31]
+Overfull \hbox (1.54576pt too wide) detected at line 2566
+[]
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [32]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [33]
+Overfull \hbox (5.16658pt too wide) detected at line 2894
+[]
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [34]
@@ -1144,7 +1257,22 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [35]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36] (./sn-article-CM26.bbl
+ [36]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41] (./sn-article-CM26.bbl
 Underfull \hbox (badness 1038) in paragraph at lines 49--76
 []\OT1/cmr/m/n/10 Archinal, B.A., Acton, C.H., A'Hearn, M.F., Con-rad, A., Con-sol-magno, G.J.,
  []
@@ -1152,56 +1280,49 @@ Underfull \hbox (badness 1038) in paragraph at lines 49--76
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [37]
-Underfull \hbox (badness 10000) in paragraph at lines 414--427
-[]\OT1/cmr/m/n/10 Landau, L.D., Lif-shitz, E.M.: Mechan-ics, 3rd edn. Course of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 414--427
-\OT1/cmr/m/n/10 The-o-ret-i-cal Physics, vol. 1. Butterworth-Heinemann, Oxford
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 414--427
-\OT1/cmr/m/n/10 (1976). [][]$https : / / doi . org / 10 . 1016 / B978-[]0-[]08-[]050347-[]9 . 50011-[]3$[][] .
+ [42]
+Underfull \hbox (badness 5203) in paragraph at lines 414--426
+[]\OT1/cmr/m/n/10 Landau, L.D., Lif-shitz, E.M.: Mechan-ics, 3rd edn. Course of The-o-ret-i-cal
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38]
+ [43]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [39]
-Underfull \hbox (badness 1418) in paragraph at lines 699--712
+ [44]
+Underfull \hbox (badness 1418) in paragraph at lines 718--731
 []\OT1/cmr/m/n/10 Steinbr^^?ugge, G., Steinke, T., Thor, R., Stark, A., Huss-mann, H.: Mea-sur-ing
  []
 
-)
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40] (./sn-article-CM26.aux)
+ [45])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46] (./sn-article-CM26.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.985pt have occurred.
 
 Package rerunfilecheck Info: File `sn-article-CM26.out' has not changed.
-(rerunfilecheck)             Checksum: 3FFFF85227CA3C2F9F959D8E4B62466D;2744.
+(rerunfilecheck)             Checksum: 371710D1E504699B92CFA472E5B6E72F;3799.
  ) 
 Here is how much of TeX's memory you used:
- 35217 strings out of 478268
- 718151 string characters out of 5846346
- 1057997 words of memory out of 5000000
- 52664 multiletter control sequences out of 15000+600000
- 497411 words of font info for 135 fonts, out of 8000000 for 9000
+ 35251 strings out of 478268
+ 718872 string characters out of 5846346
+ 1060905 words of memory out of 5000000
+ 52684 multiletter control sequences out of 15000+600000
+ 497757 words of font info for 136 fonts, out of 8000000 for 9000
  1151 hyphenation exceptions out of 8191
- 85i,17n,90p,1146b,1279s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on sn-article-CM26.pdf (40 pages, 6614023 bytes).
+ 85i,17n,90p,1444b,1279s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on sn-article-CM26.pdf (46 pages, 6722465 bytes).
 PDF statistics:
- 10230 PDF objects out of 10688 (max. 8388607)
- 4210 compressed objects within 43 object streams
- 208 named destinations out of 1000 (max. 500000)
- 169 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 10318 PDF objects out of 10688 (max. 8388607)
+ 4288 compressed objects within 43 object streams
+ 221 named destinations out of 1000 (max. 500000)
+ 201 words of extra memory for PDF output out of 10000 (max. 10000000)
 

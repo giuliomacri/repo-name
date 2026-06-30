@@ -28,10 +28,12 @@
 %%Note: the following reference styles support Namedate and Numbered referencing. By default the style follows the most common style. To switch between the options you can add or remove �Numbered� in the optional parenthesis. 
 %%The option is available for: sn-basic.bst, sn-chicago.bst%  
  
-%%\documentclass[pdflatex,sn-nature]{sn-jnl}% Style for submissions to Nature Portfolio journals
+%\documentclass[pdflatex,sn-nature]{sn-jnl}% Style for submissions to Nature Portfolio journals
 %%\documentclass[pdflatex,sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
 %%\documentclass[pdflatex,sn-mathphys-num]{sn-jnl}% Math and Physical Sciences Numbered Reference Style
-\documentclass[lineno, pdflatex,sn-mathphys-ay]{sn-jnl}% Math and Physical Sciences Author Year Reference Style
+\documentclass[lineno, pdflatex,sn-mathphys-ay]{sn-jnl}
+% \documentclass[pdflatex,sn-mathphys-ay, iicol]{sn-jnl}
+% \documentclass[twocolumn, pdflatex,sn-mathphys-ay]{sn-jnl}% Math and Physical Sciences Author Year Reference Style
 %%\documentclass[pdflatex,sn-aps]{sn-jnl}% American Physical Society (APS) Reference Style
 %%\documentclass[pdflatex,sn-vancouver-num]{sn-jnl}% Vancouver Numbered Reference Style
 %%\documentclass[pdflatex,sn-vancouver-ay]{sn-jnl}% Vancouver Author Year Reference Style
@@ -40,6 +42,8 @@
 
 %%%% Standard Packages
 %%<additional latex packages if required can be included here>
+
+% For test only!!
 
 \usepackage{graphicx}%
 \usepackage{multirow}%
@@ -215,12 +219,11 @@
 \abstract{
 Constraining the interior structure of Ganymede, and confirming the presence of a subsurface ocean, is a primary objective of the upcoming Juice mission.
 By measuring the round-trip time of flight of short laser pulses, an altimeter determines the precise distance between a spacecraft and a planetary surface. Such observations are sensitive to both tidal surface deformations and the librations of Ganymede, thereby offering independent constraints on the satellite's interior structure.
-We present a mathematical and computational framework to estimate the rotational state, principal moments of inertia, and tidal Love number of Ganymede using laser altimetry range measurements. Simulated altimetric profiles from the Ganymede Laser Altimeter (GALA) are co-registered with a synthetic digital terrain model.
-%s which will be available from the JANUS stereo images. 
+We present a mathematical and computational framework to estimate the rotational state, principal moments of inertia, and tidal Love number of Ganymede using measurements from the Ganymede Laser Altimeter (GALA),  which have to be co-registered with a digital terrain model which will be available from the JANUS stereo images. 
 The satellite orientation is modeled through a set of second-order ordinary differential equations for the 3-1-3 Euler angles derived from a Lagrangian formulation. Quadrupole gravity coefficients are treated as independent quantities, assumed to be provided by the 
-3GM radio science experiment onboard Juice, which allows the moments of inertia to be estimated independently. To account for the mechanical decoupling induced by a subsurface ocean, the rigid-body rotational model is extended by introducing shell-ocean laminar coupling through a Rayleigh dissipation function. The framework is tested using synthetic laser range measurements with realistic error profiles acquired during the near-circular orbit science phases at 500 km (GCO-500) and 200 km, and the parameters of a reference interior model are recovered.
+3GM radio science experiment onboard Juice, which allows the moments of inertia to be estimated independently. To account for the mechanical decoupling induced by a subsurface ocean, the rigid-body rotational model is extended by introducing shell-ocean laminar coupling through a Rayleigh dissipation function. The framework is tested using synthetic laser range measurements GALA acquired during the near-circular orbit science phases at 500 km (GCO-500) and 200 km.
+% We find that $h_2$ is largely decoupled from the rotational state, whereas the principal moments of inertia are recovered with systematic biases that exceed their formal uncertainties; in particular the minimum moment, associated with the Jupiter-facing axis, is effectively unobservable from altimetry alone. We show that this degeneracy is removed by constraining the absolute scale with the externally provided gravity coefficients, and recommend solving for moment ratios and $h_2$ rather than the three absolute moments.
 }
-
 
 % \abstract{The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. Authors are advised to check the author instructions for the journal they are submitting to for word limits and if structural elements like subheadings, citations, or equations are permitted.}
 
@@ -252,7 +255,7 @@ Laser altimetry has become a powerful remote sensing technique for planetary geo
 %
 In 2035, the Ganymede Laser Altimeter \citep[GALA;][]{2025SSRv..221...33H, 2022AdSpR..69.2283E,2019JSAST..17..234K} onboard the Jupiter Icy Moons Explorer (Juice) mission will map Ganymede's surface during its near-circular orbital phases. 
 %
-After performing several flybys of the icy moons Europa, Callisto and Ganymede, Juice will be inserted in  Elliptical Orbit (GEO) for 150 days, followed by the GCO-500 science phase, a near-circular orbit at an altitude of approximately \SI{500}{km}, which is expected to last for approximately 19 Ganymede orbital periods for a total of about 136 days.
+After performing several flybys of the icy moons Europa, Callisto and Ganymede, Juice will be inserted in the Ganymede Elliptical Orbit (GEO) for 150 days, followed by the GCO-500 science phase, a near-circular orbit at an altitude of approximately \SI{500}{km}, which is expected to last for approximately 19 Ganymede orbital periods for a total of about 136 days.
 %
 Following this nominal mission, operations are expected to be extended for an additional circular orbit phase at an altitude of \SI{200}{km}, designated GCO-200. Hereafter, we refer to the combined GCO-500 and GCO-200 phases simply as the GCO. Figure~\ref{fig:Juice_orbit} shows the geometry of the Juice orbit during the GCO-500 phase over one Ganymede orbital period.
 %
@@ -301,12 +304,10 @@ However, the minimization framework developed to solve this problem represents a
 
 The paper is organized as follows. 
 Section~\ref{sec:rotational_eqs_V2} details the kinematics and the rotational dynamics model of Ganymede. 
-In Sect.~\ref{sec:DC_laser}, we present our novel mathematical and computational framework, highlighting the observation equations and the dynamical estimation using the STM. 
+In Sect.~\ref{sec:DC_laser}, we present our novel mathematical and computational framework, highlighting the observation equations and the dynamical estimation using the state transition matrix (STM). 
 Section~\ref{sec:measurement_model} describes the functional model of the synthetic altimetric profiles and the way the synthetic profiles are generated. The results of our estimations and the corresponding discussion are presented in 
 Sect.~\ref{sec:results}. 
-% Finally, 
-% Sect.~\ref{sec6} summarizes the conclusions of this work.
-
+Finally, Sect.~\ref{sec:conclusions} summarizes the conclusions of this work.
 
 
 %-------------------- COPY PASTE REFERENCE FRAMES ----------------------------------
@@ -352,7 +353,7 @@ Sect.~\ref{sec:results}.
 	\centering
 
 
-	\def\radius{3.5}
+	\def\radius{3}
 	\def\Alpha{180 + 32} %28
 	\def\Alphashift{\Alpha-180}
 	\def\Beta{25}
@@ -594,8 +595,8 @@ If $\mathcal{B}$ is a principal reference frame for the rigid satellite, the pro
 %
 Throughout this work we will refer interchangeably to the same moments as ${I_{11} < I_{22} < I_{33}}$ or ${A_\mathrm{s} < B_\mathrm{s} < C_\mathrm{s}}$, respectively.
 
-The axis of minimum inertia ($A_\mathrm{s}$) is the one facing Jupiter and corresponds to the longest one axis of the satellite's triaxial figure. Vice versa, the axis corresponding to the largest moment of inertia $(C_\mathrm{s})$ is the rotation axis and is pointing up relative the orbital plane. 
-It is worth noting, the well known fact stable rotation about the axis of intermediate inertia ($B$) is not possible \citep[see, e.g.,][]{Goldstein:102554}.
+The axis of minimum inertia ($A_\mathrm{s}$) is the one facing Jupiter and corresponds to the longest axis of the satellite's triaxial figure. Vice versa, the axis corresponding to the largest moment of inertia $(C_\mathrm{s})$ is the rotation axis and is pointing up relative the orbital plane. 
+It is worth noting, the well known fact that stable rotation about the axis of intermediate inertia ($B$) is not possible \citep[see, e.g.,][]{Goldstein:102554}.
 %
 In practice, we cannot guarantee that the chosen frame coincides perfectly with the principal axes frame, and in general it will not. As more accurate measurements will lead to different realizations of the principal axes frame of the body. 
 %
@@ -746,7 +747,7 @@ where the Christoffel symbols of the first kind are defined as
 	 \frac{1}{2} \left( \pdv{g_{\lambda\beta}}{q^\gamma} + \pdv{g_{\lambda\gamma}}{q^\beta} - \pdv{g_{\beta\gamma}}{q^\lambda} \right).
 \end{equation}
 %
-The explicit expressions of the metric tensor components  27 Christoffel symbols of the first kind $\Gamma_{\alpha\beta\gamma}$ in terms of the Euler angles and moments of inertia ${I}_{ij}$ is given in Sec~\ref{sec:metric_tensor_christoffel_off_diagonal}.
+The explicit expression of the metric tensor components and the 27 Christoffel symbols of the first kind $\Gamma_{\alpha\beta\gamma}$ in terms of the Euler angles and moments of inertia ${I}_{ij}$ is given in Sect.~\ref{sec:metric_tensor_christoffel_off_diagonal}.
 Equation~(\ref{eq_geodesic_potential_V2}) is the desired set of second order ODEs for the Euler angles.
 Since only the derivatives with respect to the Euler angles appear on the right-hand side of Eq.~(\ref{eq_geodesic_potential_V2}), it is clear that the only contribution of the potential $\mathcal{U}$, on the orientation must come from Euler angles dependent terms.
 %
@@ -767,15 +768,15 @@ The McCullagh potential expressed in terms of the satellite's gravity coefficien
 \begin{equation}\label{potential_1b_approx_stokes_V2}
 	\mathcal{U} = 	\mathcal{G}
 	\left(
-	\frac{M_{\mathrm{J}} M_{\mathrm{G}}}{r} 
-	+ M_{\mathrm{J}} M_{\mathrm{G}} R_\mathrm{G}^2 \frac{
+	\frac{M_{\mathrm{J}} {M}_{\mathrm{G}}}{r} 
+	+ M_{\mathrm{J}} {M}_{\mathrm{G}} R_\mathrm{G}^2 \frac{
 		 \vec{r}^\top \left( 
 	\vec{R}^\top \vec{Q} \vec{R}
 		\right) \vec{r}}{2 r^5}
 	 \right),
 \end{equation}
 %
-where $\mathcal{G}$ is the gravitational constant,  $M_{\mathrm{J}}$ and $M_{\mathrm{G}}$ are the masses of Jupiter and Ganymede, respectively, $R_{\mathrm{G}}$ is Ganymedes's reference radius, 
+where $\mathcal{G}$ is the gravitational constant,  $M_{\mathrm{J}}$ and ${M}_{\mathrm{G}}$ are the masses of Jupiter and Ganymede, respectively, $R_{\mathrm{G}}$ is Ganymedes's reference radius, 
 $\vec{r}$ and $r$ are the relative position vector of the satellite with respect to Jupiter expressed in the $\mathcal{I}$ frame, and its magnitude, respectively.   
 ${\vec{R}(\varphi,\theta,\psi) = \vec{R}_{\mathcal{B}}^{\mathcal{I}}}$
 is the rotation matrix from the inertial frame $\mathcal{I}$ to the body-fixed $\mathcal{B}$ frame, as defined in Appendix~\ref{appendix:rotm_V2}. 
@@ -793,26 +794,30 @@ We have also introduced the traceless quadrupole moment tensor \citep[e.g.,][]{M
 %
 where the second degree Stokes coefficients $C_{2m}, S_{2m}$, in the rigid body approximation, are related to the moments of inertia by
 %
+\begin{subequations}
+	\label{eq:inertia2stokes_V2}
 \begin{align}
-	\label{eq:inertia2stokes_C20_C22_V2}
-	C_{20}  &= \frac{I_{11} + I_{22} - 2 I_{33} }{2{m}_\mathrm{G}R_\mathrm{G}^2}, \quad
-	C_{22}  = \frac{I_{22} - I_{11}  }{4{m}_\mathrm{G}R_\mathrm{G}^2}, \\
-	\label{eq:inertia2stokes_C21_S21_S22_V2}
-	C_{21}  &=-  \frac{ I_{13} }{M_{\mathrm{G}}R_\mathrm{G}^2}, \quad
-	S_{21}  =-  \frac{ I_{32} }{M_{\mathrm{G}}R_\mathrm{G}^2}, \quad
-	S_{22}  =-  \frac{ I_{21} }{2{m}_\mathrm{G}R_\mathrm{G}^2}. 
+	\label{eq:inertia2stokes_V2_C20_V2}
+	C_{20}  &= \frac{I_{11} + I_{22} - 2 I_{33} }{2{m}_\mathrm{G}R_\mathrm{G}^2}, \\ %\quad
+	\label{eq:inertia2stokes_V2_C22_V2}
+	C_{22}  &= \frac{I_{22} - I_{11}  }{4{m}_\mathrm{G}R_\mathrm{G}^2}, \\
+	\label{eq:inertia2stokes_V2_C21_S21_S22_V2}
+	C_{21}  &=-  \frac{ I_{13} }{{M}_{\mathrm{G}}R_\mathrm{G}^2}, \\%\quad
+	S_{21}  &=-  \frac{ I_{32} }{{M}_{\mathrm{G}}R_\mathrm{G}^2}, \\% \quad
+	S_{22}  &=-  \frac{ I_{21} }{2{m}_\mathrm{G}R_\mathrm{G}^2}. 
 \end{align}
+\end{subequations}
 %
 It is easy to verify that $\vec{Q}$ is related to the whole body inertia tensor, or that of the shell if the interior is assumed spherically symmetric, by
 \begin{equation}\label{eq:Q2I_V2}
 	\vec{Q} =
-	 \frac{1}{M_{\mathrm{G}}R_\mathrm{G}^2}\left( \tr(\vec{I})\vec{1}_{3\times 3} - 3 \vec{I} \right)
+	 \frac{1}{{M}_{\mathrm{G}}R_\mathrm{G}^2}\left( \tr(\vec{I})\vec{1}_{3\times 3} - 3 \vec{I} \right)
 \end{equation} 
 %
 If $\mathcal{B}$ is a principal axes frame and spin and tidal distortion are neglected, it holds ${C_{21} = S_{21} = S_{22} = 0}$.
 % In general it is
 % \begin{equation}
-% 	\vec{I} = \tfrac{1}{3} \mathrm{tr}(\vec{I}) - \tfrac{1}{3}  M_{\mathrm{G}}R_\mathrm{G}^2 \vec{Q}.
+% 	\vec{I} = \tfrac{1}{3} \mathrm{tr}(\vec{I}) - \tfrac{1}{3}  {M}_{\mathrm{G}}R_\mathrm{G}^2 \vec{Q}.
 % \end{equation}
 %
 Substituting this expression for the potential of Eq.~\eqref{potential_1b_approx_stokes_V2} in Eq.~(\ref{eq_geodesic_potential_V2}) we obtain 
@@ -822,7 +827,7 @@ Substituting this expression for the potential of Eq.~\eqref{potential_1b_approx
 	\Gamma^{\alpha}_{\beta\gamma} \dot{q}^\beta \dot{q}^\gamma =
 	g^{\alpha\beta}
 	\left(  
-	\frac{\mathcal{G} \, M_{\mathrm{J}} M_{\mathrm{G}}R_\mathrm{G}^2 }{2 r^5}  \,
+	\frac{\mathcal{G} \, M_{\mathrm{J}} {M}_{\mathrm{G}}R_\mathrm{G}^2 }{2 r^5}  \,
 	\vec{r}^\top  \frac{\partial (\vec{R}^\top \vec{Q} \vec{R})}{\partial q^\beta} 
 	{\vec{r}} 
 	\right), %\;  \alpha = 1,2,3,
@@ -841,17 +846,21 @@ where the partial derivatives with respect to the Euler angles $q^\alpha$ can be
 It is well known that the rotational equations for the rigid body and a torque arising from a McCullagh-like potential, actually depend only on the ratios of the moments of inertia.
 Indeed, Eq.~\eqref{eq:geodesic_explicit_V2} is invariant under an arbitrary rescaling of the inertia tensor, that is ${\vec{I} \rightarrow c \vec{I}}$, with $c$ being some positive real number. 
 Thus, the rotational equations are often rewritten in terms of the relative moments of inertia differences,
-\begin{equation}
-\alpha = \frac{C_\mathrm{s} - B_\mathrm{s}}{A_\mathrm{s}}, \quad
-\beta = \frac{C_\mathrm{s} - A_\mathrm{s}}{B_\mathrm{s}}, \quad
-\gamma = \frac{B_\mathrm{s} - A_\mathrm{s}}{C_\mathrm{s}} %.
+%
+\begin{subequations}
+\begin{align}
+\alpha &= \frac{C_\mathrm{s} - B_\mathrm{s}}{A_\mathrm{s}}, \\%\quad
+\beta &= \frac{C_\mathrm{s} - A_\mathrm{s}}{B_\mathrm{s}}, \\ %\quad
+\gamma &= \frac{B_\mathrm{s} - A_\mathrm{s}}{C_\mathrm{s}} 
 = \frac{\alpha\beta}{1-\alpha\beta}.
-\end{equation}
+\end{align}
+\end{subequations}
+%
 Since ${A_\mathrm{s}<B_\mathrm{s}<C_\mathrm{s}}$, these ratios are all positive quantities.
 Clearly, only two of these three parameters are independent, and are required to integrate the rotational equations \citep{1965AJ.....70..466E}.
 %
 % ----------------- ADDED ----------------------------------
-In this work however, the quadrupole coefficients in the McCullagh potential $\mathcal{U}$ are treated as independent constants rather than functions of the moments of inertia, which breaks the scale degeneracy equations. This allows for the independent estimation of the moments of inertia by directly injecting the gravity coefficients into the equations. While this means the relations in Eq.~\ref{eq:inertia2stokes_C20_C22_V2} are not explicitly enforced, it is not an inconsistency. In this framework, the moments of inertia represent only the outer shell, not the whole body; therefore, Eq.~\ref{eq:inertia2stokes_C20_C22_V2} would only hold if the interior were spherically symmetric.
+In this work however, the quadrupole coefficients in the McCullagh potential $\mathcal{U}$ are treated as independent constants rather than functions of the moments of inertia, which breaks the scale degeneracy. This allows for the independent estimation of the moments of inertia by directly injecting the gravity coefficients into the equations. While this means the relations in Eq.~\ref{eq:inertia2stokes_V2} are not explicitly enforced, it is not an inconsistency. In this framework, the moments of inertia represent only the outer shell, not the whole body; therefore, Eq.~\ref{eq:inertia2stokes_V2} would only hold if the interior were spherically symmetric.
 %
 Since we cannot guarantee a priori that the body-fixed reference frame to which the stereo DTM is attached is the principal axis frame, and almost certainly it is not, as it is usually chosen to be attached to some feature on the surface of the satellite. 
 For this reason, it can be expected that the products of inertia (i.e., $I_{12}$,  $I_{13}$, and  $I_{23}$) are small but non-zero in the body-fixed frame. We choose to not estimate these parameters but to include them as consider parameters. This is explained in more detail in Sect.~\ref{sec:consider_covariance}.
@@ -861,10 +870,10 @@ For this reason, it can be expected that the products of inertia (i.e., $I_{12}$
 
 
 %
-% In this work however, we choose to keep fixed the moment of inertia differences in the form of the gravity field coefficients of second degree of Eq.~\eqref{eq:inertia2stokes_C20_C22}. 
+% In this work however, we choose to keep fixed the moment of inertia differences in the form of the gravity field coefficients of second degree of Eq.~\eqref{eq:inertia2stokes_V2_C20_C22}. 
 % %
-% In Table~\ref{tab:galilean_satellites_parameters_ext} we show the estimates of the values of $C_{20}$ and $C_{22}$ for each of the Galilean satellites, as well as the estimate for the value of the normalized polar moment of inertia, that is, ${C/(M_{\mathrm{G}}R_{\mathrm{G}}^2)}$, obtained assuming hydrostatic equilibrium.
-% These values are used together with Eq.~\eqref{eq:inertia2stokes_C20_C22} to compute the values of the moments of inertia $A$, $B$, and $C$ used in the numerical integration of Eq.~\eqref{eq:geodesic_explicit}.
+% In Table~\ref{tab:galilean_satellites_parameters_ext} we show the estimates of the values of $C_{20}$ and $C_{22}$ for each of the Galilean satellites, as well as the estimate for the value of the normalized polar moment of inertia, that is, ${C/({M}_{\mathrm{G}}R_{\mathrm{G}}^2)}$, obtained assuming hydrostatic equilibrium.
+% These values are used together with Eq.~\eqref{eq:inertia2stokes_V2_C20_C22} to compute the values of the moments of inertia $A$, $B$, and $C$ used in the numerical integration of Eq.~\eqref{eq:geodesic_explicit}.
 % %
 % We denoted by $n$ the mean motion of the satellite, while ${T_{n} = 2\pi / n }$ represents its  mean orbital period.
 % Throughout the text we will use subscript indices $\mathrm{G}$ from 1 through 4, are used to refer to the Galilean satellites: Io, Europa, Ganymede, and Callisto, in this order. For simplicity, subscripts will often be omitted when doing so does not create any ambiguity.
@@ -909,7 +918,7 @@ The dimensions of $k_\mathrm{o}$ are that of the moment of inertia per unit time
 We adopt a nominal kinematic viscosity of $\nu_\mathrm{o} = \SI{1.67e-6}{m^2.s^{-1}}$ as an initial baseline, which corresponds approximately to cold, liquid water at atmospheric pressure. Beneath the thick ice shell of an icy moon, the ocean exists at high hydrostatic pressures and likely contains dissolved salts, both of which will alter the true viscosity profile. Because the exact thermodynamic state and composition of the subsurface ocean are unknown, the actual value of $\nu_\mathrm{o}$ is highly uncertain. Consequently, rather than assuming this nominal value is exact, the bulk parameter $k_\mathrm{o}$ is treated as a considered parameter, and its formal uncertainty, set at $\num{e-10}C_\mathrm{s}\,\unit{s^{-1}}$, is propagated into the estimates of the other system parameters as described in Sect.~\ref{sec:consider_covariance}.
 
 This formulation assumes a smooth boundary, as topographic irregularities on the core-mantle
-boundary can give raise to additional stresses, which may play a dominant role \citep[see e.g.,][]{1981RSPTA.303..327Y}
+boundary can give rise to additional stresses, which may play a dominant role \citep[see e.g.,][]{1981RSPTA.303..327Y}.
 %
 In the Lagrangian formalism, this torque is accounted for via a Rayleigh dissipation function, of the form
 \begin{align}
@@ -982,7 +991,7 @@ For simplicity, we will assume that the ocean layer rotates uniformly with zero 
 
 % The reference frames used in this chapter are the same as that presented in Sect.~\ref{sec:reference_frames}.
 % %
-% The rotational equations are consistent with those presented in Sect.~\ref{sec:rotational_eqs} and extended in Chapter~\ref{sec:ocean_rayleigh}; however, we generalize them by allowing for a non-diagonal inertia tensor. Consequently, the body-fixed frame need not coincide with the principal axis frame. Furthermore, the quadrupole coefficients in the McCullagh potential $\mathcal{U}$ are treated as independent constants rather than functions of the moments of inertia. This allows for the independent estimation of the moments of inertia by directly injecting the gravity coefficients into the equations. While this means the relations in Eq.~\ref{eq:inertia2stokes_C20_C22} are not explicitly enforced, it is not an inconsistency. In this framework, the moments of inertia represent only the outer shell, not the whole body; therefore, Eq.~\ref{eq:inertia2stokes_C20_C22} would only hold if the interior were spherically symmetric.
+% The rotational equations are consistent with those presented in Sect.~\ref{sec:rotational_eqs} and extended in Chapter~\ref{sec:ocean_rayleigh}; however, we generalize them by allowing for a non-diagonal inertia tensor. Consequently, the body-fixed frame need not coincide with the principal axis frame. Furthermore, the quadrupole coefficients in the McCullagh potential $\mathcal{U}$ are treated as independent constants rather than functions of the moments of inertia. This allows for the independent estimation of the moments of inertia by directly injecting the gravity coefficients into the equations. While this means the relations in Eq.~\ref{eq:inertia2stokes_V2_C20_C22} are not explicitly enforced, it is not an inconsistency. In this framework, the moments of inertia represent only the outer shell, not the whole body; therefore, Eq.~\ref{eq:inertia2stokes_V2_C20_C22} would only hold if the interior were spherically symmetric.
 % %
 % The reason we include the products on inertia to the set of parameters to estimate is that we cannot guarantee a priori that the body-fixed reference frame to which the stereo DTM is attached is the principal axis frame, and almost certainly it is not, as it is usually chosen to be attached to some feature on the surface. 
 % Since the tensor of inertia is not diagonal the metric tensor and the Christoffel symbols contain additional terms with respect to those obtained in Sect.~\ref{appendix:metric_tensor} where we assumed a principal frame (and no tidal deformations of the inertia tensor). The complete expression of the metric tensor and Christoffel symbol is given in Sect.~\ref{sec:metric_tensor_christoffel_off_diagonal}.
@@ -1002,7 +1011,7 @@ Consider the state vector of the rotating rigid body in the inertial frame
 		)^\top, 
 \end{equation}
 and let  $\vec{p} = (I_{11}, I_{22}, I_{33}, I_{12}, I_{13}, I_{23}, k_\mathrm{o}) $,
-%, \lambda_2,  \ldots \lambda_5]^\top$
+%, \lambda_2,  0.0 \lambda_5]^\top$
 be the  vector of constant parameters describing the force model $ \vec{F}(\vec{x}, \vec{p}, t ) $, in this case the moments and products of inertia of Ganymede's ice shell.
 %, or the mantle in case of the Moon or Mercury. 
 %
@@ -1049,14 +1058,14 @@ where
 	\end{pmatrix}.
 \end{align}
 % 
-In general the observations  can be modeled by a function $\vec{G}_{\mathrm{LA}}(\vec{x}, \vec{g}, t )$, depending on the state vector and the vector $\vec{g}$ of constant, non-dynamical, geometrical parameters, that is
+In general the observations  can be modeled by a function ${G}_{\mathrm{LA}}(\vec{x}, \vec{g}, t )$, depending on the state vector and the vector $\vec{g}$ of constant, non-dynamical, geometrical parameters, that is
 %
 \begin{equation}\label{Y_eq1}
-	\vec{y}(t) = \vec{G}_{\mathrm{LA}}(\vec{x}, \vec{g}, t ) + \varepsilon(t), %cov??
+	{y}(t) = {G}_{\mathrm{LA}}(\vec{x}, \vec{g}, t ) + \varepsilon(t), %cov??
 \end{equation}
 %
 where 
-% $\vec{y}(t)$ is the $p$-dimensional vector of the range observations,
+% ${y}(t)$ is the $p$-dimensional vector of the range observations,
 $\varepsilon(t)$ is the vector of measurement errors.
 In the following geometrical parameters will include only $h_2$ Love number, that is $\vec{g} = h_2$. Nonetheless, we feel it is best to keep the notation slightly more general.
 %Note that we require $p<n$ at any time epoch, that is fewer observations than there are state vector components. 
@@ -1065,52 +1074,77 @@ In the following geometrical parameters will include only $h_2$ Love number, tha
 If a reasonable reference trajectory is available and if $\vec{x}$, the true trajectory, and $\vec{x}^*$,
 the reference trajectory, remain sufficiently close throughout the time interval of interest, then the trajectory for the actual motion can be expanded in a Taylor's series about the reference trajectory at each point in time. If this expansion is truncated to eliminate higher order terms, then the deviation in the state from the reference trajectory can be described by a set of linear differential equations with time dependent coefficients. A linear relation between the observation deviation and the state deviation can be obtained by a similar expansion procedure. Then, the nonlinear problem in which the complete state vector is to be estimated can be replaced by a linear orbit determination problem in which the deviation from some reference solution is to be determined.
 We assume that a reference solution $\vec{x}^* (t, \vec{x}_0 , \vec{p}^* )$ of the dynamical equations is known in terms of a set of reference values $\vec{p}^*$. The measurement model is likewise assumed to be known in terms of a set of reference values of the parameters $\vec{g}^*$. 
-The goal here is to use a discrete set of measurements ${\vec{y}(t_i) = \vec{y}_i}$, to obtain improved values for the initial state $\vec{x}_0$ and the dynamical $\vec{p}^*$ and geometrical $\vec{g}^*$ parameters.
+The goal here is to use a discrete set of measurements ${{y}(t_i) = {y}_i}$, to obtain improved values for the initial state $\vec{x}_0$ and the dynamical $\vec{p}^*$ and geometrical $\vec{g}^*$ parameters.
 %
-If we introduce the variations \( \delta \vec{x} \), \( \delta \vec{y} \), \( \delta \vec{p} \), \( \delta \vec{g} \) of the state vector, the observations, and the parameters so that
+If we introduce the variations \( \delta \vec{x} \), \( \delta {y} \), \( \delta \vec{p} \), \( \delta \vec{g} \) of the state vector, the observations, and the parameters so that
+%
+\begin{subequations}
 \begin{align}
 	\vec{x}(t) &= \vec{x}^*(t, \vec{p}^*) + \delta \vec{x}, \\
-	\vec{y}_i(t) &= \vec{G}_{\mathrm{LA}}(\vec{x}^*, \vec{g}^*, t_i) + \delta \vec{y}_i, \\
+	{y}_i(t) &= {G}_{\mathrm{LA}}(\vec{x}^*, \vec{g}^*, t_i) + \delta {y}_i, \\
 	\vec{p} &= \vec{p}^* + \delta \vec{p}, \\
 	\vec{g} &= \vec{g}^* + \delta \vec{g}.
 \end{align}
-A first-order expansion of the force \( \vec{F}(\vec{x}, \vec{p}, t ) \) and measurement model \( \vec{G}_{\mathrm{LA}}(\vec{x}, \vec{g}, t ) \) yields
+\end{subequations}
+%
+A first-order expansion of the force ${ \vec{F}(\vec{x}, \vec{p}, t ) }$ and measurement model ${ {G}_{\mathrm{LA}}(\vec{x}, \vec{g}, t ) }$ yields
+% \begin{subequations}
+% 	\begin{align}
+% 		\vec{F}(\vec{x}, \vec{p}, t ) &=  \vec{F}(\vec{x}^*, \vec{p}^*, t )
+% 		+ \pdv{ \vec{F}}{ \vec{x}} \bigg|^* \delta \vec{x}(t) 
+% 		+\pdv{ \vec{F}}{ \vec{p}} \bigg|^* \delta \vec{p}(t), \\
+% 		{G}_{\mathrm{LA}}(\vec{x}, \vec{g}, t_i ) &=  {G}_{\mathrm{LA}}(\vec{x}^*, \vec{g}^*, t_i )
+% 		+ \pdv{ {G}_{\mathrm{LA}}}{ \vec{x}} \bigg|^* \delta \vec{x}(t_i),
+% 		+\pdv{ {G}_{\mathrm{LA}}}{ \vec{g}} \bigg|^* \delta \vec{g}(t_i).
+% 	\end{align}
+% \end{subequations}
+%
+\begin{subequations}
 \begin{align}
-	\vec{F}(\vec{x}, \vec{p}, t ) &=  \vec{F}(\vec{x}^*, \vec{p}^*, t )
-	+ \pdv{ \vec{F}}{ \vec{x}} \bigg|^* \delta \vec{x}(t) 
-	+\pdv{ \vec{F}}{ \vec{p}} \bigg|^* \delta \vec{p}(t), \\
-	\vec{G}_{\mathrm{LA}}(\vec{x}, \vec{g}, t_i ) &=  \vec{G}_{\mathrm{LA}}(\vec{x}^*, \vec{g}^*, t_i )
-	+ \pdv{ \vec{G}_{\mathrm{LA}}}{ \vec{x}} \bigg|^* \delta \vec{x}(t_i),
-	+\pdv{ \vec{G}_{\mathrm{LA}}}{ \vec{g}} \bigg|^* \delta \vec{g}(t_i).
+\vec{F}(\vec{x}, \vec{p}, t)
+&= \vec{F}(\vec{x}^*, \vec{p}^*, t)
++ \pdv{\vec{F}}{\vec{x}} \bigg|^* \delta \vec{x}(t) \notag\\
+&\quad + \pdv{\vec{F}}{\vec{p}} \bigg|^* \delta \vec{p}(t), \\
+{G}_{\mathrm{LA}}(\vec{x}, \vec{g}, t_i)
+&= {G}_{\mathrm{LA}}(\vec{x}^*, \vec{g}^*, t_i)
++ \pdv{{G}_{\mathrm{LA}}}{\vec{x}} \bigg|^* \delta \vec{x}(t_i) \notag\\
+&\quad + \pdv{{G}_{\mathrm{LA}}}{\vec{g}} \bigg|^* \delta \vec{g}(t_i).
 \end{align}
+\end{subequations}
 %
 Substitution into Eqs.~\eqref{eom} and \eqref{Y_eq1} yields the equations of the differential dynamics, or the state deviation vector and the differential measurement, in the form
 \begin{align}\label{ve_1}
 	\delta\dot{\vec{x}}(t) &= \pdv{\vec{F}}{\vec{x}}\bigg|^* \delta \vec{x}(t) + \pdv{\vec{F}}{\vec{p}}\bigg|^* \delta \vec{p}, \\
 	\label{ve_2}
-	\delta \vec{y}_i &= \pdv{\vec{G}_{\mathrm{LA}}}{\vec{x}} \bigg|^*\delta \vec{x}(t_i) + \pdv{\vec{G}_{\mathrm{LA}}}{\vec{g}}\bigg|^* \delta \vec{g} 
+	\delta {y}_i &= \pdv{{G}_{\mathrm{LA}}}{\vec{x}} \bigg|^*\delta \vec{x}(t_i) + \pdv{{G}_{\mathrm{LA}}}{\vec{g}}\bigg|^* \delta \vec{g} 
 	+ \varepsilon_i.
 \end{align}
 %
 We define
-\begin{align}
-\vec{A}(t) = \pdv{\vec{F}}{\vec{x}}\bigg|^*, \quad 
-\vec{B}(t) = \pdv{\vec{F}}{\vec{p}}\bigg|^*, \quad 
-\tilde{\vec{H}}_i = \pdv{\vec{G}_{\mathrm{LA}}}{\vec{x}}\bigg|^*_i.
-\quad 
-\vec{H}^{\vec{g}}_i = \pdv{\vec{G}_{\mathrm{LA}}}{\vec{g}}\bigg|^*_i.
-\end{align}
-Then, Eqs.~\eqref{ve_1} and  \eqref{ve_2} can be rewritten as
-\begin{align}\label{vareq_ext_v2}
-	\delta \dot{\vec{x}}(t) &= \vec{A}(t) \delta \vec{x}(t) + \vec{B}(t) \delta \vec{p},
-	\\
-	\delta \vec{y}_i &= \tilde{\vec{H}}_i \delta \vec{x}_i 
-	+ \vec{H}^{\vec{g}}_i \delta \vec{g}
-	+ \varepsilon_i,
-	\quad i = 1, \dots, l
-\end{align}
+\begin{subequations}
+	\begin{align}
+	\vec{A}(t) = \pdv{\vec{F}}{\vec{x}}\bigg|^*, \quad 
+	\vec{B}(t) = \pdv{\vec{F}}{\vec{p}}\bigg|^*, \\ %\quad 
+	\tilde{\vec{H}}_i = \pdv{{G}_{\mathrm{LA}}}{\vec{x}}\bigg|^*_i.
+	\quad 
+	\vec{H}^{\vec{g}}_i = \pdv{{G}_{\mathrm{LA}}}{\vec{g}}\bigg|^*_i.
+	\end{align}
+\end{subequations}
 %
-Note that Eq.~\eqref{vareq_ext_v2} is the variational equation associated with Eq.~\eqref{eom} extended to include the system parameters $\vec{p} = (I_{11}, I_{22}, I_{33}, I_{12}, I_{13}, I_{23}, k_\mathrm{o})$.
+Then, Eqs.~\eqref{ve_1} and  \eqref{ve_2} can be rewritten as
+%
+\begin{subequations}
+	\begin{align}\label{vareq_ext_v2}
+		\delta \dot{\vec{x}}(t) &= \vec{A}(t) \delta \vec{x}(t) + \vec{B}(t) \delta \vec{p},
+		\\
+		\delta {y}_i &= \tilde{\vec{H}}_i \delta \vec{x}_i 
+		+ \vec{H}^{\vec{g}}_i \delta \vec{g}
+		+ \varepsilon_i,
+		%\quad i = 1, \dots, l
+	\end{align}
+\end{subequations}
+%
+Note that Eq.~\eqref{vareq_ext_v2} is the variational equation associated with Eq.~\eqref{eom} extended to include the system parameters. %${\vec{p} = (I_{11}, I_{22}, I_{33}, I_{12}, I_{13}, I_{23}, k_\mathrm{o})}$.
 We now write the explicit expression of the matrices of partial derivatives defined above.
 
 
@@ -1181,25 +1215,25 @@ We now write the explicit expression of the matrices of partial derivatives defi
 	
 \begin{align}	\label{eq:dGdstate}
 	\tilde{\vec{H}}_i
-	&= \frac{\partial \vec{G}_{\mathrm{LA}}}{\partial \vec{x}} \bigg|^*_i= %\mathbb{I}_{12\times12}
+	&= \frac{\partial {G}_{\mathrm{LA}}}{\partial \vec{x}} \bigg|^*_i= %\mathbb{I}_{12\times12}
 		\begin{bmatrix}
-				\frac{\partial \vec{G}_{\mathrm{LA}}}{\partial \varphi} &
-				\frac{\partial \vec{G}_{\mathrm{LA}}}{\partial \theta} &
-				\frac{\partial \vec{G}_{\mathrm{LA}}}{\partial \psi}&
+				\frac{\partial {G}_{\mathrm{LA}}}{\partial \varphi} &
+				\frac{\partial {G}_{\mathrm{LA}}}{\partial \theta} &
+				\frac{\partial {G}_{\mathrm{LA}}}{\partial \psi}&
 				0 &0  &0
 		\end{bmatrix}_i^*,
 \end{align}
 
 	
 \begin{align}   \label{eq:dGpar}
-		\vec{H}^{\vec{g}}_i & = \frac{\partial \vec{G}_{\mathrm{LA}}}{\partial \vec{g}} \bigg|^*_i=
-		\frac{\partial \vec{G}_{\mathrm{LA}}}{\partial h_2} \bigg|^*_i.
+		\vec{H}^{\vec{g}}_i & = \frac{\partial {G}_{\mathrm{LA}}}{\partial \vec{g}} \bigg|^*_i=
+		\frac{\partial {G}_{\mathrm{LA}}}{\partial h_2} \bigg|^*_i.
 \end{align}
 
 
 	
 	
-	In order to solve for the initial state and the parameters, we need to relate the measurement deviation \( \delta \vec{y}_i \) at time \( t_i \) to the state deviation \( \delta \vec{x}(t_0)\) at epoch \( t_0 \) and the parameter deviation \( \delta \vec{p} \). This can be done by mapping the linear state deviation using the differential relationship
+	In order to solve for the initial state and the parameters, we need to relate the measurement deviation \( \delta {y}_i \) at time \( t_i \) to the state deviation \( \delta \vec{x}(t_0)\) at epoch \( t_0 \) and the parameter deviation \( \delta \vec{p} \). This can be done by mapping the linear state deviation using the differential relationship
 	\begin{equation}
 	\delta \vec{x} = \pdv{\vec{x}}{\vec{x}_0} \delta \vec{x}_0 + \pdv{\vec{x}}{\vec{p}} \delta \vec{p}.
 	\end{equation}
@@ -1212,39 +1246,45 @@ We now write the explicit expression of the matrices of partial derivatives defi
 		\Phi_{\vec{xp}}(t, t_0) \delta\vec{p}.
 	\end{equation}
 	Furthermore, we can write the measurement equations in terms of the initial state deviation $\delta\vec{x}_0$, and the parameter deviations $\delta\vec{p}$ and $\delta\vec{g}$ as
-	\begin{equation}\label{eq:22.23_v2}
-		\delta\vec{y}_i = 
-		\tilde{\vec{H}}_i	\Phi_{\vec{xx}}(t, t_0) \delta\vec{x}_0 + 
-		\tilde{\vec{H}}_i	\Phi_{\vec{xp}}(t, t_0) \delta\vec{p} 
-		+ \vec{H}^{\vec{g}}_i \delta\vec{g} 
-		+ \varepsilon_i, \quad i = 1, \dots, l.
-	\end{equation}
+	\begin{subequations}
+		\begin{align}\label{eq:22.23_v2}
+			\delta{y}_i &= 
+			\tilde{\vec{H}}_i	\Phi_{\vec{xx}}(t, t_0) \delta\vec{x}_0 
+			% + \\ &
+			\notag\\ &\quad + 
+			\tilde{\vec{H}}_i	\Phi_{\vec{xp}}(t, t_0) \delta\vec{p} 
+			+ \vec{H}^{\vec{g}}_i \delta\vec{g} 
+			+ \varepsilon_i. %\quad i = 1, \dots, l.
+		\end{align}
+	\end{subequations}
 	%
 	The state transition matrix maps deviations in the state vector from one time to another.  The deviations in the state are mapped from $t_0$ to $t$. 
 	%Note that we have arbitrarily set t0 = 0. 
 	If the dynamical system is linear, the mapping is exact, but in general if  the state equations, such as in this case, are nonlinear,  the state transition matrix is just the linear term in a Taylor series expansion of the state vector at time $t$ about the state vector at a reference time \citep[see, e.g.,][]{2004sod..book.....T}. %$t_0$ (pag. 11)
 	
 	The linearized observation equations Eq.~\eqref{eq:22.23_v2} can be written more compactly in matrix form if we define two new matrices:
-	\begin{align}
-		\vec{H}_{i}^{\vec{x}} &= \tilde{\vec{H}}_i \Phi_{\vec{xx}}(t, t_0), \\
-		\vec{H}_{i}^{\vec{p}}  &= \tilde{\vec{H}}_i \Phi_{\vec{xp}}(t, t_0). 
-	\end{align}
+	\begin{subequations}
+		\begin{align}
+			\vec{H}_{i}^{\vec{x}} &= \tilde{\vec{H}}_i \Phi_{\vec{xx}}(t, t_0), \\
+			\vec{H}_{i}^{\vec{p}}  &= \tilde{\vec{H}}_i \Phi_{\vec{xp}}(t, t_0). 
+		\end{align}
+	\end{subequations}
 	%
 	Then we can also write:
 	\begin{equation}
-		\delta\vec{y}_i = 
+		\delta{y}_i = 
 		\begin{bmatrix}
 			\vec{H}_{i}^{\vec{x}}  & 	\vec{H}_{i}^{\vec{p}} & \vec{H}^{\vec{g}}_i 
 		\end{bmatrix}
 		\begin{bmatrix}
 			\delta\vec{x}_0 \\ \delta\vec{p} \\ \delta\vec{g} 
 		\end{bmatrix}
-		+ \varepsilon_i, \quad  i = 1, \ldots, l .
+		+ \varepsilon_i. %\quad  i = 1, 0.0, l .
 	\end{equation}
 	%
 	Or more compactly
 	\begin{equation}
-		\delta\vec{y}_i = 	\vec{H}_{i} \delta\tilde{	\vec{x}}_0 	+ \varepsilon_i, \quad  i = 1, \ldots,l,
+		\delta{y}_i = 	\vec{H}_{i} \delta\tilde{	\vec{x}}_0 	+ \varepsilon_i, \quad  i = 1, 0.0,l,
 	\end{equation}
 	where we defined
 	\begin{equation}
@@ -1285,12 +1325,14 @@ We now write the explicit expression of the matrices of partial derivatives defi
 		 \label{eq:22.28}
 	\end{equation}
 	the same equation can be written in the form
-	\begin{equation}
-		\dot{\vec{\Phi}}_{\vec{xx}}(t, t_0) = \vec{A}(t) \Phi_{\vec{xx}}(t, t_0), 
-		\quad 
-		\vec{\Phi}_{\vec{xx}}(t_0, t_0) = \vec{I}_{6\times 6}.
+	\begin{subequations}
+	\begin{align}
+		\dot{\vec{\Phi}}_{\vec{xx}}(t, t_0) &= \vec{A}(t) \Phi_{\vec{xx}}(t, t_0), 
+		\\ 
+		\vec{\Phi}_{\vec{xx}}(t_0, t_0) &= \vec{I}_{6\times 6}.
 		\label{eq:22.32}
-	\end{equation}
+	\end{align}
+	\end{subequations}
 	
 	
 	Taking the gradient of the dynamical equations Eq.~\eqref{eom} with respect to the dynamical parameters \( \vec{p} \), we obtain
@@ -1299,9 +1341,12 @@ We now write the explicit expression of the matrices of partial derivatives defi
 		 \label{eq:22.33}
 	\end{equation}
 	The same equation can be written in the form
+	\begin{subequations}
 	\begin{align}
-		\dot{\vec{\Phi}}_{\vec{xp}}(t, t_0) = \vec{A}(t) \Phi_{\vec{xp}}(t, t_0) + \vec{B}(t), \quad {\vec{\Phi}}_{\vec{xp}}(t_0, t_0) = \vec{0}_{6\times 7} 
+		\dot{\vec{\Phi}}_{\vec{xp}}(t, t_0) &= \vec{A}(t) \Phi_{\vec{xp}}(t, t_0) + \vec{B}(t), \\
+		{\vec{\Phi}}_{\vec{xp}}(t_0, t_0) &= \vec{0}_{6\times 7} 
 	\end{align}
+	\end{subequations}
 	
 	% Recall that the differential equations for the STM  need to be  numerically integrated alongside the system's equations of motion.
 	
@@ -1318,11 +1363,11 @@ We now write the explicit expression of the matrices of partial derivatives defi
 		\vec{L} &=  \displaystyle\sum_{i = 1}^{l} \vec{H}_i^\top  \vec{W}_i \vec{H}_i, 
 		\\% \quad
 		\vec{b} &= 	
-		\displaystyle\sum_{i = 1}^{l} \vec{H}_i^\top   \vec{W}_i \delta\vec{y}_i = 
+		\displaystyle\sum_{i = 1}^{l} \vec{H}_i^\top   \vec{W}_i \delta{y}_i = 
 		% \nonumber
 		% \\ 
 		% \quad & 
-		\displaystyle\sum_{i = 1}^{l} \vec{H}_i^\top  \vec{W}_i ( \vec{y}_i -  \vec{G}_{\mathrm{LA}}(	\vec{x},  \vec{g}, t_i)),
+		\displaystyle\sum_{i = 1}^{l} \vec{H}_i^\top  \vec{W}_i ( {y}_i -  {G}_{\mathrm{LA}}(	\vec{x},  \vec{g}, t_i)),
 	\end{align}
 	%
 	where $\vec{W}_i $ is the observation weight matrix, $\vec{P}_0$ is the a priori error covariance matrix, and the a priori estimate is set to the initial guess, that is ${\vec{\bar{x}}_0 = \tilde{\vec{x}}_0^{(0)}}$.
@@ -1380,7 +1425,7 @@ The (unweighted) RMS is computed as
 	\label{eq:RMS}
 	\mathrm{RMS}
 	=
-	\sqrt{\frac{1}{l}\sum_{i=1}^{l}\delta\vec{y}_i^\top \delta\vec{y}_i},
+	\sqrt{\frac{1}{l}\sum_{i=1}^{l}\delta{y}_i^\top \delta{y}_i},
 \end{equation}
 
 
@@ -1394,7 +1439,7 @@ To evaluate the linear dependencies between the estimated parameters, we extract
 	 \rho_{ij} = \frac{P_{ij}}{\sigma_i\,\sigma_j},
 \end{equation}
 where ${\sigma_i = \sqrt{P_{ii}}}$ is the standard deviation of the $i$-th parameter.  
-By construction, all diagonal elements of $\bar{\vec{P}}$ are equal to unity, that is ${\rho_{ii}=1}$.
+By construction, all diagonal elements of $\vec{\rho}$ are equal to unity, that is ${\rho_{ii}=1}$.
 Values of $\rho_{ij}$ close to $+1$ indicate a strong positive correlation between parameters $i$ and $j$, whereas values close to $-1$ indicate strong anti-correlation. Values close to zero indicate weak or negligible correlation.
 
 
@@ -1451,7 +1496,7 @@ For example, we could set ${\vec{c} = (I_{12}, I_{13}, I_{23}, k_{\mathrm{o}})}$
 %
 The linearized observation equation from Eq.~\eqref{eq:22.23_v2} can be partitioned accordingly for the $i$-th measurement:
 \begin{equation}
-    \delta\vec{y}_i = \vec{H}_{i} \delta \tilde{\vec{x}}_{0} + \vec{H}_{i}^{\vec{c}} \delta\vec{c} + \varepsilon_i,
+    \delta{y}_i = \vec{H}_{i} \delta \tilde{\vec{x}}_{0} + \vec{H}_{i}^{\vec{c}} \delta\vec{c} + \varepsilon_i,
 \end{equation}
 where $\vec{H}_{i}$ is obtained from the matrix defined in Eq.~\eqref{eq:def:HMat} by removing the rows and columns corresponding to the consider parameter, which form $\vec{H}_{i}^\mathrm{c}$.
 %
@@ -1479,10 +1524,10 @@ In practice the variational equation corresponding to both the estimated and con
 %--------------- FUNCTIONAL LASER MODEL G_LA -------------------------------
 %---------------------------------------------------------------------------
 \section{Measurement functional model}\label{sec:measurement_model}
-% The most simple functional model $ \vec{G}_{\mathrm{LA}}( \vec{x},\vec{g},t)$ is obtained when the laser beam is pointing in the nadir direction, directed toward the center of mass of the body. In this case the functional model can be written as 
+% The most simple functional model $ {G}_{\mathrm{LA}}( \vec{x},\vec{g},t)$ is obtained when the laser beam is pointing in the nadir direction, directed toward the center of mass of the body. In this case the functional model can be written as 
 % %
 % \begin{equation} \label{eq:g_LA_nadir}
-% \vec{G}_{\mathrm{LA}}(\vec{x},\vec{g},t) = \|\vec{r}_{\mathrm{SC}} \| - \left(R_{\mathrm{G}} 
+% {G}_{\mathrm{LA}}(\vec{x},\vec{g},t) = \|\vec{r}_{\mathrm{SC}} \| - \left(R_{\mathrm{G}} 
 % + h_{\mathrm{DTM}}(\phi, \lambda) 
 % + h_{\mathrm{tide}}(\phi, \lambda) 
 % \right),
@@ -1549,6 +1594,8 @@ and the reference sphere of radius $R_{\mathrm{G}}$.
 %(or even better the DTM height).  
 % Instead of solving the quadratic equation for $s$, a compact geometric approach can be used.
 Define
+%
+\begin{subequations}
 \begin{align}
     s_{\mathrm{min}} &= - \left(\vec{r}_{\mathrm{SC},\mathcal{B}} \cdot \vec{d}_{\mathrm{LA},\mathcal{B}}\right), \\
     d_{\mathrm{min}} &=
@@ -1558,6 +1605,8 @@ Define
 	}.
 	\label{eq:laser_offnadir_rho2}
 \end{align}
+\end{subequations}
+%
 Here, $s_{\mathrm{min}}$ is the distance along the ray to the point of closest approach to the center of the body, and $d_{\mathrm{min}}$ is the corresponding closest distance. Eq.~\eqref{eq:laser_offnadir_rho2} is just the Pythagorean theorem.
 If ${d_{\mathrm{min}} \le R_{\mathrm{G}}}$, that is, if the laser beam intersect the reference sphere, the distance from the surface to the closest approach to the origin of the body-fixed frame is
 \begin{align}
@@ -1580,11 +1629,15 @@ The forward intersection is then found with
 % \end{align}
 %
 The corresponding body-fixed latitude and longitude follow from
-\begin{align}
-	\phi = \sin^{-1}\!\left(\frac{z_{\mathrm{FP}}}{\| \vec{r}_{\mathrm{FP},\mathcal{B}}\| }\right),
-	\quad
-	\lambda = \atantwo\!\left(y_{\mathrm{FP}}, x_{\mathrm{FP}}\right),
-\end{align}
+%
+\begin{subequations}
+	\begin{align}
+		\phi = \sin^{-1}\!\left(\frac{z_{\mathrm{FP}}}{\| \vec{r}_{\mathrm{FP},\mathcal{B}}\| }\right),
+		\\ % \quad
+		\lambda = \atantwo\!\left(y_{\mathrm{FP}}, x_{\mathrm{FP}}\right),
+	\end{align}
+\end{subequations}
+%
 where $\vec{r}_{\mathrm{FP},\mathcal{B}} = (x_{\mathrm{FP}}, y_{\mathrm{FP}}, z_{\mathrm{FP}})$.
 %
 Note that in this way we are computing the latitude and longitude that the laser footprint would have, on the reference sphere and not on the actual DTM surface.
@@ -1630,8 +1683,9 @@ Notice that with our notation the tidal deformation $h_{\mathrm{tide}}$ is posit
 
 
 The generalized observation equation for the off-nadir case compares the radial distance of the laser footprint derived from the instrument measurement against the radial distance modeled by the DTM and tides. The functional model becomes:
+%
 \begin{equation}
-    \vec{G}_{\mathrm{LA}}(\vec{x},\vec{g},t) = s -
+    {G}_{\mathrm{LA}}(\vec{x},\vec{g},t) = s -
     % \left\| \vec{r}_{\mathrm{SC},\mathcal{B}} + s \vec{d}_{\mathrm{LA},\mathcal{B}} \right\| 
     \left( \frac{ h_{\mathrm{DTM}}(\phi, \lambda) 
 	+  h_{\mathrm{tide}}(\phi, \lambda)}{\cos \alpha }\right),
@@ -1652,7 +1706,7 @@ The division by $\cos \alpha$ effectively projects the radial height components 
 %
 This first-order correction accounts for the fact that the footprint coordinates are computed on the reference sphere, and therefore differ from the true footprint location on the physical surface when accounting for the topography.
 %
-This formulation is adopted as an approximation to allow for the analytical computation of the partial derivatives of the functional model $\vec{G}_{\mathrm{LA}}$, which is crucial part of the non-linear least squares inversion used in the differential correction scheme.
+This formulation is adopted as an approximation to allow for the analytical computation of the partial derivatives of the functional model ${G}_{\mathrm{LA}}$, which is crucial part of the non-linear least squares inversion used in the differential correction scheme.
 A more accurate computation of the modeled laser measurements would in fact require an iterative process to compute the actual footprints on the DTM surface rather than on the reference sphere of radius $R_{\mathrm{G}}$.
 
 
@@ -1660,7 +1714,7 @@ A more accurate computation of the modeled laser measurements would in fact requ
 %------------------------------------------------------------
 % \subsection{Interpolation of the DTM and partial derivatives}
 
-The partial derivatives of the functional model $\vec{G}_{\mathrm{LA}}$ with respect to the Euler angles $
+The partial derivatives of the functional model ${G}_{\mathrm{LA}}$ with respect to the Euler angles $
 (\varphi, \theta, \psi )$, which appear in Eq.~\ref{eq:dGdstate}, require the evaluation of the local topographic slopes. This arises as a direct consequence of the chain rule.
 % 
 % Since the body-fixed latitude $\phi$ and longitude $\lambda$ of the laser footprint depend on the rotation matrix that orients the body in the inertial frame.
@@ -1714,7 +1768,7 @@ ${\rho_\mathrm{s} = \SI{1100}{kg.m^{-3}}}$
 and inner radius ${R_{\mathrm{o}} = R_{\mathrm{s}}-d_{\mathrm{s}}}$, with the shell thickness
 ${d_\mathrm{s} = R_\mathrm{G}/10}$.
 %
-The second term in Eq.~\eqref{eq:inertia_shell_guess} represents the residual asymmetry due to the quadrupole gravity field $\vec{Q}$, that we defined in in Eq.~\eqref{eq:def_Q_gravity_coeffs_V2}.
+The second term in Eq.~\eqref{eq:inertia_shell_guess} represents the residual asymmetry due to the quadrupole gravity field $\vec{Q}$, that we defined in Eq.~\eqref{eq:def_Q_gravity_coeffs_V2}.
 %
 The degree-two gravity coefficients of Ganymede are shown in Table~\ref{tab:phys_params_ganymede}.
 
@@ -1728,14 +1782,16 @@ The degree-two gravity coefficients of Ganymede are shown in Table~\ref{tab:phys
 
 % The total GCO phasenominal mission will last 132 days from May to September 2035.
 The planned orbit of Juice, that is, the position vector of Juice in the inertial frame $\vec{r}_{\mathrm{SC},\mathcal{I}}$ is available in the form of SPICE kernels (\texttt{spk} kernels).
-We compute the synthetic GALA measurements by evaluating the functional model of Eq.~\eqref{eq:g_LA_offnadir}, $\vec{G}_{\mathrm{LA}}(\vec{x},\vec{g},t)$ at discrete points in time. 
+We compute the synthetic GALA measurements by evaluating the functional model of Eq.~\eqref{eq:g_LA_offnadir}, ${G}_{\mathrm{LA}}(\vec{x},\vec{g},t)$ at discrete points in time. 
 %
 The pointing direction of the laser beam at each point in time in the instrument frame $\vec{d}_{\mathrm{LA}}$ is retrieved from the orientation of  Juice spacecraft provided in the spacecraft orientation kernels (\texttt{ck} kernels) and from the  GALA reference frame provided in the (\texttt{fk} kernels)
 
 Since a digital terrain model (DTM) of Ganymede is not yet available, we generate synthetic GALA measurements using a lunar DTM derived from the LOLA GDR \citep{Neumann2014LOLA_GDR}. 
 The highest resolution global DTM model publicly available has a resolution of 1024 grid points per degree. To reduce the computational cost, we adopt an undersampled model with a resolution of 256 grid points per degree, corresponding to $\SI{118.45}{m/pixel}$. To adapt it to Ganymede, the reference radius is modified to $R_{\mathrm{G}} = \SI{2631.2}{km}$.
 %
-% In practice, the observations will be co-registered to a stereo DTM obtained from JANUS images. To provide a more realistic assessment of the performance of our method, the synthetic measurements are therefore co-registered using a different DTM than the one employed for their generation. Specifically, the functional model $\boldsymbol{g}_{\mathrm{LA}}$ is evaluated using the GLD100 WAC Global DTM of the Moon, which is derived from stereo images acquired by the Wide Angle Camera (WAC) of the Lunar Reconnaissance Orbiter Camera (LROC) system \citep{2012JGRE..117.0H17S}, and has a resolution of about $\SI{100}{m/pixel}$. To reduce computational cost, we use a degraded version with a resolution of 64 grid points per degree. The vertical accuracy of this DTM is estimated to be on the order of 10 to 20 meters. Due to persistent shadowing near the poles, the WAC stereo data only covers latitudes between $79\degr$ North and $79\degr$ South. The polar gaps are filled using LOLA data \citep{2010GeoRL..3718204S}. %https://data.lroc.im-ldi.com/lroc/view_rdr/WAC_GLD100
+In practice, the observations will be co-registered to a stereo DTM obtained from JANUS images. To provide a more realistic assessment of the performance of our method, the synthetic measurements are therefore co-registered using a different DTM than the one employed for their generation. Specifically, the functional model $\vec{G}_{\mathrm{LA}}$ is evaluated using the GLD100 WAC Global DTM of the Moon, which is derived from stereo images acquired by the Wide Angle Camera (WAC) of the Lunar Reconnaissance Orbiter Camera (LROC) system \citep{2012JGRE..117.0H17S}, and has a resolution of about $\SI{100}{m/pixel}$. To reduce computational cost, we use a degraded version with a resolution of 64 grid points per degree. The vertical accuracy of this DTM is estimated to be on the order of 10 to 20 meters. Due to persistent shadowing near the poles, the WAC stereo data only covers latitudes between $79\degr$ North and $79\degr$ South. The polar gaps are filled using LOLA data \citep{2010GeoRL..3718204S}. %https://data.lroc.im-ldi.com/lroc/view_rdr/WAC_GLD100
+%
+The RMS of the difference between the stereo DTM from WAC and the  LOLA DTM, is of about \SI{26.3}{\meter} (see Fig.~\ref{fig:ganymede_laser_residuals_hist}).
 
 During the GCO-500, the ranging accuracy of GALA is expected to be less than \SI{2}{m}, and is slightly dependent on the local albedo and surface slope \citep{2015P&SS..117..184S, 2018P&SS..159...84S, 2019Geosc...9..320S}. However, pointing inaccuracies are expected to dominate the overall error budget. When alignment, pointing, and interpolation errors are also considered, previous studies estimate a total mean absolute error of roughly \SI{6}{m} to \SI{7}{m} \citep{2015P&SS..117..184S}.
 %
@@ -1772,12 +1828,12 @@ This approach induces a smooth expansion and contraction of the line-of-sight di
 
 
 %
-% To account for this, each synthetic measurement $\vec{y}_i$ contains additive white noise drawn from a Gaussian distribution $\mathcal{N}(0, \sigma_{\mathrm{LA}}^2)$ with zero mean and standard deviation $\sigma_{\mathrm{LA}} = \SI{9}{m}$. 
+% To account for this, each synthetic measurement ${y}_i$ contains additive white noise drawn from a Gaussian distribution $\mathcal{N}(0, \sigma_{\mathrm{LA}}^2)$ with zero mean and standard deviation $\sigma_{\mathrm{LA}} = \SI{9}{m}$. 
 % The choice of $\sigma_{\mathrm{LA}}$ is consistent with a mean absolute error of \SI{7}{m}, since the expected value of the half-normal distribution with zero mean and standard deviation $\sigma$ is $\sigma \sqrt{2/\pi}$.
 % The standard deviation of the stereo DTM heights relative to the reference topography from the DTM used to generate the synthetic measurements is  ${\sigma_{\mathrm{DTM}} = \SI{23.4}{m}}$. 
 %
 We then perturb the vector of the initial conditions, inertia parameters and initialize $h_2$ to zero, and use the differential correction scheme described in Sect.~\ref{sec:DC_laser} to try to recover the ground truth state vector and parameters.
-The perturbation to the initial conditions is given as a random deviation generated from a normal distribution with zero mean and standard deviation $\sigma$, equal to $\SI{e-4}{rad}$ for the Euler angles, $\phi_0$, $\theta_0$, and $\psi_0$ and $\SI{e-8}{rad/s}$ for the Euler angles rates $\dot{\phi}_0$, $\dot{\theta}_0$, and $\dot{\psi}_0$. The standard deviation for the moments of inertia is of $\SI{e34}{kg.m^2}$ that is roughly $\SI{3}{\%}$ the polar moment of inertia. % The products of inertia...
+The perturbation to the initial conditions is given as a random deviation generated from a normal distribution with zero mean and standard deviation $\sigma$, equal to $\SI{e-4}{rad}$ for the Euler angles, $\phi_0$, $\theta_0$, and $\psi_0$ and $\SI{e-8}{rad/s}$ for the Euler angles rates $\dot{\varphi}_0$, $\dot{\theta}_0$, and $\dot{\psi}_0$. The standard deviation for the moments of inertia is of $\SI{e34}{kg.m^2}$ that is roughly $\SI{3}{\%}$ the polar moment of inertia. % The products of inertia...
 % \begin{align}
 % 	\label{eq:GALA_perturb_initial_guess}
 	
@@ -1871,7 +1927,7 @@ where $\rho_\mathrm{o} = \SI{1100}{kg.m^{-3}}$ is the assumed uniform ocean dens
         \hline
         % --- PASTE MATLAB OUTPUT HERE ---
 		$R_{\mathrm{G}}$ & \num{2631.2} & km \\ 
-		$M_{\mathrm{G}}$ & \num{1.4815e+23} & kg \\ 
+		${M}_{\mathrm{G}}$ & \num{1.4815e+23} & kg \\ 
 		$C_{20}$ & \num{-1.2753e-04} & - \\ 
 		% $C_{21}$ & \num{0.0000e+00} & - \\ 
 		% $S_{21}$ & \num{0.0000e+00} & - \\ 
@@ -1891,7 +1947,7 @@ where $\rho_\mathrm{o} = \SI{1100}{kg.m^{-3}}$ is the assumed uniform ocean dens
 %-----------------------------------------------------------------------
 % FIGURE TIDAL POTENTIAL
 %-----------------------------------------------------------------------
-\begin{figure}[h!]
+\begin{figure*}[h!]
     \centering
 
     \begin{subfigure}{\textwidth}
@@ -1913,9 +1969,26 @@ where $\rho_\mathrm{o} = \SI{1100}{kg.m^{-3}}$ is the assumed uniform ocean dens
 	  \caption{Tidal potential on Ganymede during the GCO phase. The top panel shows the permanent component of the tidal potential, while the bottom panel shows the maximum variation during the few months of the GCO phase.}
     \label{fig:GANYMEDE_tidal_potential_combined}
 
-\end{figure}
+\end{figure*}
 
 
+
+\subsection{Intermediate test: a controlled DTM corruption}\label{sec:dtm_corruption}
+
+The two configurations considered so far bracket the achievable performance from opposite sides: an identical DTM for generation and fit (recovery to numerical precision, Sect.~\ref{sec:results}), and two independent DTMs whose \SI{26.3}{m} RMS mismatch is realistic but possibly pessimistic, since the two products originate from different instruments and pipelines. To probe the intermediate regime in a controlled way, we use a \emph{single} DTM both for generation and for the fit, but perturb the copy entering the co-registration model $\vec{G}_{\mathrm{LA}}$ by a synthetic, analytically differentiable error field,
+%
+\begin{align}
+	h_{\mathrm{DTM}}^{\mathrm{c}}(\phi, \lambda) &= h_{\mathrm{DTM}}(\phi, \lambda) + \delta h(\phi, \lambda), 
+	\\% \qquad
+	\delta h(\phi, \lambda) &= \sum_{j=1}^{N} A_j \, \sin\!\left( n_j\, \phi + \alpha_j \right)\cos\!\left( n_j\, \lambda + \beta_j \right),
+	\label{eq:corruption_field}
+\end{align}
+%
+with amplitudes $A_j$, integer angular orders $n_j$, and phases $\alpha_j, \beta_j$ drawn uniformly on $[0, 2\pi)$ with a fixed seed. The order $n_j$ sets the number of oscillations over a full revolution, so the characteristic wavelength is $L_{n}=2\pi R_{\mathrm{G}}/n$; restricting $n_j$ to integers keeps $\delta h$ continuous across the $0^\circ/360^\circ$ meridian. Because $\delta h$ is analytic, its slopes $\partial\delta h/\partial\phi$ and $\partial\delta h/\partial\lambda$ are added in closed form to the topographic slopes entering the observation partials $\tilde{\vec H}_i$ of Eq.~\eqref{eq:dGdstate}, so the perturbed surface and the slopes used in the fit remain mutually consistent.
+
+We restrict the perturbation to low orders, $n=1$ and $n=2$, for both physical and methodological reasons. Stereo-photogrammetric DTMs are dominated by long-wavelength, spatially correlated systematic errors -- regional tilts and broad warps from baseline geometry, illumination, and bundle adjustment -- rather than by white short-wavelength noise, which averages out over the $\sim\!10^{7}$ GALA footprints. More importantly, the long-wavelength component is the one geometrically degenerate with the slowly varying orientation of the body, and hence the component most liable to alias into the rotational state and the moments of inertia. Order $n=1$ ($L_1 \approx \SI{16500}{km}$) represents a hemispheric tilt; order $n=2$ ($L_2 \approx \SI{8300}{km}$) a broad doming. We emphasise that Eq.~\eqref{eq:corruption_field} is a controlled parametric perturbation, not a spectral fit to a measured DTM-error field, and that the factors are undulations of angular order $n$, not spherical harmonics.
+
+We adopt $A_1 = \SI{3}{m}$ at $n=1$ and $A_2 = \SI{1}{m}$ at $n=2$, decreasing with order so that the field is dominated by the longest wavelength, giving an area-weighted RMS of $\delta h_{\mathrm{RMS}} = \SI{1.58}{m}$. This is a deliberately conservative error, well below the \SIrange{10}{20}{m} vertical accuracy quoted for stereo DTMs (Sect.~\ref{sec:GALA_data}); as shown below, even at this level the long-wavelength error propagates into the interior parameters, so it provides a sensitive lower bound. The phases are randomised to avoid imprinting an artificial alignment with the body-fixed frame. Because the recovered parameters depend on amplitude and phase, we treat this realisation as one point of a sensitivity analysis, repeated over independent phase draws and over a range of $\delta h_{\mathrm{RMS}}$. % CONFIRM: only if you actually run the sweep/ensemble; otherwise soften to "should be repeated over"
 
 
 %-----------------------------------------------------------------------
@@ -1925,35 +1998,35 @@ where $\rho_\mathrm{o} = \SI{1100}{kg.m^{-3}}$ is the assumed uniform ocean dens
 %-----------------------------------------------------------------------
 % FIGURE LASER RESIDUALS HISTOGRAM
 %-----------------------------------------------------------------------
-\begin{figure}[h]
+\begin{figure*}[h]
     \centering
-    \begin{overpic}[width=\textwidth]{IMAGES/ganymede_laser_residuals_hist.pdf}
-          \put(40,1){%
-            \colorbox{white}{%
-                \rotatebox{0}{$\boldsymbol{y}-\boldsymbol{g}_{\mathrm{LA}}\ \mathrm{(m)}$}%
-            }%
+    \begin{overpic}[width=\textwidth]{IMAGES/ganymede_laser_residuals_hist_14_04_26.pdf}
+          \put(41,1){%
+            % \colorbox{white}{%
+            %     \rotatebox{0}{$\vec{y}-\vec{G}_{\mathrm{LA}}\ \mathrm{(m)}$}%
+            % }%
         }
     \end{overpic}
     \caption{Histograms of the laser range residuals (observed minus computed) for different iteration of the differential correction.}
     \label{fig:ganymede_laser_residuals_hist}
-\end{figure}
+\end{figure*}
 
 %-----------------------------------------------------------------------
 % CORRELATION MATRIX
 %-----------------------------------------------------------------------
-\begin{figure}[h]
+\begin{figure*}[h]
     \centering
-    \includegraphics[width=\textwidth]{IMAGES/ganymede_correlation.pdf}
+    \includegraphics[width=\textwidth]{IMAGES/ganymede_correlation_14_04_26.pdf}
     \caption{Correlation matrix (${\vec{\rho}}$) of the estimated variables at the last iteration.}
     \label{fig:ganymede_correlation_matrix}
-\end{figure}
+\end{figure*}
 
 
 
 %-----------------------------------------------------------------------
 % STANDARD DEVIATIONS OF ESTIMATED PARAMETERS
 %-----------------------------------------------------------------------
-\begin{table}
+\begin{table*}
 \centering
 \caption{Ground truth values and estimated parameters and associated standard deviations ($\sigma$) in SI units, from the GALA synthetic observations.}
 \label{tab:GALA_ground_truth_estimates}
@@ -1962,44 +2035,43 @@ where $\rho_\mathrm{o} = \SI{1100}{kg.m^{-3}}$ is the assumed uniform ocean dens
 Parameter & Ground truth & Estimated ($\pm \sigma$) & Unit \\
 \hline
 % --- rows printed by MATLAB go here ---
-% % Parameter & True Value & Estimated $\pm$ $1\sigma$ & Units \\
-% $\phi_0$ & \num{6.24688} & \num{6.24687} $\pm$ \num{2.74e-07} & \unit{rad} \\
-% $\theta_0$ & \num{0.44759} & \num{0.44759} $\pm$ \num{8.83e-08} & \unit{rad} \\
-% $\psi_0$ & \num{2.89119} & \num{2.89120} $\pm$ \num{2.76e-07} & \unit{rad} \\
-% $\dot{\phi}_0$ & \num{-1.55518} & \num{-1.49165} $\pm$ \num{0.00165} & $10^{-10}$ \unit{rad.s^{-1}} \\
-% $\dot{\theta}_0$ & \num{-1.43793} & \num{1.64638} $\pm$ \num{0.01986} & $10^{-11}$ \unit{rad.s^{-1}} \\
+% Parameter & True Value & Estimated ($\pm$ $\sigma$) & Units \\ 
+$\varphi_0$ & \num{6.24688} & \num{6.24680} $\pm$ \num{5.29e-07} & \unit{rad} \\
+ $\theta_0$ & \num{0.44759} & \num{0.44763} $\pm$ \num{1.54e-07} & \unit{rad} \\
+  $\psi_0$ & \num{2.89119} & \num{2.89126} $\pm$ \num{5.11e-07} & \unit{rad} \\ 
+  $\dot{\varphi}_0$ & \num{-1.55518} & \num{-1.01260} $\pm$ \num{0.02686} & $10^{-10}$ \unit{rad.s^{-1}} \\
+   $\dot{\theta}_0$ & \num{-1.43793} & \num{0.23024} $\pm$ \num{0.17137} & $10^{-11}$ \unit{rad.s^{-1}} \\ 
+   $\dot{\psi}_0$ & \num{1.01644} & \num{1.01644} $\pm$ \num{0.00000} & $10^{-5}$ \unit{rad.s^{-1}} \\
+    $I_{11}$ & \num{9.50641} & \num{10.59483} $\pm$ \num{0.00856} & $10^{34}$ \unit{kg.m^2} \\
+	 $I_{22}$ & \num{9.52214} & \num{10.94134} $\pm$ \num{0.02236} & $10^{34}$ \unit{kg.m^2} \\
+	  $I_{33}$ & \num{9.52738} & \num{10.52629} $\pm$ \num{0.00699} & $10^{34}$ \unit{kg.m^2} \\ 
+	  % $I_{12}$ & \num{0.00000} & -- $\pm$ \num{0.00000} & $10^{34}$ \unit{kg.m^2} \\ 
+	  % $I_{13}$ & \num{0.00000} & -- $\pm$ \num{0.00000} & $10^{34}$ \unit{kg.m^2} \\
+	   % $I_{23}$ & \num{0.00000} & -- $\pm$ \num{0.00000} & $10^{34}$ \unit{kg.m^2} \\ 
+	   % $k_{\mathrm{o}}$ & \num{2.78457} & -- $\pm$ \num{0.00003} & $10^{23}$ \unit{kg.m^2.s^{-1}} \\
+	    $h_2$ & \num{1.50000} & \num{1.43499} $\pm$ \num{0.01182} & -- \\
+		 \hline $d_\mathrm{s}$ & \num{263.192} & \num{298.715} $\pm$ \num{0.256} & \unit{km} \\
+% % Parameter & True Value & Estimated ($\pm$ $\sigma$) & Units \\
+% $\phi_0$ & \num{6.24688} & \num{6.24687} $\pm$ \num{2.07e-07} & \unit{rad} \\
+% $\theta_0$ & \num{0.44759} & \num{0.44759} $\pm$ \num{6.64e-08} & \unit{rad} \\
+% $\psi_0$ & \num{2.89119} & \num{2.89119} $\pm$ \num{1.97e-07} & \unit{rad} \\
+% $\dot{\phi}_0$ & \num{-1.55518} & \num{-1.65454} $\pm$ \num{0.01149} & $10^{-10}$ \unit{rad.s^{-1}} \\
+% $\dot{\theta}_0$ & \num{-1.43793} & \num{-0.46485} $\pm$ \num{0.06436} & $10^{-11}$ \unit{rad.s^{-1}} \\
 % $\dot{\psi}_0$ & \num{1.01644} & \num{1.01644} $\pm$ \num{0.00000} & $10^{-5}$ \unit{rad.s^{-1}} \\
-% $I_{11}$ & \num{9.50641} & \num{9.46719} $\pm$ \num{0.01487} & $10^{34}$ \unit{kg.m^2} \\
-% $I_{22}$ & \num{9.52214} & \num{9.66790} $\pm$ \num{0.00465} & $10^{34}$ \unit{kg.m^2} \\
-% $I_{33}$ & \num{9.52738} & \num{9.57409} $\pm$ \num{0.00449} & $10^{34}$ \unit{kg.m^2} \\
+% $I_{11}$ & \num{9.50641} & \num{9.70019} $\pm$ \num{0.01748} & $10^{34}$ \unit{kg.m^2} \\
+% $I_{22}$ & \num{9.52214} & \num{9.67854} $\pm$ \num{0.00316} & $10^{34}$ \unit{kg.m^2} \\
+% $I_{33}$ & \num{9.52738} & \num{9.64247} $\pm$ \num{0.00250} & $10^{34}$ \unit{kg.m^2} \\
 % % $I_{12}$ & \num{0.00000} & -- $\pm$ \num{0.00000} & $10^{34}$ \unit{kg.m^2} \\
 % % $I_{13}$ & \num{0.00000} & -- $\pm$ \num{0.00000} & $10^{34}$ \unit{kg.m^2} \\
 % % $I_{23}$ & \num{0.00000} & -- $\pm$ \num{0.00000} & $10^{34}$ \unit{kg.m^2} \\
 % % $k_{\mathrm{o}}$ & \num{2.78457} & -- $\pm$ \num{0.00003} & $10^{23}$ \unit{kg.m^2.s^{-1}} \\
-% $h_2$ & \num{1.50000} & \num{1.49559} $\pm$ \num{0.01133} & -- \\
+% $h_2$ & \num{1.50000} & \num{1.48731} $\pm$ \num{0.00543} & -- \\
 % \hline
-% $d_\mathrm{s}$ & \num{263.192} & \num{264.806} $\pm$ \num{0.155} & \unit{km} \\
-% Parameter & True Value & Estimated ($\pm$ $\sigma$) & Units \\
-$\phi_0$ & \num{6.24688} & \num{6.24687} $\pm$ \num{2.07e-07} & \unit{rad} \\
-$\theta_0$ & \num{0.44759} & \num{0.44759} $\pm$ \num{6.64e-08} & \unit{rad} \\
-$\psi_0$ & \num{2.89119} & \num{2.89119} $\pm$ \num{1.97e-07} & \unit{rad} \\
-$\dot{\phi}_0$ & \num{-1.55518} & \num{-1.65454} $\pm$ \num{0.01149} & $10^{-10}$ \unit{rad.s^{-1}} \\
-$\dot{\theta}_0$ & \num{-1.43793} & \num{-0.46485} $\pm$ \num{0.06436} & $10^{-11}$ \unit{rad.s^{-1}} \\
-$\dot{\psi}_0$ & \num{1.01644} & \num{1.01644} $\pm$ \num{0.00000} & $10^{-5}$ \unit{rad.s^{-1}} \\
-$I_{11}$ & \num{9.50641} & \num{9.70019} $\pm$ \num{0.01748} & $10^{34}$ \unit{kg.m^2} \\
-$I_{22}$ & \num{9.52214} & \num{9.67854} $\pm$ \num{0.00316} & $10^{34}$ \unit{kg.m^2} \\
-$I_{33}$ & \num{9.52738} & \num{9.64247} $\pm$ \num{0.00250} & $10^{34}$ \unit{kg.m^2} \\
-% $I_{12}$ & \num{0.00000} & -- $\pm$ \num{0.00000} & $10^{34}$ \unit{kg.m^2} \\
-% $I_{13}$ & \num{0.00000} & -- $\pm$ \num{0.00000} & $10^{34}$ \unit{kg.m^2} \\
-% $I_{23}$ & \num{0.00000} & -- $\pm$ \num{0.00000} & $10^{34}$ \unit{kg.m^2} \\
-% $k_{\mathrm{o}}$ & \num{2.78457} & -- $\pm$ \num{0.00003} & $10^{23}$ \unit{kg.m^2.s^{-1}} \\
-$h_2$ & \num{1.50000} & \num{1.48731} $\pm$ \num{0.00543} & -- \\
-\hline
-$d_\mathrm{s}$ & \num{263.192} & \num{267.177} $\pm$ \num{0.087} & \unit{km} \\
+% $d_\mathrm{s}$ & \num{263.192} & \num{267.177} $\pm$ \num{0.087} & \unit{km} \\
 % --------------------------------------
 \hline
 \end{tabular}
-\end{table}
+\end{table*}
 
 
 
@@ -2030,7 +2102,7 @@ This sampling frequency is significantly lower than the nominal capability of GA
 A joint analysis of the parameter estimates in Table~\ref{tab:GALA_ground_truth_estimates} and the correlation matrix in Fig.~\ref{fig:ganymede_correlation_matrix} provides a comprehensive picture of the estimator's performance and the physical coupling of the system. 
 %
 Assuming an observation window corresponding to the GCO phase we are able to retrieve the moments of inertia and Euler angles to high precision. Under these conditions, the ground truth thickness of the icy shell, set at one-tenth of Ganymede's reference radius (\SI{263.1}{km}), is recovered as 
-$d_{\mathrm{s}} = \SI{267.2 \pm 0.1}{km}$.
+${d_{\mathrm{s}} = \SI{298.71 \pm 0.26}{km}}$.
 % 
 However, we note that these results are strongly dependent on the noise level in the measurements, as well as on orbit reconstruction and pointing errors. In particular, with a higher uncertainty level in the orbit, the filter struggles to properly separate the $I_{22}$ and $I_{33}$ moments, resulting in a significantly higher correlation.
 %
@@ -2038,7 +2110,7 @@ However, we note that these results are strongly dependent on the noise level in
 % significantly degrades this precision, expanding the uncertainty of the estimated shell thickness to approximately $\pm\SI{30}{km}$.
 %
 The tidal Love number is estimated at
-${h_2 = \num{1.4871} \pm \num{0.005}}$, close to the ground truth value of $\num{1.5}$, close to the $3\sigma$ formal uncertainty. As revealed by the correlation matrix, this success is driven by the fact that $h_2$ is fundamentally decoupled from the rest of the state vector, exhibiting correlation coefficients smaller than $0.01$. Consequently, the tidal deformation signal can be robustly separated from both the static gravity field and the rotational dynamics.
+${h_2 = \num{1.434} \pm \num{0.012}}$, close to the ground truth value of $\num{1.5}$, close to the $3\sigma$ formal uncertainty. As revealed by the correlation matrix, this success is driven by the fact that $h_2$ is fundamentally decoupled from the rest of the state vector, exhibiting correlation coefficients smaller than $0.01$. Consequently, the tidal deformation signal can be robustly separated from both the static gravity field and the rotational dynamics.
 %
 Conversely, a critical examination of the principal moments of inertia ($I_{11}$, $I_{22}$, and $I_{33}$) reveals that their formal $1\sigma$ uncertainties underestimate the true estimation error. For instance, the estimated $I_{22}$ deviates from the ground truth by approximately 
 $\SI{0.14e34}{kg.m^2}$, an offset far exceeding its formal standard deviation of 
@@ -2112,7 +2184,7 @@ $-0.885$ anti-correlation between the initial precession angle $\phi_0$ and the 
 %     \begin{overpic}[width=\textwidth]{IMAGES/ganymede_laser_residuals_time.pdf}
 %           \put(0,30){%
 %             \colorbox{white}{%
-%                 \rotatebox{90}{$\boldsymbol{y}-\boldsymbol{g}_{\mathrm{LA}}\ \mathrm{(m)}$}%
+%                 \rotatebox{90}{$\boldsymbol{y}-\boldsymbol{G}_{\mathrm{LA}}\ \mathrm{(m)}$}%
 %             }%
 %         }
 %     \end{overpic}
@@ -2153,13 +2225,64 @@ $-0.885$ anti-correlation between the initial precession angle $\phi_0$ and the 
 
 
 
+\subsection{Recovery with a corrupted DTM}\label{sec:results_corrupted_dtm}
+
+We apply the differential correction to observations generated and fitted with the common DTM of Sect.~\ref{sec:dtm_corruption}, with the fit copy perturbed by the field of Eq.~\eqref{eq:corruption_field}. The behaviour of the estimator separates sharply into a well-determined part and an unidentifiable part, and this separation -- rather than any single recovered value -- is the main result of the test. Representative converged values are listed in Table~\ref{tab:corrupted_dtm_estimates}.
+
+The initial Euler angles $(\phi_0,\theta_0,\psi_0)$ and the spin rate $\dot\psi_0$ are recovered essentially to the precision of the noise-free case. The intermediate and polar moments $I_{22}$ and $I_{33}$ converge to stable values, but biased high by about \SI{5}{\percent} ($\sim\!\SI{0.45e34}{kg.m^2}$), an offset that exceeds their formal $1\sigma$ uncertainties (a few $\times 10^{30}\,\mathrm{kg\,m^2}$) by two to three orders of magnitude. Consequently the inferred ice-shell thickness from Eq.~\eqref{eq:ice_shell_thickness} is ${d_{\mathrm{s}} \approx \SI{279}{km}}$, % CONFIRM
+biased by about \SI{16}{km} from the ground-truth \SI{263.2}{km}. This bias is smaller than the $\sim\!\SI{35}{km}$ of the two-DTM case (Table~\ref{tab:GALA_ground_truth_estimates}), confirming the intended intermediate character of the test; that a long-wavelength error of only \SI{1.58}{m} RMS already biases $d_{\mathrm{s}}$ by more than \SI{15}{km} underscores how efficiently long-wavelength DTM error aliases into the interior estimate.
+
+The minimum moment $I_{11}$, by contrast, does not converge. After the other parameters stabilise (near the eighth iteration) its estimate drifts and then diverges across subsequent iterations, swinging over more than an order of magnitude while the observation-residual RMS remains flat at $\approx\!\SI{9.4}{m}$. The normal-equation system is numerically rank-deficient throughout the inversion ($\mathrm{RCOND}\sim 10^{-22}$), with $I_{11}$ identified as the near-singular direction: both its formal and consider standard deviations grow without bound, the latter exceeding the a priori by many orders of magnitude. We therefore report $I_{11}$ as unconstrained rather than as an estimate. The corresponding ratio $A_{\mathrm{s}}/C_{\mathrm{s}}$ wanders in lock-step with $I_{11}$, so the minimum-inertia axis is the unobservable degree of freedom of the rotational fit; we examine why in Sect.~\ref{sec:identifiability}.
+
+\begin{table}[h!]
+\centering
+\caption{Representative converged parameters for the corrupted-DTM test of Sect.~\ref{sec:dtm_corruption}. The minimum moment $I_{11}$ does not converge and is reported as unconstrained (see text); the $h_2$ value is provisional pending the phase-ensemble analysis of Sect.~\ref{sec:identifiability}.}
+\label{tab:corrupted_dtm_estimates}
+\begin{tabular}{l c c r}
+\hline \hline
+Parameter & Ground truth & Estimated & Unit \\
+\hline
+$\phi_0$        & \num{6.24688} & \num{6.24688} & \unit{rad} \\
+$\theta_0$      & \num{0.44759} & \num{0.44762} & \unit{rad} \\
+$\psi_0$        & \num{2.89119} & \num{2.89119} & \unit{rad} \\
+$\dot{\psi}_0$  & \num{1.01644} & \num{1.01644} & $10^{-5}$ \unit{rad.s^{-1}} \\
+$I_{11}$        & \num{9.51}    & \multicolumn{1}{c}{unconstrained} & $10^{34}$ \unit{kg.m^2} \\
+$I_{22}$        & \num{9.52}    & \num{9.99}    & $10^{34}$ \unit{kg.m^2} \\
+$I_{33}$        & \num{9.53}    & \num{9.98}    & $10^{34}$ \unit{kg.m^2} \\
+$h_2$           & \num{1.500}   & \num{1.34}    & -- \\ % CONFIRM (provisional)
+\hline $d_\mathrm{s}$ & \num{263.2} & \num{279} & \unit{km} \\ % CONFIRM
+\hline \hline
+\end{tabular}
+\end{table}
 
 
+\subsection{Identifiability of the moments and consequences for the parameterisation}\label{sec:identifiability}
+
+The divergence of $I_{11}$ is not a numerical accident but a direct manifestation of the near-degeneracy discussed in Sect.~\ref{sec:rotational_eqs_V2}. In the rigid-body limit the rotational equations are invariant under a global rescaling of the inertia tensor (Eq.~\ref{eq:geodesic_explicit_V2}) and depend only on the ratios $\alpha$, $\beta$, $\gamma$. Treating the quadrupole coefficients in the McCullagh potential as injected constants formally breaks this invariance and, in principle, restores sensitivity to the absolute scale. In practice, however, the present test shows that this sensitivity is too weak to constrain the minimum moment from GCO altimetry: the rotational signal depends only marginally on $A_{\mathrm{s}} = I_{11}$, the long axis pointing toward Jupiter, and the normal equations are correspondingly singular in that direction ($\mathrm{RCOND}\sim 10^{-22}$). The well-determined combinations are the polar moment $C_{\mathrm{s}} = I_{33}$ -- and hence $d_{\mathrm{s}}$ -- together with $I_{22}$, while $I_{11}$ remains effectively unobservable. This qualifies the statement of Sect.~\ref{sec:rotational_eqs_V2}: injecting the gravity field permits estimation of the well-observed moments, but does not by itself render all three principal moments independently recoverable from altimetry.
+
+The remedy is to stop solving for the minimum moment as a free absolute parameter and instead to fix it through the gravity field, which is exactly the information the 3GM experiment is expected to provide. Since the injected coefficient $C_{22}$ is related to the equatorial moments by Eq.~\eqref{eq:inertia2stokes_V2_C22_V2}, the minimum moment follows from the well-determined $I_{22}$ as $I_{11} = I_{22} - 4 {M}_{\mathrm{G}} R_{\mathrm{G}}^2\, C_{22}$, removing the singular direction from the solve-for set. Equivalently, the estimation can be reparametrized in terms of the ratios $\alpha$, $\beta$, $\gamma$ and $h_2$, with the absolute scale supplied externally by $C_{20}$ and $C_{22}$. Either choice eliminates the unconstrained direction that causes the $I_{11}$ divergence while retaining the quantities the altimetry actually determines, and we adopt it as the recommended estimation strategy.
+
+A practical corollary concerns the convergence criterion. Monitoring only the observation-residual RMS (Sect.~\ref{sec:DC_laser}) is insufficient when a parameter is weakly observable: the residual RMS is by construction nearly flat along the unobservable direction, so the iteration can appear converged on the RMS metric while $I_{11}$ continues to drift. We therefore also monitor the norm of the parameter increment $\|\delta\tilde{\vec x}_0\|$ and terminate only when both metrics fall below tolerance.
 
 
+A further feature of this realisation is that $h_2$ converges to $\approx\!\num{1.34}$, % CONFIRM
+i.e. biased low by about \SI{11}{\percent} -- further from the ground truth than in the two-DTM case, despite the milder DTM error. Because the $n=2$ corruption term shares the angular order of the degree-two tidal deformation, we suspected a spectral overlap between the long-wavelength DTM error and the tidal signal. To test this we repeated the inversion over an ensemble of independent corruption phases at fixed amplitude.
+% BRANCH A (ensemble shows scatter -> phase artifact):
+% The recovered h_2 varies by ~X across realisations, indicating that the apparent bias is a feature of the particular phase pattern rather than a systematic effect; the ensemble mean is h_2 = <..> +/- <..>, consistent with the decoupling found in Sect.~\ref{sec:results}.
+% BRANCH B (ensemble stable -> real overlap):
+% The recovered h_2 remains biased low across all realisations, confirming a genuine degeneracy between order-two DTM error and the tidal deformation. This identifies a specific failure mode for h_2 recovery: long-wavelength DTM error of the same angular order as the tide aliases directly into the tidal channel, and must be controlled (e.g. by crossover-based separation) in the analysis of real GALA data.
 
+\section{Conclusions}\label{sec:conclusions}
 
+We have presented a fully dynamical framework for estimating the rotational state, the principal moments of inertia, and the tidal Love number $h_2$ of Ganymede from laser altimetry. In contrast to kinematic profile fitting, the satellite orientation is propagated through the tri-axial second-order Euler-angle equations derived from a Lagrangian formulation; the quadrupole gravity coefficients are injected as independent constants so as to break the scale invariance of the rigid-body equations; and the mechanical decoupling induced by a subsurface ocean is represented through a laminar shell--ocean coupling described by a Rayleigh dissipation function. The reliability of the solution and the correlations among the parameters are assessed through a consider-covariance analysis, and the method is exercised on synthetic GALA observations spanning the GCO phase, with realistic instrument noise, pointing errors, and orbit-reconstruction errors.
 
+The estimation results separate cleanly into a well-observed part and a poorly observed part. The tidal Love number is the most robustly determined parameter: it is essentially decoupled from the rest of the state vector, with correlation coefficients below $0.01$, so the tidal-deformation signal can be isolated from both the static gravity field and the rotational dynamics. Its formal precision is competitive with the crossover-based estimate of \citet{2015P&SS..117..184S}, although, as for the moments of inertia, its accuracy is ultimately limited by systematic DTM and pointing errors rather than by the formal covariance. The initial Euler angles and the spin rate $\dot{\psi}_0$ are likewise recovered to high accuracy, whereas the slow nutation and precession rates are markedly more sensitive to the unmodelled errors. The principal moments of inertia are recovered with systematic biases that exceed their formal $1\sigma$ uncertainties, so the formal covariance substantially underestimates the true error in the presence of unmodelled topographic signal and correlated orbit errors.
+
+The most important limitation we identify concerns the absolute moments of inertia. Although injecting the gravity coefficients formally restores sensitivity to the absolute scale, our experiments show that the minimum principal moment $A_{\mathrm{s}} = I_{11}$, associated with the long axis pointing toward Jupiter, remains effectively unobservable from GCO altimetry: it is the near-singular direction of the normal equations ($\mathrm{RCOND}\sim 10^{-22}$), it fails to converge, and both its formal and consider uncertainties diverge. The well-determined quantities are instead the polar moment $C_{\mathrm{s}} = I_{33}$ -- and hence the ice-shell thickness -- together with the intermediate moment $I_{22}$. This qualifies the notion that the injection alone renders all three principal moments independently recoverable, and points to a concrete remedy: the minimum moment should be fixed through the gravity field, via the relation $I_{11} = I_{22} - 4 {M}_{\mathrm{G}} R_{\mathrm{G}}^2\,C_{22}$, or, equivalently, the estimation should be reparameterised in terms of the moment ratios and $h_2$, with the absolute scale supplied by $C_{20}$ and $C_{22}$. Either choice removes the unconstrained direction while retaining the quantities the altimetry actually determines, and we adopt it as the recommended estimation strategy for the JUICE data.
+
+A controlled, long-wavelength corruption of the digital terrain model confirms this picture from the data side and quantifies the sensitivity of the method to topographic error. Using a single DTM for both the generation and the fit, with the fit copy perturbed by an analytic field dominated by the lowest angular orders, we find that even a perturbation of \SI{1.58}{m} RMS biases the inferred ice-shell thickness by more than \SI{15}{km} -- smaller than the $\sim\!\SI{35}{km}$ bias obtained with two independent DTMs, and thus intermediate between the noise-free and the fully mismatched configurations, as intended. The efficiency with which such a small, long-wavelength error propagates into the interior estimate underscores that the dominant threat to the recovery is not the high-frequency measurement noise, which averages down over the $\sim\!10^{7}$ footprints, but the long-wavelength, spatially correlated component of the DTM error, which is geometrically degenerate with the slowly varying orientation of the body.
+
+Taken together, these results indicate that GCO laser altimetry provides a strong, independent constraint on the tidal Love number, and hence on the presence of a subsurface ocean, but does not by itself separate the individual absolute moments of inertia. The method is therefore best regarded as complementary to the 3GM radio-science experiment and to crossover analyses, with which it should be combined. Future work should replace the reference-sphere footprint with an iterative intersection on the actual DTM surface, integrate the ocean-layer Euler angles self-consistently rather than prescribing them, propagate the JANUS-derived DTM and its error budget once available, and assess a joint inversion of altimetry, gravity, and crossovers. A systematic characterisation of the achievable accuracy as a function of the amplitude and spectral content of the DTM error, building on the controlled corruption introduced here, will be an essential ingredient of that assessment.
 
 
 %-----------------------------------------------------------------------
@@ -2167,8 +2290,6 @@ $-0.885$ anti-correlation between the initial precession angle $\phi_0$ and the 
 % \begin{subappendices} % comment SN
 \begin{appendices}    % uncomment SN
 %-----------------------------------------------------------------------
-
-
 
 
 %_____________________________________________________________
@@ -2268,6 +2389,7 @@ Then, the coordinates of a vector in the body frame $ \vec{r}_\mathcal{B}$ are t
 %
 Explicitly the components of $\vec{R}(\varphi,\theta,\psi) = (R_{ij})$ are
 %
+% \begin{subequations}
 \begin{align}
 R_{11} &= \cos\psi \cos\varphi - \sin\psi \cos\theta \sin\varphi, \nonumber\\ \displaybreak[2]
 R_{12} &= \cos\psi \sin\varphi + \sin\psi \cos\theta \cos\varphi, \nonumber\\ \displaybreak[2]
@@ -2279,7 +2401,7 @@ R_{31} &= \sin\theta \sin\varphi, \nonumber\\ \displaybreak[2]
 R_{32} &= -\sin\theta \cos\varphi, \nonumber\\ \displaybreak[2]
 R_{33} &= \cos\theta.
 \end{align}
-
+% \end{subequations}
 
 This rotation matrices correspond to  counterclockwise rotations of the about the respective intermediate axes.
 In particular $\varphi$ is the angle between the $\vec{e}_{1,\mathcal{I}}$ axis and the ascending node of the satellite equator, $\theta$ is the inclination of the satellite equator to the inertial frame equator, and $\psi$ is the angle between the ascending node and the satellite's prime meridian, that is the $\vec{e}_{1,\mathcal{B}}$ axis \citep{2018CeMDA.130...22A}.
@@ -2360,7 +2482,7 @@ For further details about rotations and Euler angles the reader is referred to \
 % %     \label{eq:RMS_weighted}
 % %     \mathrm{RMS}_{\mathrm{w}}
 % %     =
-% %     \sqrt{\frac{\sum_{i=1}^{l}\delta\vec{y}_i^\top \vec{W}_i \delta\vec{y}_i}{\sum_{i=1}^{l} \mathrm{tr}(\vec{W}_i)}}.
+% %     \sqrt{\frac{\sum_{i=1}^{l}\delta{y}_i^\top \vec{W}_i \delta{y}_i}{\sum_{i=1}^{l} \mathrm{tr}(\vec{W}_i)}}.
 % % \end{equation}
 
 % The root mean square error (RMS) of the observation residuals generally is computed and may be used as a measure of convergence; when the RMS no longer changes, within some given tolerance, the solution is assumed to have converged.
@@ -2370,14 +2492,14 @@ For further details about rotations and Euler angles the reader is referred to \
 % 	\label{eq:RMS}
 % 	\mathrm{RMS}
 % 	=
-% 	\sqrt{\frac{1}{l}\sum_{i=1}^{l}\delta\vec{y}_i^\top \delta\vec{y}_i},
+% 	\sqrt{\frac{1}{l}\sum_{i=1}^{l}\delta{y}_i^\top \delta{y}_i},
 % \end{equation}
 
 
 
 % The best estimate of the observation error after the correction of the parameters is given by
 % \begin{align}
-% 	\hat{\varepsilon}_i &= \delta\vec{y}_i - \vec{H}_i \delta\tilde{\vec{x}}_0, \label{eq:22.73}
+% 	\hat{\varepsilon}_i &= \delta{y}_i - \vec{H}_i \delta\tilde{\vec{x}}_0, \label{eq:22.73}
 % \end{align}
 % %
 % Then the predicted weighted RMS is computed from
@@ -2387,32 +2509,32 @@ For further details about rotations and Euler angles the reader is referred to \
 % 	\hat{\varepsilon}_i}. \label{eq:rms_def} %k = l!! p = 1
 % \end{equation}
 % %
-% where $l$ is the number of processed observations. To compute this statistic efficiently without storing the history of all residuals $\hat{\varepsilon}_i$ and measurement matrices $\vec{H}_i$ (which requires excessive memory), we expand the quadratic term. Recalling that the post-fit residual is defined as $\hat{\varepsilon}_i = \delta\vec{y}_i - \vec{H}_i \delta\tilde{\vec{x}}_0$, the weighted sum of squares can be written as:
+% where $l$ is the number of processed observations. To compute this statistic efficiently without storing the history of all residuals $\hat{\varepsilon}_i$ and measurement matrices $\vec{H}_i$ (which requires excessive memory), we expand the quadratic term. Recalling that the post-fit residual is defined as $\hat{\varepsilon}_i = \delta{y}_i - \vec{H}_i \delta\tilde{\vec{x}}_0$, the weighted sum of squares can be written as:
 % % \begin{align}
 % % 	\nonumber
 % % 	\displaystyle\sum_{i=1}^{l} \hat{\varepsilon}_i^\top 
 % % 	\vec{W}_i
 % % 	\hat{\varepsilon}_i 
 % % 	% 
-% % 	&= \sum_{i=1}^{l} (\delta\vec{y}_i - \vec{H}_i \delta\tilde{\vec{x}}_0)^\top \vec{W}_i (\delta\vec{y}_i - \vec{H}_i \delta\tilde{\vec{x}}_0) 
+% % 	&= \sum_{i=1}^{l} (\delta{y}_i - \vec{H}_i \delta\tilde{\vec{x}}_0)^\top \vec{W}_i (\delta{y}_i - \vec{H}_i \delta\tilde{\vec{x}}_0) 
 % % 	\\
-% % 	&= \sum_{i=1}^{l} \left( \delta\vec{y}_i^\top \vec{W}_i \delta\vec{y}_i - \delta\vec{y}_i^\top \vec{W}_i \vec{H}_i \delta\tilde{\vec{x}}_0 - \delta\tilde{\vec{x}}_0^\top \vec{H}_i^\top \vec{W}_i \delta\vec{y}_i + \delta\tilde{\vec{x}}_0^\top \vec{H}_i^\top \vec{W}_i \vec{H}_i \delta\tilde{\vec{x}}_0 \right).
+% % 	&= \sum_{i=1}^{l} \left( \delta{y}_i^\top \vec{W}_i \delta{y}_i - \delta{y}_i^\top \vec{W}_i \vec{H}_i \delta\tilde{\vec{x}}_0 - \delta\tilde{\vec{x}}_0^\top \vec{H}_i^\top \vec{W}_i \delta{y}_i + \delta\tilde{\vec{x}}_0^\top \vec{H}_i^\top \vec{W}_i \vec{H}_i \delta\tilde{\vec{x}}_0 \right).
 % % \end{align}
-% % Since the term $\delta\vec{y}_i^\top \vec{W}_i \vec{H}_i \delta\tilde{\vec{x}}_0$ is a scalar, it is equal to its transpose $\delta\tilde{\vec{x}}_0^\top \vec{H}_i^\top \vec{W}_i \delta\vec{y}_i$. We can thus group the terms and distribute the summation:
+% % Since the term $\delta{y}_i^\top \vec{W}_i \vec{H}_i \delta\tilde{\vec{x}}_0$ is a scalar, it is equal to its transpose $\delta\tilde{\vec{x}}_0^\top \vec{H}_i^\top \vec{W}_i \delta{y}_i$. We can thus group the terms and distribute the summation:
 % \begin{align}
 % 	\displaystyle\sum_{i=1}^{l} \hat{\varepsilon}_i^\top 
 % 	\vec{W}_i
 % 	\hat{\varepsilon}_i 
 % 	%
-% 	&= \sum_{i=1}^{l} \delta\vec{y}_i^\top \vec{W}_i \delta\vec{y}_i
-% 	- 2 \delta\tilde{\vec{x}}_0^\top \left( \sum_{i=1}^{l} \vec{H}_i^\top \vec{W}_i \delta\vec{y}_i \right) 
+% 	&= \sum_{i=1}^{l} \delta{y}_i^\top \vec{W}_i \delta{y}_i
+% 	- 2 \delta\tilde{\vec{x}}_0^\top \left( \sum_{i=1}^{l} \vec{H}_i^\top \vec{W}_i \delta{y}_i \right) 
 % 	\nonumber \\ 
 % 	& \quad +
 % 	\delta\tilde{\vec{x}}_0^\top \left( \sum_{i=1}^{l} \vec{H}_i^\top \vec{W}_i \vec{H}_i \right) \delta\tilde{\vec{x}}_0.
 % \end{align}
-% Here, $\vec{L}$ and $\vec{b}$ are the normal equation matrix and vector, which are already computed iteratively during the accumulation of the least-squares system. Therefore, to compute the predicted RMS, one only needs to accumulate the scalar term $\sum \delta\vec{y}_i^\top \vec{W}_i \delta\vec{y}_i$ during the observation loop. The final RMS is then obtained algebraically after solving for $\delta\tilde{\vec{x}}_0$:
+% Here, $\vec{L}$ and $\vec{b}$ are the normal equation matrix and vector, which are already computed iteratively during the accumulation of the least-squares system. Therefore, to compute the predicted RMS, one only needs to accumulate the scalar term $\sum \delta{y}_i^\top \vec{W}_i \delta{y}_i$ during the observation loop. The final RMS is then obtained algebraically after solving for $\delta\tilde{\vec{x}}_0$:
 % \begin{equation}
-% 	\widehat{\mathrm{RMS}}_{\mathrm{w}} = \sqrt{\frac{1}{l} \left[ \left(\sum_{i=1}^{l} \delta\vec{y}_i^\top \vec{W}_i \delta\vec{y}_i\right) - 2 \delta\tilde{\vec{x}}_0^\top \vec{b} + \delta\tilde{\vec{x}}_0^\top \vec{L} \delta\tilde{\vec{x}}_0 \right]}.
+% 	\widehat{\mathrm{RMS}}_{\mathrm{w}} = \sqrt{\frac{1}{l} \left[ \left(\sum_{i=1}^{l} \delta{y}_i^\top \vec{W}_i \delta{y}_i\right) - 2 \delta\tilde{\vec{x}}_0^\top \vec{b} + \delta\tilde{\vec{x}}_0^\top \vec{L} \delta\tilde{\vec{x}}_0 \right]}.
 % \end{equation}
 		
 

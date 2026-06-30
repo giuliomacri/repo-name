@@ -46,45 +46,45 @@ Warning--"Determination}" isn't a brace-balanced string for entry 2004sod..book.
 while executing--line 2869 of file sn-mathphys-ay.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 33 entries,
+You've used 35 entries,
             7485 wiz_defined-function locations,
-            1515 strings with 26440 characters,
-and the built_in function-call counts, 354050 in all, are:
-= -- 48034
-> -- 2816
-< -- 820
-+ -- 14552
-- -- 1189
-* -- 23116
-:= -- 73653
-add.period$ -- 41
-call.type$ -- 33
-change.case$ -- 528
-chr.to.int$ -- 1410
-cite$ -- 33
-duplicate$ -- 2559
-empty$ -- 19212
-format.name$ -- 2593
-if$ -- 80649
+            1532 strings with 27783 characters,
+and the built_in function-call counts, 377973 in all, are:
+= -- 51045
+> -- 3030
+< -- 877
++ -- 15183
+- -- 1282
+* -- 24869
+:= -- 78857
+add.period$ -- 42
+call.type$ -- 35
+change.case$ -- 565
+chr.to.int$ -- 1502
+cite$ -- 35
+duplicate$ -- 2738
+empty$ -- 20691
+format.name$ -- 2792
+if$ -- 85906
 int.to.chr$ -- 1
-int.to.str$ -- 34
+int.to.str$ -- 36
 missing$ -- 0
-newline$ -- 795
-num.names$ -- 165
-pop$ -- 2278
+newline$ -- 845
+num.names$ -- 175
+pop$ -- 2460
 preamble$ -- 1
-purify$ -- 545
+purify$ -- 584
 quote$ -- 0
-skip$ -- 22421
+skip$ -- 23753
 stack$ -- 0
-substring$ -- 49297
-swap$ -- 1385
-text.length$ -- 1055
+substring$ -- 52897
+swap$ -- 1483
+text.length$ -- 1130
 text.prefix$ -- 14
 top$ -- 1
-type$ -- 1463
+type$ -- 1552
 warning$ -- 0
-while$ -- 2366
+while$ -- 2539
 width$ -- 0
-write$ -- 991
+write$ -- 1053
 (There were 10 warnings)

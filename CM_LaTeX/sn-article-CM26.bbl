@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{33}
+\begin{thebibliography}{35}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -420,8 +420,7 @@ vol. \bseriesno{1}.
 \bpublisher{Butterworth-Heinemann},
 \blocation{Oxford}
 (\byear{1976}).
-\doiurl{10.1016/B978-0-08-050347-9.50011-3} .
-\burl{https://www.sciencedirect.com/science/article/pii/B9780080503479500113}
+\doiurl{10.1016/B978-0-08-050347-9.50011-3}
 \end{bbook}
 \endbibitem
 
@@ -633,6 +632,26 @@ LRO-L-LOLA-4-GDR-V2.0
 \endbibitem
 
 %%% 24
+\bibitem[\protect\citeauthoryear{{Scholten} et~al.}{2012}]{2012JGRE..117.0H17S}
+\begin{barticle}
+\bauthor{\bsnm{{Scholten}}, \binits{F.}},
+\bauthor{\bsnm{{Oberst}}, \binits{J.}},
+\bauthor{\bsnm{{Matz}}, \binits{K.-D.}},
+\bauthor{\bsnm{{Roatsch}}, \binits{T.}},
+\bauthor{\bsnm{{W{\"a}hlisch}}, \binits{M.}},
+\bauthor{\bsnm{{Speyerer}}, \binits{E.J.}},
+\bauthor{\bsnm{{Robinson}}, \binits{M.S.}}:
+\batitle{{GLD100: The near-global lunar 100 m raster DTM from LROC WAC stereo
+  image data}}.
+\bjtitle{Journal of Geophysical Research (Planets)}
+\bvolume{117},
+\bfpage{00}--\blpage{17}
+(\byear{2012})
+\doiurl{10.1029/2011JE003926}
+\end{barticle}
+\endbibitem
+
+%%% 25
 \bibitem[\protect\citeauthoryear{{Stark} et~al.}{2015}]{2015GeoRL..42.7881S}
 \begin{barticle}
 \bauthor{\bsnm{{Stark}}, \binits{A.}},
@@ -654,7 +673,7 @@ LRO-L-LOLA-4-GDR-V2.0
 \end{barticle}
 \endbibitem
 
-%%% 25
+%%% 26
 \bibitem[\protect\citeauthoryear{{Steinbr{\"u}gge}
   et~al.}{2015}]{2015P&SS..117..184S}
 \begin{barticle}
@@ -673,7 +692,7 @@ LRO-L-LOLA-4-GDR-V2.0
 \end{barticle}
 \endbibitem
 
-%%% 26
+%%% 27
 \bibitem[\protect\citeauthoryear{{Steinbr{\"u}gge}
   et~al.}{2018}]{2018P&SS..159...84S}
 \begin{barticle}
@@ -692,7 +711,7 @@ LRO-L-LOLA-4-GDR-V2.0
 \end{barticle}
 \endbibitem
 
-%%% 27
+%%% 28
 \bibitem[\protect\citeauthoryear{{Steinbr{\"u}gge}
   et~al.}{2019}]{2019Geosc...9..320S}
 \begin{barticle}
@@ -710,7 +729,39 @@ LRO-L-LOLA-4-GDR-V2.0
 \end{barticle}
 \endbibitem
 
-%%% 28
+%%% 29
+\bibitem[\protect\citeauthoryear{{Smith} et~al.}{2010}]{2010GeoRL..3718204S}
+\begin{barticle}
+\bauthor{\bsnm{{Smith}}, \binits{D.E.}},
+\bauthor{\bsnm{{Zuber}}, \binits{M.T.}},
+\bauthor{\bsnm{{Neumann}}, \binits{G.A.}},
+\bauthor{\bsnm{{Lemoine}}, \binits{F.G.}},
+\bauthor{\bsnm{{Mazarico}}, \binits{E.}},
+\bauthor{\bsnm{{Torrence}}, \binits{M.H.}},
+\bauthor{\bsnm{{McGarry}}, \binits{J.F.}},
+\bauthor{\bsnm{{Rowlands}}, \binits{D.D.}},
+\bauthor{\bsnm{{Head}}, \binits{J.W.}},
+\bauthor{\bsnm{{Duxbury}}, \binits{T.H.}},
+\bauthor{\bsnm{{Aharonson}}, \binits{O.}},
+\bauthor{\bsnm{{Lucey}}, \binits{P.G.}},
+\bauthor{\bsnm{{Robinson}}, \binits{M.S.}},
+\bauthor{\bsnm{{Barnouin}}, \binits{O.S.}},
+\bauthor{\bsnm{{Cavanaugh}}, \binits{J.F.}},
+\bauthor{\bsnm{{Sun}}, \binits{X.}},
+\bauthor{\bsnm{{Liiva}}, \binits{P.}},
+\bauthor{\bsnm{{Mao}}, \binits{D.-d.}},
+\bauthor{\bsnm{{Smith}}, \binits{J.C.}},
+\bauthor{\bsnm{{Bartels}}, \binits{A.E.}}:
+\batitle{{Initial observations from the Lunar Orbiter Laser Altimeter (LOLA)}}.
+\bjtitle{\grl}
+\bvolume{37}(\bissue{18}),
+\bfpage{18204}
+(\byear{2010})
+\doiurl{10.1029/2010GL043751}
+\end{barticle}
+\endbibitem
+
+%%% 30
 \bibitem[\protect\citeauthoryear{{Tricarico}}{2008}]{Tricarico2008CeMDA.100..319T}
 \begin{barticle}
 \bauthor{\bsnm{{Tricarico}}, \binits{P.}}:
@@ -726,7 +777,7 @@ LRO-L-LOLA-4-GDR-V2.0
 \end{barticle}
 \endbibitem
 
-%%% 29
+%%% 31
 \bibitem[\protect\citeauthoryear{{Tapley} et~al.}{2004}]{2004sod..book.....T}
 \begin{bbook}
 \bauthor{\bsnm{{Tapley}}, \binits{B.}},
@@ -739,7 +790,7 @@ LRO-L-LOLA-4-GDR-V2.0
 \end{bbook}
 \endbibitem
 
-%%% 30
+%%% 32
 \bibitem[\protect\citeauthoryear{Verner}{2010}]{Verner2010}
 \begin{barticle}
 \bauthor{\bsnm{Verner}, \binits{J.H.}}:
@@ -752,7 +803,7 @@ LRO-L-LOLA-4-GDR-V2.0
 \end{barticle}
 \endbibitem
 
-%%% 31
+%%% 33
 \bibitem[\protect\citeauthoryear{{Williams} et~al.}{2014}]{2014JGRE..119.1546W}
 \begin{barticle}
 \bauthor{\bsnm{{Williams}}, \binits{J.G.}},
@@ -789,7 +840,7 @@ LRO-L-LOLA-4-GDR-V2.0
 \end{barticle}
 \endbibitem
 
-%%% 32
+%%% 34
 \bibitem[\protect\citeauthoryear{{Yoder}}{1981}]{1981RSPTA.303..327Y}
 \begin{barticle}
 \bauthor{\bsnm{{Yoder}}, \binits{C.F.}}:
@@ -802,7 +853,7 @@ LRO-L-LOLA-4-GDR-V2.0
 \end{barticle}
 \endbibitem
 
-%%% 33
+%%% 35
 \bibitem[\protect\citeauthoryear{{Yoder}}{1995}]{1995Icar..117..250Y}
 \begin{barticle}
 \bauthor{\bsnm{{Yoder}}, \binits{C.F.}}:
