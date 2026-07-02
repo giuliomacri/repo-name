@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex sn-article-CM26"] 1782814199 "sn-article-CM26.aux" "sn-article-CM26.bbl" "sn-article-CM26" 1782814205
+["bibtex sn-article-CM26"] 1782984807 "sn-article-CM26.aux" "sn-article-CM26.bbl" "sn-article-CM26" 1782984808
   "./sn-mathphys-ay.bst" 1772014103 64023 05b1181d970e8ec37922f99c68cbf16a ""
-  "references.bib" 1778057626 210447 cfa8d33813156552104d0639b38fd4b2 ""
+  "references.bib" 1782984807 210973 ed91e049bb565d4d8ced8f974a5bbdad ""
   "sn-article-CM26.aux" 1782814205 17074 231bcfaaa5cbd23a49272dd09c46c2c6 "pdflatex"
   (generated)
   "sn-article-CM26.bbl"
   "sn-article-CM26.blg"
-["pdflatex"] 1782814200 "/Users/giuliomacri/Desktop/PhD/CM_paper/CM_LaTeX/sn-article-CM26.tex" "sn-article-CM26.pdf" "sn-article-CM26" 1782814205
+["pdflatex"] 1782814200 "/Users/giuliomacri/Desktop/PhD/CM_paper/CM_LaTeX/sn-article-CM26.tex" "sn-article-CM26.pdf" "sn-article-CM26" 1782984808
   "/Users/giuliomacri/Desktop/PhD/CM_paper/CM_LaTeX/sn-article-CM26.tex" 1782814194 197481 66d47d487401367d07fe97f119f77da0 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
@@ -260,7 +260,7 @@
   "IMAGES/ganymede_laser_residuals_hist_14_04_26.pdf" 1778715186 168732 3488b2d47ebc98bcbe535ac9b76b42f4 ""
   "IMAGES/spheres/ganymede.png" 1761037164 1934994 05c9905ceb664e89e2ba9a2e33fc0f89 ""
   "sn-article-CM26.aux" 1782814205 17074 231bcfaaa5cbd23a49272dd09c46c2c6 "pdflatex"
-  "sn-article-CM26.bbl" 1782814200 29879 bcfcb06ba3de06fe6f818ddd01b19014 "bibtex sn-article-CM26"
+  "sn-article-CM26.bbl" 1782984808 29879 bcfcb06ba3de06fe6f818ddd01b19014 "bibtex sn-article-CM26"
   "sn-article-CM26.out" 1782814205 3799 371710d1e504699b92cfa472e5b6e72f "pdflatex"
   "sn-article-CM26.tex" 1782814194 197481 66d47d487401367d07fe97f119f77da0 ""
   "sn-jnl.cls" 1734078670 55857 c14ef9d34b3d95356940eaf177aff85f ""
